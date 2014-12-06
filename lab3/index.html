@@ -23,9 +23,6 @@
     </table>
 
     <h3>3.1 S&uuml;mboli edastamine RS-232C liidesel</h3>
-    <p>
-        OMA JOONISEL NÄIDATA, kus asuvad bitijadas start-bitt, paarsusbitt, stopp-bitid ja infobitid.
-    </p>
     <table border=1 cellpadding=4 cellspacing=0>
         <tr>
             <td>Liikme nimi</td>
@@ -61,56 +58,12 @@
         </tr>
     </table>
     <p>
-        OMA JOONISEL NÄIDATA, kus asuvad bitijadas start-bitt, paarsusbitt,
-        stopp-bitid ja infobitid.
+        <strong>Legend</strong>:<br />
+        punane - start-bitt<br />
+        lilla - paarsusbitt<br />
+        sinine - stopp-bitid<br />
+        roheline - infobitid<br />
     </p>
-    <table border=1 cellpadding=4 cellspacing=0>
-        <tr>
-            <td>Liikme nimi</td>
-            <td>Väino Kokk</td>
-        </tr>
-        <tr>
-            <td>Valitud sümbol</td>
-            <td>S</td>
-        </tr>
-        <tr>
-            <td>Sümboli ASCII kood</td>
-            <td>1100101</td>
-        </tr>
-        <tr>
-            <td>signaali "1" nivoo</td>
-            <td align=center>-10.8</td>
-        </tr>
-        <tr>
-            <td>signaali "0" nivoo</td>
-            <td align=center>10.4</td>
-        </tr>
-        <tr>
-            <td>sümboli edastamiseks kulunud aeg</td>
-            <td>40</td>
-        </tr>
-        <tr>
-            <td>mitu bitti selle aja jooksul edastati</td>
-            <td>11</td>
-        </tr>
-        <tr>
-            <td>signaali pilt</td>
-            <td><img src="F0002TEK.JPG" alt="LISA SIIA SIGNAALI KUJU PILT!"></td>
-        </tr>
-    </table>
-
-    <p>
-        Sümbolite edastuskiirus (bit/s):<br>
-        ARVUTADA SÜMBOLITE EDASTUSKIIRUS!
-    </p>
-    <h4>Paarsuskontroll</h4>
-    <table border=1 cellpadding=4 cellspacing=0>
-        <tr>
-            <td>Mis muutus, kui paarsuskontrolli viisiks seada Odd</td>
-            <td>Paarsusbit hüppas püsti</td>
-            <td><img src="" alt="LISA SIIA SIGNAALI KUJU PILT!"></td>
-        </tr>
-    </table>
     <h3>3.2 Andmevahetus arvutite vahel nullmodemi abil</h3>
     <h4>Seadistus</h4>
     <table border=1 cellpadding=4 cellspacing=0>
@@ -155,14 +108,12 @@
             <td>9</td>
         </tr>
         <tr>
-            <td colspan=4 align=center><img src="" alt="LISA SIIA SIGNAALI KUJU PILT!"></td>
+            <td colspan=4 align=center><img src="F0003TEK.JPG" alt="LISA SIIA SIGNAALI KUJU PILT!" /></td>
         </tr>
     </table>
 
     Sümbolite edastuskiirus (bit/s): (1000 / 7,5) * 9 = 1200 bit/s<br />
-
-
-    ARVUTADA SÜMBOLITE EDASTUSKIIRUS!<h3>3.3 Modem&uuml;hendus arvutite vahel</h3>
+    <h3>3.3 Modem&uuml;hendus arvutite vahel</h3>
     <table border=1 cellpadding=4 cellspacing=0>
         <tr>
             <td>
@@ -191,9 +142,28 @@
     </table>
 
     <h2>3.4 Kodune individuaalülesanne</h2>
-    <p>KIRJUTA INDIVIDUAALÜLESANDE LAHENDUS SIIA!</p>
+    <p>
+        Vaja on edastada N = 111881 * 27 = 3020787 bitti informatsiooni. <br />
+        Andmeedastus kiirus on 19200 bit / s<br />
+        Andmebitte: 8<br />
+        Paarsuskontroll: paaritu<br />
+        Stopbitte: 2<br />
+        <br />
+        Edastatavate pakettide arv: N / 8 = 3020787 / 8 = 377598.375; <br />
+        Kuna täpselt ei jagu siis tuleb üks pakett lisaks ning kokku on vaja edastada 377599 paketti.<br />
+        <br />
+        Ühe paketti edastamiseks kulub,  1 startbit + 8 databitti + 1 paarsusbitt + 2 stopbit = 12 bitti<br />
+
+        Edastusbitte tuleb kokku siis 377599 * 12 = 4531188 bitti <br />
+
+        Aeg = 4531188 / 19200 = 235,999375 sekundit<br />
+    </p>
+    
+    
     <h2>Kokkuvõte ja järeldused</h2>
-    <p>KIRJUTA KOKKUVÕTE JA JÄRELDUSED SIIA!</p>
+    <p>
+        
+    </p>
 
 
 

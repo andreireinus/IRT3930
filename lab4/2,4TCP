@@ -1,0 +1,93 @@
+bin/iperf.exe -s -P 0 -i 1 -p 5001 -f k
+------------------------------------------------------------
+Server listening on TCP port 5001
+TCP window size: 8.00 KByte (default)
+------------------------------------------------------------
+OpenSCManager failed - Access is denied. (0x5)
+[176] local 172.19.11.154 port 5001 connected with 172.19.11.155 port 49294
+[ ID] Interval       Transfer     Bandwidth
+[176]  0.0- 1.0 sec   992 KBytes  8126 Kbits/sec
+[176]  1.0- 2.0 sec   784 KBytes  6423 Kbits/sec
+[176]  2.0- 3.0 sec   872 KBytes  7143 Kbits/sec
+[176]  3.0- 4.0 sec   816 KBytes  6685 Kbits/sec
+[176]  4.0- 5.0 sec   744 KBytes  6095 Kbits/sec
+[176]  5.0- 6.0 sec   792 KBytes  6488 Kbits/sec
+[176]  6.0- 7.0 sec  1017 KBytes  8335 Kbits/sec
+[176]  7.0- 8.0 sec   599 KBytes  4904 Kbits/sec
+[176]  8.0- 9.0 sec   832 KBytes  6816 Kbits/sec
+[176]  9.0-10.0 sec   712 KBytes  5833 Kbits/sec
+[176] 10.0-11.0 sec   688 KBytes  5636 Kbits/sec
+[176] 11.0-12.0 sec   736 KBytes  6029 Kbits/sec
+[176] 12.0-13.0 sec   672 KBytes  5505 Kbits/sec
+[176] 13.0-14.0 sec   760 KBytes  6226 Kbits/sec
+[176] 14.0-15.0 sec   904 KBytes  7406 Kbits/sec
+[176] 15.0-16.0 sec   720 KBytes  5898 Kbits/sec
+[176] 16.0-17.0 sec   848 KBytes  6947 Kbits/sec
+[176] 17.0-18.0 sec   856 KBytes  7012 Kbits/sec
+[176] 18.0-19.0 sec  1040 KBytes  8520 Kbits/sec
+[176] 19.0-20.0 sec   800 KBytes  6554 Kbits/sec
+[ ID] Interval       Transfer     Bandwidth
+[176] 20.0-21.0 sec   928 KBytes  7602 Kbits/sec
+[176] 21.0-22.0 sec   936 KBytes  7668 Kbits/sec
+[176] 22.0-23.0 sec   744 KBytes  6095 Kbits/sec
+[176] 23.0-24.0 sec   832 KBytes  6816 Kbits/sec
+[176] 24.0-25.0 sec  1104 KBytes  9044 Kbits/sec
+[176]  0.0-25.0 sec  20744 KBytes  6791 Kbits/sec
+[264] local 172.19.11.154 port 5001 connected with 172.19.11.155 port 49296
+[ ID] Interval       Transfer     Bandwidth
+[264]  0.0- 1.0 sec  1120 KBytes  9175 Kbits/sec
+[264]  1.0- 2.0 sec  1424 KBytes  11665 Kbits/sec
+[264]  2.0- 3.0 sec  1304 KBytes  10682 Kbits/sec
+[264]  3.0- 4.0 sec  1280 KBytes  10486 Kbits/sec
+[264]  4.0- 5.0 sec  1360 KBytes  11141 Kbits/sec
+[264]  5.0- 6.0 sec  1240 KBytes  10158 Kbits/sec
+[264]  6.0- 7.0 sec  1056 KBytes  8651 Kbits/sec
+[264]  7.0- 8.0 sec   704 KBytes  5767 Kbits/sec
+[264]  8.0- 9.0 sec   912 KBytes  7471 Kbits/sec
+[264]  9.0-10.0 sec   880 KBytes  7209 Kbits/sec
+[264] 10.0-11.0 sec   920 KBytes  7537 Kbits/sec
+[264] 11.0-12.0 sec   880 KBytes  7209 Kbits/sec
+[264] 12.0-13.0 sec  1384 KBytes  11338 Kbits/sec
+[264] 13.0-14.0 sec  1288 KBytes  10551 Kbits/sec
+[264] 14.0-15.0 sec  1208 KBytes  9896 Kbits/sec
+[264] 15.0-16.0 sec  1312 KBytes  10748 Kbits/sec
+[264] 16.0-17.0 sec  1072 KBytes  8782 Kbits/sec
+[264] 17.0-18.0 sec  1120 KBytes  9175 Kbits/sec
+[264] 18.0-19.0 sec   568 KBytes  4653 Kbits/sec
+[264] 19.0-20.0 sec   384 KBytes  3146 Kbits/sec
+[ ID] Interval       Transfer     Bandwidth
+[264] 20.0-21.0 sec   200 KBytes  1638 Kbits/sec
+[264] 21.0-22.0 sec   352 KBytes  2884 Kbits/sec
+[264] 22.0-23.0 sec   360 KBytes  2949 Kbits/sec
+[264] 23.0-24.0 sec   288 KBytes  2359 Kbits/sec
+[264] 24.0-25.0 sec   440 KBytes  3604 Kbits/sec
+[264]  0.0-25.0 sec  23072 KBytes  7553 Kbits/sec
+[176] local 172.19.11.154 port 5001 connected with 172.19.11.155 port 49297
+[ ID] Interval       Transfer     Bandwidth
+[176]  0.0- 1.0 sec   528 KBytes  4325 Kbits/sec
+[176]  1.0- 2.0 sec   640 KBytes  5243 Kbits/sec
+[176]  2.0- 3.0 sec   640 KBytes  5243 Kbits/sec
+[176]  3.0- 4.0 sec   712 KBytes  5833 Kbits/sec
+[176]  4.0- 5.0 sec   616 KBytes  5046 Kbits/sec
+[176]  5.0- 6.0 sec   600 KBytes  4915 Kbits/sec
+[176]  6.0- 7.0 sec   616 KBytes  5046 Kbits/sec
+[176]  7.0- 8.0 sec   432 KBytes  3539 Kbits/sec
+[176]  8.0- 9.0 sec   560 KBytes  4588 Kbits/sec
+[176]  9.0-10.0 sec   616 KBytes  5046 Kbits/sec
+[176] 10.0-11.0 sec   704 KBytes  5767 Kbits/sec
+[176] 11.0-12.0 sec   368 KBytes  3015 Kbits/sec
+[176] 12.0-13.0 sec   312 KBytes  2556 Kbits/sec
+[176] 13.0-14.0 sec   600 KBytes  4915 Kbits/sec
+[176] 14.0-15.0 sec   376 KBytes  3080 Kbits/sec
+[176] 15.0-16.0 sec   608 KBytes  4981 Kbits/sec
+[176] 16.0-17.0 sec   784 KBytes  6423 Kbits/sec
+[176] 17.0-18.0 sec   440 KBytes  3604 Kbits/sec
+[176] 18.0-19.0 sec   736 KBytes  6029 Kbits/sec
+[176] 19.0-20.0 sec   408 KBytes  3342 Kbits/sec
+[ ID] Interval       Transfer     Bandwidth
+[176] 20.0-21.0 sec   328 KBytes  2687 Kbits/sec
+[176] 21.0-22.0 sec   328 KBytes  2687 Kbits/sec
+[176] 22.0-23.0 sec   240 KBytes  1966 Kbits/sec
+[176] 23.0-24.0 sec   352 KBytes  2884 Kbits/sec
+[176] 24.0-25.0 sec   488 KBytes  3998 Kbits/sec
+[176]  0.0-25.0 sec  13040 KBytes  4272 Kbits/sec

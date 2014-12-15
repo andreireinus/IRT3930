@@ -1,0 +1,659 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Side labor 4 aruanne</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+    <h1>Side labor 4 Traadita kohtvõrk WLAN aruanne</h1>
+
+    <table border="1" cellpadding="4" cellspacing="0">
+        <tbody>
+            <tr>
+                <td>Töö tegijate nimed:</td>
+            </tr>
+            <tr>
+                <td>Andrei Reinus</td>
+            </tr>
+            <tr>
+                <td>Kristjan Kranich</td>
+            </tr>
+            <tr>
+                <td>Töö tegemise kuupäev: Sat Oct 18 13:38:36 2014</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>1. WLAN tugijaama seadistamine</h2>
+    <h3>WLAN tugijaama seadistamise IP osa</h3>
+    <table border="1">
+        <tbody>
+            <tr>
+                <td>Variant nr</td>
+                <td>Võrgu aadress</td>
+                <td>Maski bittide arv</td>
+                <td>Võrgus seadmetele antavate aadresside max arv</td>
+                <td>võrgumask kümnendkujul</td>
+                <td>Esimene kasutatav aadress - <br>tugijaama IP aadress</td>
+                <td>Teine kasutatav aadress - <br>esimene DHCPga jagatav aadress</td>
+                <td>Viimane kasutatav aadress - <br>viimane DHCPga jagatav aadress</td>
+                <td>Aadressruumi viimane aadress, levisaade (<i>broadcast</i>)</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>172.19.11.152</td>
+                <td>29</td>
+                <td>6</td>
+                <td>255.255.255.248</td>
+                <td>172.19.11.153</td>
+                <td>172.19.11.154</td>
+                <td>172.19.11.158</td>
+                <td>172.19.11.159</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>WLAN tugijaama seadistamise WLAN osa</h3>
+    <table border="1" cellpadding="4" cellspacing="0">
+        <tbody>
+            <tr>
+                <td>
+                    <small>2,4 GHz võrgu nimi</small><br>
+                    LAUPAEV
+                </td>
+                <td>
+                    <small>2,4 GHz kanali number</small><br>
+                    07
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <small>5 GHz võrgu nimi</small><br>
+                    LAUPAEV-5G
+                </td>
+                <td>
+                    <small>5 GHz kanali number</small><br>
+                    44+48
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <h2>2. WLAN spektri mõõtmine</h2>
+    <table border="1" cellpadding="4" cellspacing="0">
+        <tbody>
+            <tr>
+                <td>katse</td>
+                <td>WLAN kanalid</td>
+                <td>Mõõdetud spektri alumine sagedus</td>
+                <td>Mõõdetud spektri ülemine sagedus</td>
+                <td>Mõõdetud  spektri laius</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>1 ja 6</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="7"><img src="Screen_20141018_153418.png" alt="LISA SIIA KATSE 1 SPEKTRIPILT!"></td>
+            </tr>
+        </tbody>
+    </table>
+    <p>
+    </p><table border="1" cellpadding="4" cellspacing="0">
+        <tbody>
+            <tr>
+                <td>katse</td>
+                <td>WLAN kanalid</td>
+                <td>Mõõdetud spektri alumine sagedus</td>
+                <td>Mõõdetud spektri ülemine sagedus</td>
+                <td>Mõõdetud  spektri laius</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>1 ja 4</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="7"><img src="Screen_20141018_153637.png" alt="LISA SIIA KATSE 2 SPEKTRIPILT!"></td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>3. WLAN võrgu uurimine</h2>
+    <h3>Windowsi käsurea käskude väljundid:</h3>
+    <ol>
+        <li>
+            <font face="Courier New, monospace">netsh wlan show interface</font>
+<pre>KOPEERI ESIMESE KÄSU VÄLJUNDFAILI SISU SIIA!
+</pre>
+        </li>
+        <li>
+            <font face="Courier New, monospace">netsh wlan show all</font><br>
+<pre>     
+Interface name : Wireless Network Connection 
+There are 15 networks currently visible. 
+SSID 1 : TTU
+    Network type            : Infrastructure
+    Authentication          : Open
+    Encryption              : None 
+    BSSID 1                 : 00:1f:da:28:77:00
+         Signal             : 96%  
+         Radio type         : 802.11g
+         Channel            : 1 
+         Basic rates (Mbps) : 1 2 5.5 11
+         Other rates (Mbps) : 6 9 12 18 24 36 48 54
+    BSSID 2                 : 00:1f:da:28:69:00
+         Signal             : 76%  
+         Radio type         : 802.11g
+         Channel            : 1 
+         Basic rates (Mbps) : 1 2 5.5 11
+         Other rates (Mbps) : 6 9 12 18 24 36 48 54
+    BSSID 3                 : 00:1f:da:28:68:80
+         Signal             : 52%  
+         Radio type         : 802.11g
+         Channel            : 6 
+         Basic rates (Mbps) : 1 2 5.5 11
+         Other rates (Mbps) : 6 9 12 18 24 36 48 54
+    BSSID 4                 : 00:1f:da:28:88:00
+         Signal             : 100%  
+         Radio type         : 802.11g
+         Channel            : 6 
+         Basic rates (Mbps) : 1 2 5.5 11
+         Other rates (Mbps) : 6 9 12 18 24 36 48 54
+    BSSID 5                 : 00:1f:da:28:6e:00
+         Signal             : 40%  
+         Radio type         : 802.11g
+         Channel            : 6 
+         Basic rates (Mbps) : 1 2 5.5 11
+         Other rates (Mbps) : 6 9 12 18 24 36 48 54
+    BSSID 6                 : 00:1f:da:28:3b:40
+         Signal             : 36%  
+         Radio type         : 802.11g
+         Channel            : 6 
+         Basic rates (Mbps) : 1 2 5.5 11
+         Other rates (Mbps) : 6 9 12 18 24 36 48 54
+    BSSID 7                 : 00:1f:da:28:3d:c0
+         Signal             : 40%  
+         Radio type         : 802.11g
+         Channel            : 11 
+         Basic rates (Mbps) : 1 2 5.5 11
+         Other rates (Mbps) : 6 9 12 18 24 36 48 54
+    BSSID 8                 : 00:1f:da:28:8a:40
+         Signal             : 52%  
+         Radio type         : 802.11g
+         Channel            : 11 
+         Basic rates (Mbps) : 1 2 5.5 11
+         Other rates (Mbps) : 6 9 12 18 24 36 48 54
+    BSSID 9                 : 00:1f:da:28:8a:41
+         Signal             : 36%  
+         Radio type         : 802.11a
+         Channel            : 36 
+         Basic rates (Mbps) : 6 12 24
+         Other rates (Mbps) : 9 18 36 48 54
+    BSSID 10                 : 00:1f:da:28:6e:01
+         Signal             : 36%  
+         Radio type         : 802.11a
+         Channel            : 36 
+         Basic rates (Mbps) : 6 12 24
+         Other rates (Mbps) : 9 18 36 48 54
+    BSSID 11                 : 00:1f:da:28:77:01
+         Signal             : 88%  
+         Radio type         : 802.11a
+         Channel            : 36 
+         Basic rates (Mbps) : 6 12 24
+         Other rates (Mbps) : 9 18 36 48 54
+    BSSID 12                 : 00:1f:da:28:68:81
+         Signal             : 36%  
+         Radio type         : 802.11a
+         Channel            : 36 
+         Basic rates (Mbps) : 6 12 24
+         Other rates (Mbps) : 9 18 36 48 54
+    BSSID 13                 : 00:1f:da:28:69:01
+         Signal             : 84%  
+         Radio type         : 802.11a
+         Channel            : 40 
+         Basic rates (Mbps) : 6 12 24
+         Other rates (Mbps) : 9 18 36 48 54
+    BSSID 14                 : 00:1f:da:28:3d:41
+         Signal             : 36%  
+         Radio type         : 802.11a
+         Channel            : 44 
+         Basic rates (Mbps) : 6 12 24
+         Other rates (Mbps) : 9 18 36 48 54
+    BSSID 15                 : 00:1f:da:28:3b:c1
+         Signal             : 40%  
+         Radio type         : 802.11a
+         Channel            : 48 
+         Basic rates (Mbps) : 6 12 24
+         Other rates (Mbps) : 9 18 36 48 54
+    BSSID 16                 : 00:1f:da:28:41:c0
+         Signal             : 44%  
+         Radio type         : 802.11g
+         Channel            : 6 
+         Basic rates (Mbps) : 1 2 5.5 11
+         Other rates (Mbps) : 6 9 12 18 24 36 48 54
+    BSSID 17                 : 00:1f:da:28:3b:c0
+         Signal             : 52%  
+         Radio type         : 802.11g
+         Channel            : 11 
+         Basic rates (Mbps) : 1 2 5.5 11
+         Other rates (Mbps) : 6 9 12 18 24 36 48 54
+    BSSID 18                 : 00:1f:da:28:88:01
+         Signal             : 100%  
+         Radio type         : 802.11a
+         Channel            : 40 
+         Basic rates (Mbps) : 6 12 24
+         Other rates (Mbps) : 9 18 36 48 54
+SSID 2 : eduroam
+    Network type            : Infrastructure
+    Authentication          : WPA2-Enterprise
+    Encryption              : CCMP 
+    BSSID 1                 : 00:1f:da:28:77:02
+         Signal             : 84%  
+         Radio type         : 802.11g
+         Channel            : 1 
+         Basic rates (Mbps) : 1 2 5.5 11
+         Other rates (Mbps) : 6 9 12 18 24 36 48 54
+    BSSID 2                 : 00:1f:da:28:69:02
+         Signal             : 88%  
+         Radio type         : 802.11g
+         Channel            : 1 
+         Basic rates (Mbps) : 1 2 5.5 11
+         Other rates (Mbps) : 6 9 12 18 24 36 48 54
+    BSSID 3                 : 00:1f:da:28:68:82
+         Signal             : 52%  
+         Radio type         : 802.11g
+         Channel            : 6 
+         Basic rates (Mbps) : 1 2 5.5 11
+         Other rates (Mbps) : 6 9 12 18 24 36 48 54
+    BSSID 4                 : 00:1f:da:28:3b:42
+         Signal             : 40%  
+         Radio type         : 802.11g
+         Channel            : 6 
+         Basic rates (Mbps) : 1 2 5.5 11
+         Other rates (Mbps) : 6 9 12 18 24 36 48 54
+    BSSID 5                 : 00:1f:da:28:88:02
+         Signal             : 100%  
+         Radio type         : 802.11g
+         Channel            : 6 
+         Basic rates (Mbps) : 1 2 5.5 11
+         Other rates (Mbps) : 6 9 12 18 24 36 48 54
+    BSSID 6                 : 00:1f:da:28:6e:02
+         Signal             : 40%  
+         Radio type         : 802.11g
+         Channel            : 6 
+         Basic rates (Mbps) : 1 2 5.5 11
+         Other rates (Mbps) : 6 9 12 18 24 36 48 54
+    BSSID 7                 : 00:1f:da:28:3d:c2
+         Signal             : 32%  
+         Radio type         : 802.11g
+         Channel            : 11 
+         Basic rates (Mbps) : 1 2 5.5 11
+         Other rates (Mbps) : 6 9 12 18 24 36 48 54
+    BSSID 8                 : 00:1f:da:28:8a:42
+         Signal             : 60%  
+         Radio type         : 802.11g
+         Channel            : 11 
+         Basic rates (Mbps) : 1 2 5.5 11
+         Other rates (Mbps) : 6 9 12 18 24 36 48 54
+    BSSID 9                 : 00:1f:da:28:8a:43
+         Signal             : 36%  
+         Radio type         : 802.11a
+         Channel            : 36 
+         Basic rates (Mbps) : 6 12 24
+         Other rates (Mbps) : 9 18 36 48 54
+    BSSID 10                 : 00:1f:da:28:6e:03
+         Signal             : 36%  
+         Radio type         : 802.11a
+         Channel            : 36 
+         Basic rates (Mbps) : 6 12 24
+         Other rates (Mbps) : 9 18 36 48 54
+    BSSID 11                 : 00:1f:da:28:77:03
+         Signal             : 80%  
+         Radio type         : 802.11a
+         Channel            : 36 
+         Basic rates (Mbps) : 6 12 24
+         Other rates (Mbps) : 9 18 36 48 54
+    BSSID 12                 : 00:1f:da:28:68:83
+         Signal             : 36%  
+         Radio type         : 802.11a
+         Channel            : 36 
+         Basic rates (Mbps) : 6 12 24
+         Other rates (Mbps) : 9 18 36 48 54
+    BSSID 13                 : 00:1f:da:28:69:03
+         Signal             : 80%  
+         Radio type         : 802.11a
+         Channel            : 40 
+         Basic rates (Mbps) : 6 12 24
+         Other rates (Mbps) : 9 18 36 48 54
+    BSSID 14                 : 00:1f:da:28:3d:43
+         Signal             : 32%  
+         Radio type         : 802.11a
+         Channel            : 44 
+         Basic rates (Mbps) : 6 12 24
+         Other rates (Mbps) : 9 18 36 48 54
+    BSSID 15                 : 00:1f:da:28:3b:c3
+         Signal             : 44%  
+         Radio type         : 802.11a
+         Channel            : 48 
+         Basic rates (Mbps) : 6 12 24
+         Other rates (Mbps) : 9 18 36 48 54
+    BSSID 16                 : 00:1f:da:28:86:83
+         Signal             : 40%  
+         Radio type         : 802.11a
+         Channel            : 40 
+         Basic rates (Mbps) : 6 12 24
+         Other rates (Mbps) : 9 18 36 48 54
+    BSSID 17                 : 00:1f:da:28:3b:c2
+         Signal             : 48%  
+         Radio type         : 802.11g
+         Channel            : 11 
+         Basic rates (Mbps) : 1 2 5.5 11
+         Other rates (Mbps) : 6 9 12 18 24 36 48 54
+    BSSID 18                 : 00:1f:da:28:88:03
+         Signal             : 100%  
+         Radio type         : 802.11a
+         Channel            : 40 
+         Basic rates (Mbps) : 6 12 24
+         Other rates (Mbps) : 9 18 36 48 54
+SSID 3 : orinoco
+    Network type            : Infrastructure
+    Authentication          : Open
+    Encryption              : None 
+    BSSID 1                 : 00:02:2d:20:8b:9a
+         Signal             : 100%  
+         Radio type         : 802.11b
+         Channel            : 1 
+         Basic rates (Mbps) : 1 2 5.5 11
+SSID 4 : NETGEAR28
+    Network type            : Infrastructure
+    Authentication          : WPA2-Personal
+    Encryption              : CCMP 
+    BSSID 1                 : 2c:b0:5d:a6:98:a9
+         Signal             : 100%  
+         Radio type         : 802.11n
+         Channel            : 3 
+         Basic rates (Mbps) : 1 2 5.5 11
+         Other rates (Mbps) : 6 9 12 18 24 36 48 54
+SSID 5 : A41
+    Network type            : Infrastructure
+    Authentication          : WPA2-Personal
+    Encryption              : CCMP 
+    BSSID 1                 : 2c:b0:5d:a6:99:87
+         Signal             : 100%  
+         Radio type         : 802.11g
+         Channel            : 6 
+         Basic rates (Mbps) : 1 2 5.5 11
+         Other rates (Mbps) : 6 9 12 18 24 36 48 54
+SSID 6 : Artjoms network24ghx
+    Network type            : Infrastructure
+    Authentication          : WPA2-Personal
+    Encryption              : CCMP 
+    BSSID 1                 : 2c:b0:5d:a6:98:49
+         Signal             : 92%  
+         Radio type         : 802.11g
+         Channel            : 7 
+         Basic rates (Mbps) : 1 2 5.5 11
+         Other rates (Mbps) : 6 9 12 18 24 36 48 54
+SSID 7 : NETGEAR68
+    Network type            : Infrastructure
+    Authentication          : WPA2-Personal
+    Encryption              : CCMP 
+    BSSID 1                 : 2c:b0:5d:a6:98:58
+         Signal             : 88%  
+         Radio type         : 802.11n
+         Channel            : 9 
+         Basic rates (Mbps) : 1 2 5.5 11
+         Other rates (Mbps) : 6 9 12 18 24 36 48 54
+SSID 8 : eriline_v6rk
+    Network type            : Infrastructure
+    Authentication          : WPA2-Personal
+    Encryption              : CCMP 
+    BSSID 1                 : 2c:b0:5d:a6:96:b4
+         Signal             : 100%  
+         Radio type         : 802.11g
+         Channel            : 11 
+         Basic rates (Mbps) : 1 2 5.5 11
+         Other rates (Mbps) : 6 9 12 18 24 36 48 54
+SSID 9 : Artjoms network5ghz
+    Network type            : Infrastructure
+    Authentication          : WPA2-Personal
+    Encryption              : CCMP 
+    BSSID 1                 : 2c:b0:5d:a6:98:4b
+         Signal             : 92%  
+         Radio type         : 802.11n
+         Channel            : 36 
+         Basic rates (Mbps) : 6 12 24
+         Other rates (Mbps) : 9 18 36 48 54
+SSID 10 : NETGEAR28-5G
+    Network type            : Infrastructure
+    Authentication          : WPA2-Personal
+    Encryption              : CCMP 
+    BSSID 1                 : 2c:b0:5d:a6:98:ab
+         Signal             : 100%  
+         Radio type         : 802.11n
+         Channel            : 44 
+         Basic rates (Mbps) : 6 12 24
+         Other rates (Mbps) : 9 18 36 48 54
+SSID 11 : NETGEAR68-5G
+    Network type            : Infrastructure
+    Authentication          : WPA2-Personal
+    Encryption              : CCMP 
+    BSSID 1                 : 2c:b0:5d:a6:98:5a
+         Signal             : 88%  
+         Radio type         : 802.11n
+         Channel            : 44 
+         Basic rates (Mbps) : 6 12 24
+         Other rates (Mbps) : 9 18 36 48 54
+SSID 12 : A42
+    Network type            : Infrastructure
+    Authentication          : WPA2-Personal
+    Encryption              : CCMP 
+    BSSID 1                 : 2c:b0:5d:a6:99:89
+         Signal             : 100%  
+         Radio type         : 802.11n
+         Channel            : 44 
+         Basic rates (Mbps) : 6 12 24
+         Other rates (Mbps) : 9 18 36 48 54
+SSID 13 : eriline_v6rk_5ghz
+    Network type            : Infrastructure
+    Authentication          : WPA2-Personal
+    Encryption              : CCMP 
+    BSSID 1                 : 2c:b0:5d:a6:96:b6
+         Signal             : 84%  
+         Radio type         : 802.11n
+         Channel            : 40 
+         Basic rates (Mbps) : 6 12 24
+         Other rates (Mbps) : 9 18 36 48 54
+SSID 14 : LAUPAEV
+    Network type            : Infrastructure
+    Authentication          : WPA2-Personal
+    Encryption              : CCMP 
+    BSSID 1                 : 2c:b0:5d:a6:98:73
+         Signal             : 100%  
+         Radio type         : 802.11g
+         Channel            : 6 
+         Basic rates (Mbps) : 1 2 5.5 11
+         Other rates (Mbps) : 6 9 12 18 24 36 48 54
+SSID 15 : LAUPAEV-5G
+    Network type            : Infrastructure
+    Authentication          : WPA2-Personal
+    Encryption              : CCMP 
+    BSSID 1                 : 2c:b0:5d:a6:98:75
+         Signal             : 100%  
+         Radio type         : 802.11n
+         Channel            : 44 
+         Basic rates (Mbps) : 6 12 24
+         Other rates (Mbps) : 9 18 36 48 54
+</pre>
+        </li>
+    </ol>
+
+    <h3>Programmi <font face="Courier New, monospace"><i>inSSIDer 3</i></font> ekraanipilt</h3>
+
+    <img src="inssider.png" alt="LISA SIIA INSSIDER EKRAANIPILT!">
+    <p>
+
+    </p><h3>Küsimused:</h3>
+    <ol>
+        <li>
+            <small>
+                Mitu ja millised on 802.11a standardi, millised on 802.11b
+                või 802.11g standardi ning millised on 802.11n standardi võrgud (vaadata
+                netsh käsu väljundfailidest)?
+            </small><br>
+
+
+        </li>
+        <li>
+            <small>Kui palju on võrreldavate võrkude Link Score ja mida sellest järeldada võib? </small><br>
+
+
+        </li>
+        <li>
+            <small>Selgitada <font face="Courier New, monospace"><i>inSSIDer</i></font>'i tabelis näidatavate MAC aadresside tähendust.</small><br>
+
+
+
+        </li>
+        <li>
+            <small>Millised raadiokanalid on kasutuses ja kus on veel vaba ruumi uute võrkude jaoks?</small><br>
+
+        </li>
+    </ol>
+
+
+    <h2>4. WLAN võrgu kiiruste uurimine</h2>
+    <table border="1" cellpadding="4" cellspacing="0">
+        <tbody>
+            <tr>
+                <td colspan="2">
+                    Valitud kanali number 802.11g (2,4 GHz) võrgus:
+                    12
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Hinnang TCP katsetulemustele:<br>
+                </td>
+                <td>
+                    <img src="24gz_tcp_1.png" alt="LISA KATSE 1 TULEMUSTE PILT!"><br>
+                    <img src="24gz_tcp_2.png" alt="LISA KATSE 2 TULEMUSTE PILT!"><br>
+                    <img src="24gz_tcp_3.png" alt="LISA KATSE 3 TULEMUSTE PILT!"><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Hinnang UDP katsetulemustele:<br>
+                </td>
+                <td>
+                    <img src="24gz_udp_1.png" alt="LISA KATSE 1 TULEMUSTE PILT!"><br>
+                    <img src="24gz_udp_2.png" alt="LISA KATSE 2 TULEMUSTE PILT!"><br>
+                    <img src="24gz_udp_3.png" alt="LISA KATSE 3 TULEMUSTE PILT!"><br>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <p>
+    </p><table border="1" cellpadding="4" cellspacing="0">
+        <tbody>
+            <tr>
+                <td colspan="2">
+                    Valitud kanali number 802.11n (5 GHz) võrgus:
+                    44+48
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Hinnang TCP katsetulemustele:<br>
+                </td>
+                <td>
+                    <img src="5gz_tcp_1.png" alt="LISA KATSE 1 TULEMUSTE PILT!"><br>
+                    <img src="5gz_tcp_2.png" alt="LISA KATSE 2 TULEMUSTE PILT!"><br>
+                    <img src="5gz_tcp_3.png" alt="LISA KATSE 3 TULEMUSTE PILT!"><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Hinnang UDP katsetulemustele:<br>
+                </td>
+                <td>
+                    <img src="5gz_udp_1.png" alt="LISA KATSE 1 TULEMUSTE PILT!"><br>
+                    <img src="5gz_udp_2.png" alt="LISA KATSE 2 TULEMUSTE PILT!"><br>
+                    <img src="5gz_udp_3.png" alt="LISA KATSE 3 TULEMUSTE PILT!"><br>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <p>
+        <img src="" alt="LISA JPERF VÄLJUNDFAILIDE ANDMETEST KOOSTATUD VÕRGU KIIRUSTE MUUTUMISTE GRAAFIK SIIA!">
+    </p>
+
+    <p>
+        Milline oli mõlema võrgu (802.11g ja 802.11n) korral maksimaalne saavutatud kiirus mõlema protokolli (TCP ja UDP) korral?
+    </p>
+
+    <p>KÜSIMUSE VASTUS SIIA!</p>
+
+
+    <h2>Individuaalülesanne</h2>
+    <table border="1" cellpadding="4" cellspacing="0">
+        <tbody>
+            <tr>
+                <td width="49"><b>Suurus</b></td>
+                <td width="39"><b>Ühik</b></td>
+                <td width="24" align="center"></td>
+            </tr>
+            <tr>
+                <td width="49"><b>R</b></td>
+                <td width="39">Mbps</td>
+                <td width="24" align="right">10</td>
+            </tr>
+            <tr>
+                <td width="49"><b>W</b></td>
+                <td width="39">MHz</td>
+                <td width="24" align="right">&nbsp;</td>
+            </tr>
+            <tr>
+                <td width="49"><b>S</b></td>
+                <td width="39">dBm</td>
+                <td width="24" align="right">
+                    <pre></pre>
+                </td>
+            </tr>
+            <tr>
+                <td width="49"><b>N</b></td>
+                <td width="39">dBm</td>
+                <td width="24" align="right">-91</td>
+            </tr>
+            <tr>
+                <td width="49"><b>S/N</b></td>
+                <td width="39">dB</td>
+                <td width="24" align="right">&nbsp;</td>
+            </tr>
+            <tr>
+                <td width="49"><b>S</b></td>
+                <td width="39">mW</td>
+                <td width="24" align="right">10<sup>-6</sup></td>
+            </tr>
+            <tr>
+                <td width="49"><b>N</b></td>
+                <td width="39">mW</td>
+                <td width="24" align="right">
+                    <pre>10 * log<sub>10</sub>(P/P<sub>väljund</sub>) = 0</pre>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>Kokkuvõte ja järeldused</h2>
+
+    <p>
+        Hea ühenduse kiiruse saavutamiseks on soovitatav kasutada 5gz vürku ja võimalikult vaba kanalit.
+    </p>
+</body>
+</html>

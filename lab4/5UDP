@@ -1,0 +1,456 @@
+bin/iperf.exe -s -P 0 -i 1 -p 5001 -f k
+------------------------------------------------------------
+Server listening on TCP port 5001
+TCP window size: 8.00 KByte (default)
+------------------------------------------------------------
+OpenSCManager failed - Access is denied. (0x5)
+[176] local 172.19.11.154 port 5001 connected with 172.19.11.155 port 49294
+[ ID] Interval       Transfer     Bandwidth
+[176]  0.0- 1.0 sec   992 KBytes  8126 Kbits/sec
+[176]  1.0- 2.0 sec   784 KBytes  6423 Kbits/sec
+[176]  2.0- 3.0 sec   872 KBytes  7143 Kbits/sec
+[176]  3.0- 4.0 sec   816 KBytes  6685 Kbits/sec
+[176]  4.0- 5.0 sec   744 KBytes  6095 Kbits/sec
+[176]  5.0- 6.0 sec   792 KBytes  6488 Kbits/sec
+[176]  6.0- 7.0 sec  1017 KBytes  8335 Kbits/sec
+[176]  7.0- 8.0 sec   599 KBytes  4904 Kbits/sec
+[176]  8.0- 9.0 sec   832 KBytes  6816 Kbits/sec
+[176]  9.0-10.0 sec   712 KBytes  5833 Kbits/sec
+[176] 10.0-11.0 sec   688 KBytes  5636 Kbits/sec
+[176] 11.0-12.0 sec   736 KBytes  6029 Kbits/sec
+[176] 12.0-13.0 sec   672 KBytes  5505 Kbits/sec
+[176] 13.0-14.0 sec   760 KBytes  6226 Kbits/sec
+[176] 14.0-15.0 sec   904 KBytes  7406 Kbits/sec
+[176] 15.0-16.0 sec   720 KBytes  5898 Kbits/sec
+[176] 16.0-17.0 sec   848 KBytes  6947 Kbits/sec
+[176] 17.0-18.0 sec   856 KBytes  7012 Kbits/sec
+[176] 18.0-19.0 sec  1040 KBytes  8520 Kbits/sec
+[176] 19.0-20.0 sec   800 KBytes  6554 Kbits/sec
+[ ID] Interval       Transfer     Bandwidth
+[176] 20.0-21.0 sec   928 KBytes  7602 Kbits/sec
+[176] 21.0-22.0 sec   936 KBytes  7668 Kbits/sec
+[176] 22.0-23.0 sec   744 KBytes  6095 Kbits/sec
+[176] 23.0-24.0 sec   832 KBytes  6816 Kbits/sec
+[176] 24.0-25.0 sec  1104 KBytes  9044 Kbits/sec
+[176]  0.0-25.0 sec  20744 KBytes  6791 Kbits/sec
+[264] local 172.19.11.154 port 5001 connected with 172.19.11.155 port 49296
+[ ID] Interval       Transfer     Bandwidth
+[264]  0.0- 1.0 sec  1120 KBytes  9175 Kbits/sec
+[264]  1.0- 2.0 sec  1424 KBytes  11665 Kbits/sec
+[264]  2.0- 3.0 sec  1304 KBytes  10682 Kbits/sec
+[264]  3.0- 4.0 sec  1280 KBytes  10486 Kbits/sec
+[264]  4.0- 5.0 sec  1360 KBytes  11141 Kbits/sec
+[264]  5.0- 6.0 sec  1240 KBytes  10158 Kbits/sec
+[264]  6.0- 7.0 sec  1056 KBytes  8651 Kbits/sec
+[264]  7.0- 8.0 sec   704 KBytes  5767 Kbits/sec
+[264]  8.0- 9.0 sec   912 KBytes  7471 Kbits/sec
+[264]  9.0-10.0 sec   880 KBytes  7209 Kbits/sec
+[264] 10.0-11.0 sec   920 KBytes  7537 Kbits/sec
+[264] 11.0-12.0 sec   880 KBytes  7209 Kbits/sec
+[264] 12.0-13.0 sec  1384 KBytes  11338 Kbits/sec
+[264] 13.0-14.0 sec  1288 KBytes  10551 Kbits/sec
+[264] 14.0-15.0 sec  1208 KBytes  9896 Kbits/sec
+[264] 15.0-16.0 sec  1312 KBytes  10748 Kbits/sec
+[264] 16.0-17.0 sec  1072 KBytes  8782 Kbits/sec
+[264] 17.0-18.0 sec  1120 KBytes  9175 Kbits/sec
+[264] 18.0-19.0 sec   568 KBytes  4653 Kbits/sec
+[264] 19.0-20.0 sec   384 KBytes  3146 Kbits/sec
+[ ID] Interval       Transfer     Bandwidth
+[264] 20.0-21.0 sec   200 KBytes  1638 Kbits/sec
+[264] 21.0-22.0 sec   352 KBytes  2884 Kbits/sec
+[264] 22.0-23.0 sec   360 KBytes  2949 Kbits/sec
+[264] 23.0-24.0 sec   288 KBytes  2359 Kbits/sec
+[264] 24.0-25.0 sec   440 KBytes  3604 Kbits/sec
+[264]  0.0-25.0 sec  23072 KBytes  7553 Kbits/sec
+[176] local 172.19.11.154 port 5001 connected with 172.19.11.155 port 49297
+[ ID] Interval       Transfer     Bandwidth
+[176]  0.0- 1.0 sec   528 KBytes  4325 Kbits/sec
+[176]  1.0- 2.0 sec   640 KBytes  5243 Kbits/sec
+[176]  2.0- 3.0 sec   640 KBytes  5243 Kbits/sec
+[176]  3.0- 4.0 sec   712 KBytes  5833 Kbits/sec
+[176]  4.0- 5.0 sec   616 KBytes  5046 Kbits/sec
+[176]  5.0- 6.0 sec   600 KBytes  4915 Kbits/sec
+[176]  6.0- 7.0 sec   616 KBytes  5046 Kbits/sec
+[176]  7.0- 8.0 sec   432 KBytes  3539 Kbits/sec
+[176]  8.0- 9.0 sec   560 KBytes  4588 Kbits/sec
+[176]  9.0-10.0 sec   616 KBytes  5046 Kbits/sec
+[176] 10.0-11.0 sec   704 KBytes  5767 Kbits/sec
+[176] 11.0-12.0 sec   368 KBytes  3015 Kbits/sec
+[176] 12.0-13.0 sec   312 KBytes  2556 Kbits/sec
+[176] 13.0-14.0 sec   600 KBytes  4915 Kbits/sec
+[176] 14.0-15.0 sec   376 KBytes  3080 Kbits/sec
+[176] 15.0-16.0 sec   608 KBytes  4981 Kbits/sec
+[176] 16.0-17.0 sec   784 KBytes  6423 Kbits/sec
+[176] 17.0-18.0 sec   440 KBytes  3604 Kbits/sec
+[176] 18.0-19.0 sec   736 KBytes  6029 Kbits/sec
+[176] 19.0-20.0 sec   408 KBytes  3342 Kbits/sec
+[ ID] Interval       Transfer     Bandwidth
+[176] 20.0-21.0 sec   328 KBytes  2687 Kbits/sec
+[176] 21.0-22.0 sec   328 KBytes  2687 Kbits/sec
+[176] 22.0-23.0 sec   240 KBytes  1966 Kbits/sec
+[176] 23.0-24.0 sec   352 KBytes  2884 Kbits/sec
+[176] 24.0-25.0 sec   488 KBytes  3998 Kbits/sec
+[176]  0.0-25.0 sec  13040 KBytes  4272 Kbits/sec
+Done.
+
+bin/iperf.exe -s -u -P 0 -i 1 -p 5001 -f k
+------------------------------------------------------------
+Server listening on UDP port 5001
+Receiving 1470 byte datagrams
+UDP buffer size: 8.00 KByte (default)
+------------------------------------------------------------
+OpenSCManager failed - Access is denied. (0x5)
+[140] local 172.19.11.154 port 5001 connected with 172.19.11.155 port 50504
+[ ID] Interval       Transfer     Bandwidth       Jitter   Lost/Total Datagrams
+[140]  0.0- 1.0 sec  30.1 KBytes   247 Kbits/sec  130.779 ms 1028870656/  789 (1.3e+008%)
+[140]  1.0- 2.0 sec  0.00 KBytes  0.00 Kbits/sec  130.779 ms    0/    0 (-1.$%)
+[140]  2.0- 3.0 sec  1.44 KBytes  11.8 Kbits/sec  251.305 ms    6/    7 (86%)
+[140]  3.0- 4.0 sec  8.61 KBytes  70.6 Kbits/sec  184.991 ms    0/    6 (0%)
+[140]  4.0- 5.0 sec  0.00 KBytes  0.00 Kbits/sec  184.991 ms    0/    0 (-1.$%)
+[140]  5.0- 6.0 sec  0.00 KBytes  0.00 Kbits/sec  184.991 ms    0/    0 (-1.$%)
+[140]  0.0- 6.1 sec  41.6 KBytes  55.9 Kbits/sec  363.555 ms  789/  818 (96%)
+[140] local 172.19.11.154 port 5001 connected with 172.19.11.155 port 50505
+[ ID] Interval       Transfer     Bandwidth       Jitter   Lost/Total Datagrams
+[140]  0.0- 1.0 sec  2.87 KBytes  23.5 Kbits/sec  4.875 ms   50/   52 (96%)
+[140]  1.0- 2.0 sec  0.00 KBytes  0.00 Kbits/sec  4.875 ms    0/    0 (-1.$%)
+[140]  2.0- 3.0 sec  0.00 KBytes  0.00 Kbits/sec  4.875 ms    0/    0 (-1.$%)
+[140]  3.0- 4.0 sec  21.5 KBytes   176 Kbits/sec  113.488 ms   21/   36 (58%)
+[140]  4.0- 5.0 sec  0.00 KBytes  0.00 Kbits/sec  113.488 ms    0/    0 (-1.$%)
+[140]  5.0- 6.0 sec  0.00 KBytes  0.00 Kbits/sec  113.488 ms    0/    0 (-1.$%)
+[140]  6.0- 7.0 sec  7.18 KBytes  58.8 Kbits/sec  194.971 ms    5/   10 (50%)
+[140]  7.0- 8.0 sec  0.00 KBytes  0.00 Kbits/sec  194.971 ms    0/    0 (-1.$%)
+[140]  8.0- 9.0 sec  0.00 KBytes  0.00 Kbits/sec  194.971 ms    0/    0 (-1.$%)
+[140]  9.0-10.0 sec  38.8 KBytes   318 Kbits/sec  87.459 ms   20/   47 (43%)
+[140] 10.0-11.0 sec  4.31 KBytes  35.3 Kbits/sec  75.724 ms    0/    3 (0%)
+[140] 11.0-12.0 sec  0.00 KBytes  0.00 Kbits/sec  75.724 ms    0/    0 (-1.$%)
+[140] 12.0-13.0 sec  4.31 KBytes  35.3 Kbits/sec  192.550 ms    4/    7 (57%)
+[140] 13.0-14.0 sec  0.00 KBytes  0.00 Kbits/sec  192.550 ms    0/    0 (-1.$%)
+[140] 14.0-15.0 sec  0.00 KBytes  0.00 Kbits/sec  192.550 ms    0/    0 (-1.$%)
+[140] 15.0-16.0 sec  23.0 KBytes   188 Kbits/sec  165.831 ms   20/   36 (56%)
+[140] 16.0-17.0 sec  15.8 KBytes   129 Kbits/sec  96.793 ms    0/   11 (0%)
+[140] 17.0-18.0 sec  0.00 KBytes  0.00 Kbits/sec  96.793 ms    0/    0 (-1.$%)
+[140] 18.0-19.0 sec  8.61 KBytes  70.6 Kbits/sec  167.452 ms    6/   12 (50%)
+[140] 19.0-20.0 sec  0.00 KBytes  0.00 Kbits/sec  167.452 ms    0/    0 (-1.$%)
+[ ID] Interval       Transfer     Bandwidth       Jitter   Lost/Total Datagrams
+[140] 20.0-21.0 sec  0.00 KBytes  0.00 Kbits/sec  167.452 ms    0/    0 (-1.$%)
+[140] 21.0-22.0 sec  18.7 KBytes   153 Kbits/sec  163.351 ms   21/   34 (62%)
+[140] 22.0-23.0 sec  8.61 KBytes  70.6 Kbits/sec  127.660 ms    0/    6 (0%)
+[140] 23.0-24.0 sec  0.00 KBytes  0.00 Kbits/sec  127.660 ms    0/    0 (-1.$%)
+[140] 24.0-25.0 sec  7.18 KBytes  58.8 Kbits/sec  279.388 ms    5/   10 (50%)
+[140] 25.0-26.0 sec  0.00 KBytes  0.00 Kbits/sec  279.388 ms    0/    0 (-1.$%)
+[140] 26.0-27.0 sec  0.00 KBytes  0.00 Kbits/sec  279.388 ms    0/    0 (-1.$%)
+[140] 27.0-28.0 sec  27.3 KBytes   223 Kbits/sec  526.358 ms   22/   41 (54%)
+[140] 28.0-29.0 sec  24.4 KBytes   200 Kbits/sec  194.844 ms    0/   17 (0%)
+[140] 29.0-30.0 sec  0.00 KBytes  0.00 Kbits/sec  194.844 ms    0/    0 (-1.$%)
+[140] 30.0-31.0 sec  20.1 KBytes   165 Kbits/sec  146.555 ms    4/   18 (22%)
+[140] 31.0-32.0 sec  0.00 KBytes  0.00 Kbits/sec  146.555 ms    0/    0 (-1.$%)
+[140] 32.0-33.0 sec  0.00 KBytes  0.00 Kbits/sec  146.555 ms    0/    0 (-1.$%)
+[140] 33.0-34.0 sec  12.9 KBytes   106 Kbits/sec  479.191 ms   22/   31 (71%)
+[140] 34.0-35.0 sec  24.4 KBytes   200 Kbits/sec  184.681 ms    0/   17 (0%)
+[140] 35.0-36.0 sec  0.00 KBytes  0.00 Kbits/sec  184.681 ms    0/    0 (-1.$%)
+[140] 36.0-37.0 sec  15.8 KBytes   129 Kbits/sec  168.032 ms    3/   14 (21%)
+[140] 37.0-38.0 sec  0.00 KBytes  0.00 Kbits/sec  168.032 ms    0/    0 (-1.$%)
+[140] 38.0-39.0 sec  0.00 KBytes  0.00 Kbits/sec  168.032 ms    0/    0 (-1.$%)
+[140] 39.0-40.0 sec  8.61 KBytes  70.6 Kbits/sec  262.059 ms   21/   27 (78%)
+[ ID] Interval       Transfer     Bandwidth       Jitter   Lost/Total Datagrams
+[140] 40.0-41.0 sec  24.4 KBytes   200 Kbits/sec  106.895 ms    0/   17 (0%)
+[140] 41.0-42.0 sec  0.00 KBytes  0.00 Kbits/sec  106.895 ms    0/    0 (-1.$%)
+[140]  0.0-42.7 sec   330 KBytes  63.3 Kbits/sec  200.447 ms  227/  457 (50%)
+[140] local 172.19.11.154 port 5001 connected with 172.19.11.155 port 50506
+[ ID] Interval       Transfer     Bandwidth       Jitter   Lost/Total Datagrams
+[140]  0.0- 1.0 sec  79.0 KBytes   647 Kbits/sec  17.981 ms    1/   56 (1.8%)
+[140]  1.0- 2.0 sec  2.87 KBytes  23.5 Kbits/sec  19.582 ms    0/    2 (0%)
+[140]  2.0- 3.0 sec  2.87 KBytes  23.5 Kbits/sec  126.045 ms    4/    6 (67%)
+[140]  3.0- 4.0 sec  14.4 KBytes   118 Kbits/sec  81.091 ms    0/   10 (0%)
+[140]  4.0- 5.0 sec  0.00 KBytes  0.00 Kbits/sec  81.091 ms    0/    0 (-1.$%)
+[140]  5.0- 6.0 sec  0.00 KBytes  0.00 Kbits/sec  81.091 ms    0/    0 (-1.$%)
+[140]  6.0- 7.0 sec  63.2 KBytes   517 Kbits/sec  34.145 ms   18/   62 (29%)
+[140]  7.0- 8.0 sec  12.9 KBytes   106 Kbits/sec  28.010 ms    0/    9 (0%)
+[140]  8.0- 9.0 sec  1.44 KBytes  11.8 Kbits/sec  138.385 ms    4/    5 (80%)
+[140]  9.0-10.0 sec  5.74 KBytes  47.0 Kbits/sec  130.367 ms    0/    4 (0%)
+[140] 10.0-11.0 sec  0.00 KBytes  0.00 Kbits/sec  130.367 ms    0/    0 (-1.$%)
+[140] 11.0-12.0 sec  0.00 KBytes  0.00 Kbits/sec  130.367 ms    0/    0 (-1.$%)
+[140] 12.0-13.0 sec  28.7 KBytes   235 Kbits/sec  113.190 ms   21/   41 (51%)
+[140] 13.0-14.0 sec  15.8 KBytes   129 Kbits/sec  68.128 ms    0/   11 (0%)
+[140] 14.0-15.0 sec  0.00 KBytes  0.00 Kbits/sec  68.128 ms    0/    0 (-1.$%)
+[140] 15.0-16.0 sec  10.0 KBytes  82.3 Kbits/sec  141.923 ms    7/   14 (50%)
+[140] 16.0-17.0 sec  0.00 KBytes  0.00 Kbits/sec  141.923 ms    0/    0 (-1.$%)
+[140] 17.0-18.0 sec  0.00 KBytes  0.00 Kbits/sec  141.923 ms    0/    0 (-1.$%)
+[140] 18.0-19.0 sec  23.0 KBytes   188 Kbits/sec  130.213 ms   21/   37 (57%)
+[140] 19.0-20.0 sec  12.9 KBytes   106 Kbits/sec  319.167 ms    0/    9 (0%)
+[ ID] Interval       Transfer     Bandwidth       Jitter   Lost/Total Datagrams
+[140] 20.0-21.0 sec  0.00 KBytes  0.00 Kbits/sec  319.167 ms    0/    0 (-1.$%)
+[140] 21.0-22.0 sec  7.18 KBytes  58.8 Kbits/sec  349.738 ms    8/   13 (62%)
+[140] 22.0-23.0 sec  0.00 KBytes  0.00 Kbits/sec  349.738 ms    0/    0 (-1.$%)
+[140] 23.0-24.0 sec  0.00 KBytes  0.00 Kbits/sec  349.738 ms    0/    0 (-1.$%)
+[140] 24.0-25.0 sec  17.2 KBytes   141 Kbits/sec  273.247 ms   22/   34 (65%)
+[140] 25.0-26.0 sec  23.0 KBytes   188 Kbits/sec  112.780 ms    0/   16 (0%)
+[140] 26.0-27.0 sec  0.00 KBytes  0.00 Kbits/sec  112.780 ms    0/    0 (-1.$%)
+[140] 27.0-28.0 sec  12.9 KBytes   106 Kbits/sec  170.713 ms    3/   12 (25%)
+[140] 28.0-29.0 sec  0.00 KBytes  0.00 Kbits/sec  170.713 ms    0/    0 (-1.$%)
+[140] 29.0-30.0 sec  0.00 KBytes  0.00 Kbits/sec  170.713 ms    0/    0 (-1.$%)
+[140] 30.0-31.0 sec  30.1 KBytes   247 Kbits/sec  110.686 ms   22/   43 (51%)
+[140] 31.0-32.0 sec  30.1 KBytes   247 Kbits/sec  64.432 ms    0/   21 (0%)
+[140] 32.0-33.0 sec  0.00 KBytes  0.00 Kbits/sec  64.432 ms    0/    0 (-1.$%)
+[140] 33.0-34.0 sec  2.87 KBytes  23.5 Kbits/sec  181.978 ms    4/    6 (67%)
+[140] 34.0-35.0 sec  0.00 KBytes  0.00 Kbits/sec  181.978 ms    0/    0 (-1.$%)
+[140] 35.0-36.0 sec  0.00 KBytes  0.00 Kbits/sec  181.978 ms    0/    0 (-1.$%)
+[140] 36.0-37.0 sec  10.0 KBytes  82.3 Kbits/sec  241.201 ms   23/   30 (77%)
+[140] 37.0-38.0 sec  28.7 KBytes   235 Kbits/sec  87.175 ms    1/   21 (4.8%)
+[140] 38.0-39.0 sec  0.00 KBytes  0.00 Kbits/sec  87.175 ms    0/    0 (-1.$%)
+[140]  0.0-39.7 sec   444 KBytes  91.6 Kbits/sec  511.541 ms  163/  472 (35%)
+[140] local 172.19.11.154 port 5001 connected with 172.19.11.155 port 50507
+[ ID] Interval       Transfer     Bandwidth       Jitter   Lost/Total Datagrams
+[140]  0.0- 1.0 sec   135 KBytes  1105 Kbits/sec  9.641 ms    0/   94 (0%)
+[140]  1.0- 2.0 sec  8.61 KBytes  70.6 Kbits/sec  12.415 ms    0/    6 (0%)
+[140]  2.0- 3.0 sec  5.74 KBytes  47.0 Kbits/sec  105.800 ms    5/    9 (56%)
+[140]  3.0- 4.0 sec  15.8 KBytes   129 Kbits/sec  67.928 ms    0/   11 (0%)
+[140]  4.0- 5.0 sec  0.00 KBytes  0.00 Kbits/sec  67.928 ms    0/    0 (-1.$%)
+[140]  5.0- 6.0 sec  0.00 KBytes  0.00 Kbits/sec  67.928 ms    0/    0 (-1.$%)
+[140]  6.0- 7.0 sec   103 KBytes   847 Kbits/sec  14.008 ms   18/   90 (20%)
+[140]  7.0- 8.0 sec  20.1 KBytes   165 Kbits/sec  15.207 ms    0/   14 (0%)
+[140]  8.0- 9.0 sec  2.87 KBytes  23.5 Kbits/sec  112.207 ms    2/    4 (50%)
+[140]  9.0-10.0 sec  23.0 KBytes   188 Kbits/sec  57.351 ms    0/   16 (0%)
+[140] 10.0-11.0 sec  0.00 KBytes  0.00 Kbits/sec  57.351 ms    0/    0 (-1.$%)
+[140] 11.0-12.0 sec  0.00 KBytes  0.00 Kbits/sec  57.351 ms    0/    0 (-1.$%)
+[140] 12.0-13.0 sec  67.5 KBytes   553 Kbits/sec  40.792 ms   14/   61 (23%)
+[140] 13.0-14.0 sec  21.5 KBytes   176 Kbits/sec  22.083 ms    0/   15 (0%)
+[140] 14.0-15.0 sec  0.00 KBytes  0.00 Kbits/sec  22.083 ms    0/    0 (-1.$%)
+[140] 15.0-16.0 sec  11.5 KBytes  94.1 Kbits/sec  155.803 ms    6/   14 (43%)
+[140] 16.0-17.0 sec  0.00 KBytes  0.00 Kbits/sec  155.803 ms    0/    0 (-1.$%)
+[140] 17.0-18.0 sec  0.00 KBytes  0.00 Kbits/sec  155.803 ms    0/    0 (-1.$%)
+[140] 18.0-19.0 sec  21.5 KBytes   176 Kbits/sec  170.081 ms   21/   36 (58%)
+[140] 19.0-20.0 sec  0.00 KBytes  0.00 Kbits/sec  170.081 ms    0/    0 (-1.$%)
+[ ID] Interval       Transfer     Bandwidth       Jitter   Lost/Total Datagrams
+[140] 20.0-21.0 sec  0.00 KBytes  0.00 Kbits/sec  170.081 ms    0/    0 (-1.$%)
+[140] 21.0-22.0 sec  2.87 KBytes  23.5 Kbits/sec  300.793 ms    7/    9 (78%)
+[140] 22.0-23.0 sec  0.00 KBytes  0.00 Kbits/sec  300.793 ms    0/    0 (-1.$%)
+[140] 23.0-24.0 sec  0.00 KBytes  0.00 Kbits/sec  300.793 ms    0/    0 (-1.$%)
+[140] 24.0-25.0 sec  30.1 KBytes   247 Kbits/sec  141.895 ms   21/   42 (50%)
+[140] 25.0-26.0 sec  43.1 KBytes   353 Kbits/sec  93.840 ms    0/   30 (0%)
+[140] 26.0-27.0 sec  0.00 KBytes  0.00 Kbits/sec  93.840 ms    0/    0 (-1.$%)
+[140] 27.0-28.0 sec  15.8 KBytes   129 Kbits/sec  124.479 ms    3/   14 (21%)
+[140] 28.0-29.0 sec  0.00 KBytes  0.00 Kbits/sec  124.479 ms    0/    0 (-1.$%)
+[140] 29.0-30.0 sec  0.00 KBytes  0.00 Kbits/sec  124.479 ms    0/    0 (-1.$%)
+[140] 30.0-31.0 sec  91.9 KBytes   753 Kbits/sec  337.421 ms   19/   83 (23%)
+[140] 31.0-32.0 sec  28.7 KBytes   235 Kbits/sec  109.315 ms    0/   20 (0%)
+[140] 32.0-33.0 sec  0.00 KBytes  0.00 Kbits/sec  109.315 ms    0/    0 (-1.$%)
+[140] 33.0-34.0 sec  2.87 KBytes  23.5 Kbits/sec  229.774 ms    7/    9 (78%)
+[140] 34.0-35.0 sec  0.00 KBytes  0.00 Kbits/sec  229.774 ms    0/    0 (-1.$%)
+[140] 35.0-36.0 sec  0.00 KBytes  0.00 Kbits/sec  229.774 ms    0/    0 (-1.$%)
+[140]  0.0-36.5 sec   653 KBytes   146 Kbits/sec  417.239 ms  138/  593 (23%)
+Done.
+
+bin/iperf.exe -s -P 0 -i 1 -p 5001 -f k
+------------------------------------------------------------
+Server listening on TCP port 5001
+TCP window size: 8.00 KByte (default)
+------------------------------------------------------------
+Done.
+
+bin/iperf.exe -s -P 0 -i 1 -p 5001 -w 128.0K -f k
+------------------------------------------------------------
+Server listening on TCP port 5001
+TCP window size:  128 KByte
+------------------------------------------------------------
+OpenSCManager failed - Access is denied. (0x5)
+[264] local 172.19.11.154 port 5001 connected with 172.19.11.155 port 49299
+[ ID] Interval       Transfer     Bandwidth
+[264]  0.0- 1.0 sec   513 KBytes  4200 Kbits/sec
+[264]  1.0- 2.0 sec   512 KBytes  4194 Kbits/sec
+[264]  2.0- 3.0 sec   880 KBytes  7212 Kbits/sec
+[264]  3.0- 4.0 sec   616 KBytes  5044 Kbits/sec
+[264]  4.0- 5.0 sec   528 KBytes  4323 Kbits/sec
+[264]  5.0- 6.0 sec   744 KBytes  6093 Kbits/sec
+[264]  6.0- 7.0 sec   728 KBytes  5964 Kbits/sec
+[264]  7.0- 8.0 sec   785 KBytes  6432 Kbits/sec
+[264]  8.0- 9.0 sec   680 KBytes  5570 Kbits/sec
+[264]  9.0-10.0 sec   728 KBytes  5964 Kbits/sec
+[264]  0.0-10.2 sec  6896 KBytes  5520 Kbits/sec
+[288] local 172.19.11.154 port 5001 connected with 172.19.11.155 port 49303
+[ ID] Interval       Transfer     Bandwidth
+[288]  0.0- 1.0 sec  3436 KBytes  28148 Kbits/sec
+[288]  1.0- 2.0 sec  9984 KBytes  81786 Kbits/sec
+[288]  2.0- 3.0 sec  7977 KBytes  65351 Kbits/sec
+[288]  3.0- 4.0 sec  5164 KBytes  42302 Kbits/sec
+[288]  4.0- 5.0 sec  4.28 KBytes  35.0 Kbits/sec
+[288]  5.0- 6.0 sec  0.00 KBytes  0.00 Kbits/sec
+[288]  6.0- 7.0 sec  0.00 KBytes  0.00 Kbits/sec
+[288]  7.0- 8.0 sec  0.00 KBytes  0.00 Kbits/sec
+[288]  8.0- 9.0 sec  0.00 KBytes  0.00 Kbits/sec
+[288]  9.0-10.0 sec  0.00 KBytes  0.00 Kbits/sec
+[288] 10.0-11.0 sec  0.00 KBytes  0.00 Kbits/sec
+[288] 11.0-12.0 sec  0.00 KBytes  0.00 Kbits/sec
+[288] 12.0-13.0 sec  3428 KBytes  28082 Kbits/sec
+[288] 13.0-14.0 sec  1481 KBytes  12134 Kbits/sec
+[288] 14.0-15.0 sec  0.00 KBytes  0.00 Kbits/sec
+[288] 15.0-16.0 sec  0.00 KBytes  0.00 Kbits/sec
+[288] 16.0-17.0 sec  0.00 KBytes  0.00 Kbits/sec
+[288] 17.0-18.0 sec  0.00 KBytes  0.00 Kbits/sec
+[288] 18.0-19.0 sec  6641 KBytes  54403 Kbits/sec
+[288] 19.0-20.0 sec  9550 KBytes  78231 Kbits/sec
+[ ID] Interval       Transfer     Bandwidth
+[288] 20.0-21.0 sec  11968 KBytes  98041 Kbits/sec
+[288] 21.0-22.0 sec  9784 KBytes  80153 Kbits/sec
+[288] 22.0-23.0 sec  11391 KBytes  93319 Kbits/sec
+[288] 23.0-24.0 sec  11600 KBytes  95025 Kbits/sec
+[288] 24.0-25.0 sec  12201 KBytes  99951 Kbits/sec
+[288]  0.0-25.0 sec  104624 KBytes  34274 Kbits/sec
+[276] local 172.19.11.154 port 5001 connected with 172.19.11.155 port 49304
+[ ID] Interval       Transfer     Bandwidth
+[276]  0.0- 1.0 sec  3793 KBytes  31076 Kbits/sec
+[276]  1.0- 2.0 sec  9145 KBytes  74919 Kbits/sec
+[276]  2.0- 3.0 sec  10637 KBytes  87140 Kbits/sec
+[276]  3.0- 4.0 sec  10936 KBytes  89588 Kbits/sec
+[276]  4.0- 5.0 sec  10848 KBytes  88867 Kbits/sec
+[276]  5.0- 6.0 sec  11872 KBytes  97255 Kbits/sec
+[276]  6.0- 7.0 sec  11864 KBytes  97190 Kbits/sec
+[276]  7.0- 8.0 sec  12504 KBytes  102433 Kbits/sec
+[276]  8.0- 9.0 sec  12488 KBytes  102302 Kbits/sec
+[276]  9.0-10.0 sec  10264 KBytes  84083 Kbits/sec
+[276] 10.0-11.0 sec  10857 KBytes  88944 Kbits/sec
+[276] 11.0-12.0 sec  11623 KBytes  95212 Kbits/sec
+[276] 12.0-13.0 sec  12072 KBytes  98894 Kbits/sec
+[276] 13.0-14.0 sec  11104 KBytes  90964 Kbits/sec
+[276] 14.0-15.0 sec  11624 KBytes  95224 Kbits/sec
+[276] 15.0-16.0 sec  6416 KBytes  52560 Kbits/sec
+[276] 16.0-17.0 sec  0.00 KBytes  0.00 Kbits/sec
+[276] 17.0-18.0 sec  0.00 KBytes  0.00 Kbits/sec
+[276] 18.0-19.0 sec  0.00 KBytes  0.00 Kbits/sec
+[276] 19.0-20.0 sec  0.00 KBytes  0.00 Kbits/sec
+[ ID] Interval       Transfer     Bandwidth
+[276] 20.0-21.0 sec  0.00 KBytes  0.00 Kbits/sec
+[276] 21.0-22.0 sec  0.00 KBytes  0.00 Kbits/sec
+[276] 22.0-23.0 sec  0.00 KBytes  0.00 Kbits/sec
+[276] 23.0-24.0 sec  0.00 KBytes  0.00 Kbits/sec
+[276] 24.0-25.0 sec  0.00 KBytes  0.00 Kbits/sec
+[276] 25.0-26.0 sec  0.00 KBytes  0.00 Kbits/sec
+[276] 26.0-27.0 sec  0.00 KBytes  0.00 Kbits/sec
+[276] 27.0-28.0 sec  0.00 KBytes  0.00 Kbits/sec
+[276]  0.0-28.2 sec  168056 KBytes  48757 Kbits/sec
+[272] local 172.19.11.154 port 5001 connected with 172.19.11.155 port 49305
+[ ID] Interval       Transfer     Bandwidth
+[272]  0.0- 1.0 sec  5310 KBytes  43497 Kbits/sec
+[272]  1.0- 2.0 sec  7218 KBytes  59132 Kbits/sec
+[272]  2.0- 3.0 sec  9425 KBytes  77213 Kbits/sec
+[272]  3.0- 4.0 sec  8712 KBytes  71369 Kbits/sec
+[272]  4.0- 5.0 sec  9215 KBytes  75486 Kbits/sec
+[272]  5.0- 6.0 sec  9824 KBytes  80478 Kbits/sec
+[292] local 172.19.11.154 port 5001 connected with 172.19.11.155 port 49307
+[ ID] Interval       Transfer     Bandwidth
+[292]  0.0- 1.0 sec  6237 KBytes  51092 Kbits/sec
+[292]  1.0- 2.0 sec  10421 KBytes  85370 Kbits/sec
+[292]  2.0- 3.0 sec  11368 KBytes  93125 Kbits/sec
+[292]  3.0- 4.0 sec  9193 KBytes  75306 Kbits/sec
+[292]  4.0- 5.0 sec  8495 KBytes  69594 Kbits/sec
+[292]  5.0- 6.0 sec  10055 KBytes  82367 Kbits/sec
+[292]  6.0- 7.0 sec  9873 KBytes  80883 Kbits/sec
+[292]  7.0- 8.0 sec  9121 KBytes  74723 Kbits/sec
+[292]  8.0- 9.0 sec  10926 KBytes  89502 Kbits/sec
+[292]  9.0-10.0 sec  10744 KBytes  88019 Kbits/sec
+[292] 10.0-11.0 sec  10831 KBytes  88727 Kbits/sec
+[292] 11.0-12.0 sec  10992 KBytes  90048 Kbits/sec
+[292] 12.0-13.0 sec  10580 KBytes  86668 Kbits/sec
+[292] 13.0-14.0 sec  10717 KBytes  87794 Kbits/sec
+[292] 14.0-15.0 sec  10352 KBytes  84804 Kbits/sec
+[292] 15.0-16.0 sec  11123 KBytes  91116 Kbits/sec
+[292] 16.0-17.0 sec  10887 KBytes  89183 Kbits/sec
+[292] 17.0-18.0 sec  10271 KBytes  84137 Kbits/sec
+[292] 18.0-19.0 sec  10312 KBytes  84475 Kbits/sec
+[292] 19.0-20.0 sec  11096 KBytes  90896 Kbits/sec
+[ ID] Interval       Transfer     Bandwidth
+[292] 20.0-21.0 sec  9592 KBytes  78576 Kbits/sec
+[292] 21.0-22.0 sec  64.0 KBytes   524 Kbits/sec
+[292] 22.0-23.0 sec  0.00 KBytes  0.00 Kbits/sec
+[292] 23.0-24.0 sec  0.00 KBytes  0.00 Kbits/sec
+[292] 24.0-25.0 sec  0.00 KBytes  0.00 Kbits/sec
+[292] 25.0-26.0 sec  0.00 KBytes  0.00 Kbits/sec
+[292] 26.0-27.0 sec  0.00 KBytes  0.00 Kbits/sec
+[292] 27.0-28.0 sec  0.00 KBytes  0.00 Kbits/sec
+[292]  0.0-28.4 sec  213320 KBytes  61482 Kbits/sec
+Done.
+
+bin/iperf.exe -s -u -P 0 -i 1 -p 5001 -f k
+------------------------------------------------------------
+Server listening on UDP port 5001
+Receiving 1470 byte datagrams
+UDP buffer size: 8.00 KByte (default)
+------------------------------------------------------------
+OpenSCManager failed - Access is denied. (0x5)
+[140] local 172.19.11.154 port 5001 connected with 172.19.11.155 port 65465
+[ ID] Interval       Transfer     Bandwidth       Jitter   Lost/Total Datagrams
+[140]  0.0- 1.0 sec  15537 KBytes  127278 Kbits/sec  0.337 ms 1028870275/11210 (9.2e+006%)
+[140]  1.0- 2.0 sec  17653 KBytes  144613 Kbits/sec  0.004 ms  485/12782 (3.8%)
+[140]  2.0- 3.0 sec  19357 KBytes  158572 Kbits/sec  0.002 ms  377/13861 (2.7%)
+[140]  3.0- 4.0 sec  19750 KBytes  161794 Kbits/sec  0.002 ms  245/14003 (1.7%)
+[140]  4.0- 5.0 sec  18639 KBytes  152692 Kbits/sec  0.018 ms  184/13168 (1.4%)
+[140]  5.0- 6.0 sec  20445 KBytes  167486 Kbits/sec  0.000 ms   89/14331 (0.62%)
+[140]  6.0- 7.0 sec  19805 KBytes  162241 Kbits/sec  0.006 ms  275/14071 (2%)
+[140]  7.0- 8.0 sec  17851 KBytes  146236 Kbits/sec  0.000 ms  325/12760 (2.5%)
+[140]  8.0- 9.0 sec  17613 KBytes  144283 Kbits/sec  0.002 ms  137/12406 (1.1%)
+[140]  9.0-10.0 sec  17442 KBytes  142884 Kbits/sec  0.000 ms  257/12407 (2.1%)
+[140] 10.0-11.0 sec  17986 KBytes  147341 Kbits/sec  0.084 ms  198/12727 (1.6%)
+[140] 11.0-12.0 sec  17982 KBytes  147306 Kbits/sec  0.317 ms  281/12807 (2.2%)
+[140] 12.0-13.0 sec  19256 KBytes  157749 Kbits/sec  0.000 ms  354/13768 (2.6%)
+[140] 13.0-14.0 sec  17689 KBytes  144907 Kbits/sec  0.057 ms  402/12724 (3.2%)
+[140] 14.0-15.0 sec  19288 KBytes  158007 Kbits/sec  0.183 ms  172/13608 (1.3%)
+[140] 15.0-16.0 sec  17782 KBytes  145671 Kbits/sec  0.171 ms  293/12680 (2.3%)
+[140] 16.0-17.0 sec  17517 KBytes  143496 Kbits/sec  0.000 ms  632/12834 (4.9%)
+[140] 17.0-18.0 sec  17181 KBytes  140744 Kbits/sec  0.000 ms  771/12739 (6.1%)
+[140] 18.0-19.0 sec  18662 KBytes  152880 Kbits/sec  0.000 ms  297/13297 (2.2%)
+[140] 19.0-20.0 sec  20013 KBytes  163946 Kbits/sec  0.000 ms  465/14406 (3.2%)
+[ ID] Interval       Transfer     Bandwidth       Jitter   Lost/Total Datagrams
+[140] 20.0-21.0 sec  19742 KBytes  161724 Kbits/sec  0.000 ms  324/14076 (2.3%)
+[140] 21.0-22.0 sec  20099 KBytes  164652 Kbits/sec  0.000 ms  512/14513 (3.5%)
+[140]  0.0-22.5 sec  416739 KBytes  151868 Kbits/sec  0.916 ms 7624/297924 (2.6%)
+[140] local 172.19.11.154 port 5001 connected with 172.19.11.155 port 55112
+[ ID] Interval       Transfer     Bandwidth       Jitter   Lost/Total Datagrams
+[140]  0.0- 1.0 sec  12687 KBytes  103935 Kbits/sec  0.407 ms   13/ 8851 (0.15%)
+[140]  1.0- 2.0 sec  17367 KBytes  142272 Kbits/sec  0.000 ms   66/12164 (0.54%)
+[140]  2.0- 3.0 sec  13028 KBytes  106722 Kbits/sec  0.023 ms  124/ 9199 (1.3%)
+[140]  3.0- 4.0 sec  7662 KBytes  62763 Kbits/sec  1.693 ms   41/ 5378 (0.76%)
+[140]  4.0- 5.0 sec  11217 KBytes  91893 Kbits/sec  0.028 ms   33/ 7847 (0.42%)
+[140]  5.0- 6.0 sec  12011 KBytes  98396 Kbits/sec  0.341 ms   48/ 8415 (0.57%)
+[140]  6.0- 7.0 sec  11954 KBytes  97926 Kbits/sec  0.009 ms  388/ 8715 (4.5%)
+[140]  7.0- 8.0 sec  14058 KBytes  115166 Kbits/sec  0.001 ms   48/ 9841 (0.49%)
+[140]  8.0- 9.0 sec  17059 KBytes  139744 Kbits/sec  0.000 ms   18/11901 (0.15%)
+[140]  9.0-10.0 sec  14938 KBytes  122375 Kbits/sec  0.538 ms   78/10484 (0.74%)
+[140] 10.0-11.0 sec  14350 KBytes  117553 Kbits/sec  0.171 ms   60/10056 (0.6%)
+[140] 11.0-12.0 sec  15579 KBytes  127620 Kbits/sec  0.000 ms   82/10934 (0.75%)
+[140] 12.0-13.0 sec  15937 KBytes  130560 Kbits/sec  0.042 ms   55/11157 (0.49%)
+[140] 13.0-14.0 sec  15409 KBytes  126232 Kbits/sec  0.706 ms   57/10791 (0.53%)
+[140] 14.0-15.0 sec  14436 KBytes  118259 Kbits/sec  0.068 ms   67/10123 (0.66%)
+[140] 15.0-16.0 sec  16675 KBytes  136604 Kbits/sec  0.005 ms  137/11753 (1.2%)
+[140] 16.0-17.0 sec  16279 KBytes  133358 Kbits/sec  0.001 ms  196/11536 (1.7%)
+[140] 17.0-18.0 sec  13167 KBytes  107863 Kbits/sec  0.002 ms  286/ 9458 (3%)
+[140] 18.0-19.0 sec  9442 KBytes  77346 Kbits/sec  0.014 ms  217/ 6794 (3.2%)
+[140] 19.0-20.0 sec  7.18 KBytes  58.8 Kbits/sec  3.023 ms  360/  365 (99%)
+[ ID] Interval       Transfer     Bandwidth       Jitter   Lost/Total Datagrams
+[140] 20.0-21.0 sec  0.00 KBytes  0.00 Kbits/sec  3.023 ms    0/    0 (-1.$%)
+[140] 21.0-22.0 sec  0.00 KBytes  0.00 Kbits/sec  3.023 ms    0/    0 (-1.$%)
+[140] 22.0-23.0 sec  0.00 KBytes  0.00 Kbits/sec  3.023 ms    0/    0 (-1.$%)
+[140] 23.0-24.0 sec  0.00 KBytes  0.00 Kbits/sec  3.023 ms    0/    0 (-1.$%)
+[140] 24.0-25.0 sec  0.00 KBytes  0.00 Kbits/sec  3.023 ms    0/    0 (-1.$%)
+[140] 25.0-26.0 sec  0.00 KBytes  0.00 Kbits/sec  3.023 ms    0/    0 (-1.$%)
+[140] 26.0-27.0 sec  0.00 KBytes  0.00 Kbits/sec  3.023 ms    0/    0 (-1.$%)
+[140]  0.0-27.3 sec  263264 KBytes  78998 Kbits/sec  141.284 ms 91733/275122 (33%)
+[140] local 172.19.11.154 port 5001 connected with 172.19.11.155 port 53714
+[ ID] Interval       Transfer     Bandwidth       Jitter   Lost/Total Datagrams
+[140]  0.0- 1.0 sec  12763 KBytes  104558 Kbits/sec  0.000 ms  567/ 9458 (6%)
+[140]  1.0- 2.0 sec  18796 KBytes  153974 Kbits/sec  0.000 ms  301/13394 (2.2%)
+[140]  2.0- 3.0 sec  17960 KBytes  147129 Kbits/sec  0.753 ms  390/12901 (3%)
+[140]  3.0- 4.0 sec  14891 KBytes  121986 Kbits/sec  0.000 ms  413/10786 (3.8%)
+[140]  4.0- 5.0 sec  12413 KBytes  101689 Kbits/sec  0.094 ms  315/ 8962 (3.5%)
+[140]  5.0- 6.0 sec  4236 KBytes  34704 Kbits/sec  0.051 ms  188/ 3139 (6%)
+[140]  6.0- 7.0 sec  10993 KBytes  90058 Kbits/sec  0.015 ms  328/ 7986 (4.1%)
+[140]  7.0- 8.0 sec  8122 KBytes  66538 Kbits/sec  0.047 ms  109/ 5767 (1.9%)
+[140]  8.0- 9.0 sec  11143 KBytes  91281 Kbits/sec  0.090 ms   86/ 7848 (1.1%)
+[140]  9.0-10.0 sec  9699 KBytes  79451 Kbits/sec  1.599 ms   94/ 6850 (1.4%)
+[140] 10.0-11.0 sec  7838 KBytes  64210 Kbits/sec  0.008 ms   17/ 5477 (0.31%)
+[140] 11.0-12.0 sec  8491 KBytes  69560 Kbits/sec  0.339 ms    2/ 5917 (0.034%)
+[140] 12.0-13.0 sec  11443 KBytes  93739 Kbits/sec  0.150 ms   69/ 8040 (0.86%)
+[140] 13.0-14.0 sec  11278 KBytes  92387 Kbits/sec  0.326 ms   26/ 7882 (0.33%)
+[140] 14.0-15.0 sec  8088 KBytes  66256 Kbits/sec  2.229 ms   15/ 5649 (0.27%)
+[140] 15.0-16.0 sec  6051 KBytes  49568 Kbits/sec  0.848 ms    6/ 4221 (0.14%)
+[140] 16.0-17.0 sec  10497 KBytes  85989 Kbits/sec  0.593 ms   19/ 7331 (0.26%)
+[140] 17.0-18.0 sec  7870 KBytes  64468 Kbits/sec  0.011 ms  244/ 5726 (4.3%)

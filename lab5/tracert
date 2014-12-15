@@ -1,0 +1,2396 @@
+No.     Time           Source                Destination           Protocol Length Info
+      1 0.000000000    192.168.1.69          192.168.1.254         DNS      75     Standard query 0x9b09  A www.example.com
+
+Frame 1: 75 bytes on wire (600 bits), 75 bytes captured (600 bits) on interface 0
+Ethernet II, Src: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54), Dst: Technico_80:af:ca (58:98:35:80:af:ca)
+Internet Protocol Version 4, Src: 192.168.1.69 (192.168.1.69), Dst: 192.168.1.254 (192.168.1.254)
+User Datagram Protocol, Src Port: 63957 (63957), Dst Port: domain (53)
+    Source port: 63957 (63957)
+    Destination port: domain (53)
+    Length: 41
+    Checksum: 0x9b97 [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+Domain Name System (query)
+    [Response In: 2]
+    Transaction ID: 0x9b09
+    Flags: 0x0100 Standard query
+        0... .... .... .... = Response: Message is a query
+        .000 0... .... .... = Opcode: Standard query (0)
+        .... ..0. .... .... = Truncated: Message is not truncated
+        .... ...1 .... .... = Recursion desired: Do query recursively
+        .... .... .0.. .... = Z: reserved (0)
+        .... .... ...0 .... = Non-authenticated data: Unacceptable
+    Questions: 1
+    Answer RRs: 0
+    Authority RRs: 0
+    Additional RRs: 0
+    Queries
+        www.example.com: type A, class IN
+            Name: www.example.com
+            Type: A (Host address)
+            Class: IN (0x0001)
+
+No.     Time           Source                Destination           Protocol Length Info
+      2 0.026911000    192.168.1.254         192.168.1.69          DNS      139    Standard query response 0x9b09  A 93.184.216.119
+
+Frame 2: 139 bytes on wire (1112 bits), 139 bytes captured (1112 bits) on interface 0
+Ethernet II, Src: Technico_80:af:ca (58:98:35:80:af:ca), Dst: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54)
+Internet Protocol Version 4, Src: 192.168.1.254 (192.168.1.254), Dst: 192.168.1.69 (192.168.1.69)
+User Datagram Protocol, Src Port: domain (53), Dst Port: 63957 (63957)
+    Source port: domain (53)
+    Destination port: 63957 (63957)
+    Length: 105
+    Checksum: 0xa944 [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+Domain Name System (response)
+    [Request In: 1]
+    [Time: 0.026911000 seconds]
+    Transaction ID: 0x9b09
+    Flags: 0x8180 Standard query response, No error
+        1... .... .... .... = Response: Message is a response
+        .000 0... .... .... = Opcode: Standard query (0)
+        .... .0.. .... .... = Authoritative: Server is not an authority for domain
+        .... ..0. .... .... = Truncated: Message is not truncated
+        .... ...1 .... .... = Recursion desired: Do query recursively
+        .... .... 1... .... = Recursion available: Server can do recursive queries
+        .... .... .0.. .... = Z: reserved (0)
+        .... .... ..0. .... = Answer authenticated: Answer/authority portion was not authenticated by the server
+        .... .... ...0 .... = Non-authenticated data: Unacceptable
+        .... .... .... 0000 = Reply code: No error (0)
+    Questions: 1
+    Answer RRs: 1
+    Authority RRs: 2
+    Additional RRs: 0
+    Queries
+        www.example.com: type A, class IN
+            Name: www.example.com
+            Type: A (Host address)
+            Class: IN (0x0001)
+    Answers
+    Authoritative nameservers
+
+No.     Time           Source                Destination           Protocol Length Info
+      3 0.030444000    192.168.1.69          93.184.216.119        ICMP     106    Echo (ping) request  id=0x0001, seq=37/9472, ttl=1
+
+Frame 3: 106 bytes on wire (848 bits), 106 bytes captured (848 bits) on interface 0
+Ethernet II, Src: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54), Dst: Technico_80:af:ca (58:98:35:80:af:ca)
+Internet Protocol Version 4, Src: 192.168.1.69 (192.168.1.69), Dst: 93.184.216.119 (93.184.216.119)
+Internet Control Message Protocol
+    Type: 8 (Echo (ping) request)
+    Code: 0
+    Checksum: 0xf7d9 [correct]
+    Identifier (BE): 1 (0x0001)
+    Identifier (LE): 256 (0x0100)
+    Sequence number (BE): 37 (0x0025)
+    Sequence number (LE): 9472 (0x2500)
+    Data (64 bytes)
+
+0000  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0030  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+        Data: 000000000000000000000000000000000000000000000000...
+        [Length: 64]
+
+No.     Time           Source                Destination           Protocol Length Info
+      4 0.043847000    192.168.1.254         192.168.1.69          ICMP     86     Time-to-live exceeded (Time to live exceeded in transit)
+
+Frame 4: 86 bytes on wire (688 bits), 86 bytes captured (688 bits) on interface 0
+Ethernet II, Src: Technico_80:af:ca (58:98:35:80:af:ca), Dst: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54)
+Internet Protocol Version 4, Src: 192.168.1.254 (192.168.1.254), Dst: 192.168.1.69 (192.168.1.69)
+Internet Control Message Protocol
+    Type: 11 (Time-to-live exceeded)
+    Code: 0 (Time to live exceeded in transit)
+    Checksum: 0xf4ff [correct]
+    Internet Protocol Version 4, Src: 192.168.1.69 (192.168.1.69), Dst: 93.184.216.119 (93.184.216.119)
+    Internet Control Message Protocol
+        Type: 8 (Echo (ping) request)
+        Code: 0
+        Checksum: 0xf7d9
+        Identifier (BE): 1 (0x0001)
+        Identifier (LE): 256 (0x0100)
+        Sequence number (BE): 37 (0x0025)
+        Sequence number (LE): 9472 (0x2500)
+        Data (16 bytes)
+
+0000  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+            Data: 00000000000000000000000000000000
+            [Length: 16]
+
+No.     Time           Source                Destination           Protocol Length Info
+      5 0.044385000    192.168.1.69          93.184.216.119        ICMP     106    Echo (ping) request  id=0x0001, seq=38/9728, ttl=1
+
+Frame 5: 106 bytes on wire (848 bits), 106 bytes captured (848 bits) on interface 0
+Ethernet II, Src: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54), Dst: Technico_80:af:ca (58:98:35:80:af:ca)
+Internet Protocol Version 4, Src: 192.168.1.69 (192.168.1.69), Dst: 93.184.216.119 (93.184.216.119)
+Internet Control Message Protocol
+    Type: 8 (Echo (ping) request)
+    Code: 0
+    Checksum: 0xf7d8 [correct]
+    Identifier (BE): 1 (0x0001)
+    Identifier (LE): 256 (0x0100)
+    Sequence number (BE): 38 (0x0026)
+    Sequence number (LE): 9728 (0x2600)
+    Data (64 bytes)
+
+0000  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0030  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+        Data: 000000000000000000000000000000000000000000000000...
+        [Length: 64]
+
+No.     Time           Source                Destination           Protocol Length Info
+      6 0.143770000    192.168.1.254         192.168.1.69          ICMP     86     Time-to-live exceeded (Time to live exceeded in transit)
+
+Frame 6: 86 bytes on wire (688 bits), 86 bytes captured (688 bits) on interface 0
+Ethernet II, Src: Technico_80:af:ca (58:98:35:80:af:ca), Dst: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54)
+Internet Protocol Version 4, Src: 192.168.1.254 (192.168.1.254), Dst: 192.168.1.69 (192.168.1.69)
+Internet Control Message Protocol
+    Type: 11 (Time-to-live exceeded)
+    Code: 0 (Time to live exceeded in transit)
+    Checksum: 0xf4ff [correct]
+    Internet Protocol Version 4, Src: 192.168.1.69 (192.168.1.69), Dst: 93.184.216.119 (93.184.216.119)
+    Internet Control Message Protocol
+        Type: 8 (Echo (ping) request)
+        Code: 0
+        Checksum: 0xf7d8
+        Identifier (BE): 1 (0x0001)
+        Identifier (LE): 256 (0x0100)
+        Sequence number (BE): 38 (0x0026)
+        Sequence number (LE): 9728 (0x2600)
+        Data (16 bytes)
+
+0000  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+            Data: 00000000000000000000000000000000
+            [Length: 16]
+
+No.     Time           Source                Destination           Protocol Length Info
+      7 0.144314000    192.168.1.69          93.184.216.119        ICMP     106    Echo (ping) request  id=0x0001, seq=39/9984, ttl=1
+
+Frame 7: 106 bytes on wire (848 bits), 106 bytes captured (848 bits) on interface 0
+Ethernet II, Src: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54), Dst: Technico_80:af:ca (58:98:35:80:af:ca)
+Internet Protocol Version 4, Src: 192.168.1.69 (192.168.1.69), Dst: 93.184.216.119 (93.184.216.119)
+Internet Control Message Protocol
+    Type: 8 (Echo (ping) request)
+    Code: 0
+    Checksum: 0xf7d7 [correct]
+    Identifier (BE): 1 (0x0001)
+    Identifier (LE): 256 (0x0100)
+    Sequence number (BE): 39 (0x0027)
+    Sequence number (LE): 9984 (0x2700)
+    Data (64 bytes)
+
+0000  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0030  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+        Data: 000000000000000000000000000000000000000000000000...
+        [Length: 64]
+
+No.     Time           Source                Destination           Protocol Length Info
+      8 0.243756000    192.168.1.254         192.168.1.69          ICMP     86     Time-to-live exceeded (Time to live exceeded in transit)
+
+Frame 8: 86 bytes on wire (688 bits), 86 bytes captured (688 bits) on interface 0
+Ethernet II, Src: Technico_80:af:ca (58:98:35:80:af:ca), Dst: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54)
+Internet Protocol Version 4, Src: 192.168.1.254 (192.168.1.254), Dst: 192.168.1.69 (192.168.1.69)
+Internet Control Message Protocol
+    Type: 11 (Time-to-live exceeded)
+    Code: 0 (Time to live exceeded in transit)
+    Checksum: 0xf4ff [correct]
+    Internet Protocol Version 4, Src: 192.168.1.69 (192.168.1.69), Dst: 93.184.216.119 (93.184.216.119)
+    Internet Control Message Protocol
+        Type: 8 (Echo (ping) request)
+        Code: 0
+        Checksum: 0xf7d7
+        Identifier (BE): 1 (0x0001)
+        Identifier (LE): 256 (0x0100)
+        Sequence number (BE): 39 (0x0027)
+        Sequence number (LE): 9984 (0x2700)
+        Data (16 bytes)
+
+0000  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+            Data: 00000000000000000000000000000000
+            [Length: 16]
+
+No.     Time           Source                Destination           Protocol Length Info
+      9 0.244549000    192.168.1.69          192.168.1.254         DNS      86     Standard query 0x75ff  PTR 254.1.168.192.in-addr.arpa
+
+Frame 9: 86 bytes on wire (688 bits), 86 bytes captured (688 bits) on interface 0
+Ethernet II, Src: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54), Dst: Technico_80:af:ca (58:98:35:80:af:ca)
+Internet Protocol Version 4, Src: 192.168.1.69 (192.168.1.69), Dst: 192.168.1.254 (192.168.1.254)
+User Datagram Protocol, Src Port: 56811 (56811), Dst Port: domain (53)
+    Source port: 56811 (56811)
+    Destination port: domain (53)
+    Length: 52
+    Checksum: 0x6321 [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+Domain Name System (query)
+    [Response In: 10]
+    Transaction ID: 0x75ff
+    Flags: 0x0100 Standard query
+        0... .... .... .... = Response: Message is a query
+        .000 0... .... .... = Opcode: Standard query (0)
+        .... ..0. .... .... = Truncated: Message is not truncated
+        .... ...1 .... .... = Recursion desired: Do query recursively
+        .... .... .0.. .... = Z: reserved (0)
+        .... .... ...0 .... = Non-authenticated data: Unacceptable
+    Questions: 1
+    Answer RRs: 0
+    Authority RRs: 0
+    Additional RRs: 0
+    Queries
+        254.1.168.192.in-addr.arpa: type PTR, class IN
+            Name: 254.1.168.192.in-addr.arpa
+            Type: PTR (Domain name pointer)
+            Class: IN (0x0001)
+
+No.     Time           Source                Destination           Protocol Length Info
+     10 0.246380000    192.168.1.254         192.168.1.69          DNS      113    Standard query response 0x75ff  PTR dsldevice.lan
+
+Frame 10: 113 bytes on wire (904 bits), 113 bytes captured (904 bits) on interface 0
+Ethernet II, Src: Technico_80:af:ca (58:98:35:80:af:ca), Dst: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54)
+Internet Protocol Version 4, Src: 192.168.1.254 (192.168.1.254), Dst: 192.168.1.69 (192.168.1.69)
+User Datagram Protocol, Src Port: domain (53), Dst Port: 56811 (56811)
+    Source port: domain (53)
+    Destination port: 56811 (56811)
+    Length: 79
+    Checksum: 0xf9b1 [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+Domain Name System (response)
+    [Request In: 9]
+    [Time: 0.001831000 seconds]
+    Transaction ID: 0x75ff
+    Flags: 0x8580 Standard query response, No error
+        1... .... .... .... = Response: Message is a response
+        .000 0... .... .... = Opcode: Standard query (0)
+        .... .1.. .... .... = Authoritative: Server is an authority for domain
+        .... ..0. .... .... = Truncated: Message is not truncated
+        .... ...1 .... .... = Recursion desired: Do query recursively
+        .... .... 1... .... = Recursion available: Server can do recursive queries
+        .... .... .0.. .... = Z: reserved (0)
+        .... .... ..0. .... = Answer authenticated: Answer/authority portion was not authenticated by the server
+        .... .... ...0 .... = Non-authenticated data: Unacceptable
+        .... .... .... 0000 = Reply code: No error (0)
+    Questions: 1
+    Answer RRs: 1
+    Authority RRs: 0
+    Additional RRs: 0
+    Queries
+        254.1.168.192.in-addr.arpa: type PTR, class IN
+            Name: 254.1.168.192.in-addr.arpa
+            Type: PTR (Domain name pointer)
+            Class: IN (0x0001)
+    Answers
+
+No.     Time           Source                Destination           Protocol Length Info
+     11 1.147525000    192.168.1.69          93.184.216.119        ICMP     106    Echo (ping) request  id=0x0001, seq=40/10240, ttl=2
+
+Frame 11: 106 bytes on wire (848 bits), 106 bytes captured (848 bits) on interface 0
+Ethernet II, Src: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54), Dst: Technico_80:af:ca (58:98:35:80:af:ca)
+Internet Protocol Version 4, Src: 192.168.1.69 (192.168.1.69), Dst: 93.184.216.119 (93.184.216.119)
+Internet Control Message Protocol
+    Type: 8 (Echo (ping) request)
+    Code: 0
+    Checksum: 0xf7d6 [correct]
+    Identifier (BE): 1 (0x0001)
+    Identifier (LE): 256 (0x0100)
+    Sequence number (BE): 40 (0x0028)
+    Sequence number (LE): 10240 (0x2800)
+    Data (64 bytes)
+
+0000  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0030  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+        Data: 000000000000000000000000000000000000000000000000...
+        [Length: 64]
+
+No.     Time           Source                Destination           Protocol Length Info
+     12 5.027771000    192.168.1.69          93.184.216.119        ICMP     106    Echo (ping) request  id=0x0001, seq=41/10496, ttl=2
+
+Frame 12: 106 bytes on wire (848 bits), 106 bytes captured (848 bits) on interface 0
+Ethernet II, Src: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54), Dst: Technico_80:af:ca (58:98:35:80:af:ca)
+Internet Protocol Version 4, Src: 192.168.1.69 (192.168.1.69), Dst: 93.184.216.119 (93.184.216.119)
+Internet Control Message Protocol
+    Type: 8 (Echo (ping) request)
+    Code: 0
+    Checksum: 0xf7d5 [correct]
+    Identifier (BE): 1 (0x0001)
+    Identifier (LE): 256 (0x0100)
+    Sequence number (BE): 41 (0x0029)
+    Sequence number (LE): 10496 (0x2900)
+    Data (64 bytes)
+
+0000  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0030  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+        Data: 000000000000000000000000000000000000000000000000...
+        [Length: 64]
+
+No.     Time           Source                Destination           Protocol Length Info
+     13 9.027902000    192.168.1.69          93.184.216.119        ICMP     106    Echo (ping) request  id=0x0001, seq=42/10752, ttl=2
+
+Frame 13: 106 bytes on wire (848 bits), 106 bytes captured (848 bits) on interface 0
+Ethernet II, Src: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54), Dst: Technico_80:af:ca (58:98:35:80:af:ca)
+Internet Protocol Version 4, Src: 192.168.1.69 (192.168.1.69), Dst: 93.184.216.119 (93.184.216.119)
+Internet Control Message Protocol
+    Type: 8 (Echo (ping) request)
+    Code: 0
+    Checksum: 0xf7d4 [correct]
+    Identifier (BE): 1 (0x0001)
+    Identifier (LE): 256 (0x0100)
+    Sequence number (BE): 42 (0x002a)
+    Sequence number (LE): 10752 (0x2a00)
+    Data (64 bytes)
+
+0000  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0030  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+        Data: 000000000000000000000000000000000000000000000000...
+        [Length: 64]
+
+No.     Time           Source                Destination           Protocol Length Info
+     14 13.028167000   192.168.1.69          93.184.216.119        ICMP     106    Echo (ping) request  id=0x0001, seq=43/11008, ttl=3
+
+Frame 14: 106 bytes on wire (848 bits), 106 bytes captured (848 bits) on interface 0
+Ethernet II, Src: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54), Dst: Technico_80:af:ca (58:98:35:80:af:ca)
+Internet Protocol Version 4, Src: 192.168.1.69 (192.168.1.69), Dst: 93.184.216.119 (93.184.216.119)
+Internet Control Message Protocol
+    Type: 8 (Echo (ping) request)
+    Code: 0
+    Checksum: 0xf7d3 [correct]
+    Identifier (BE): 1 (0x0001)
+    Identifier (LE): 256 (0x0100)
+    Sequence number (BE): 43 (0x002b)
+    Sequence number (LE): 11008 (0x2b00)
+    Data (64 bytes)
+
+0000  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0030  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+        Data: 000000000000000000000000000000000000000000000000...
+        [Length: 64]
+
+No.     Time           Source                Destination           Protocol Length Info
+     15 13.054620000   213.168.1.18          192.168.1.69          ICMP     182    Time-to-live exceeded (Time to live exceeded in transit)
+
+Frame 15: 182 bytes on wire (1456 bits), 182 bytes captured (1456 bits) on interface 0
+Ethernet II, Src: Technico_80:af:ca (58:98:35:80:af:ca), Dst: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54)
+Internet Protocol Version 4, Src: 213.168.1.18 (213.168.1.18), Dst: 192.168.1.69 (192.168.1.69)
+Internet Control Message Protocol
+    Type: 11 (Time-to-live exceeded)
+    Code: 0 (Time to live exceeded in transit)
+    Checksum: 0x974a [correct]
+    Internet Protocol Version 4, Src: 192.168.1.69 (192.168.1.69), Dst: 93.184.216.119 (93.184.216.119)
+    Internet Control Message Protocol
+        Type: 8 (Echo (ping) request)
+        Code: 0
+        Checksum: 0xfbf2
+        Identifier (BE): 1 (0x0001)
+        Identifier (LE): 256 (0x0100)
+        Sequence number (BE): 43 (0x002b)
+        Sequence number (LE): 11008 (0x2b00)
+        Data (64 bytes)
+
+0000  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0030  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+            Data: 000000000000000000000000000000000000000000000000...
+            [Length: 64]
+    ICMP Multi-Part Extensions
+
+No.     Time           Source                Destination           Protocol Length Info
+     16 13.055260000   192.168.1.69          93.184.216.119        ICMP     106    Echo (ping) request  id=0x0001, seq=44/11264, ttl=3
+
+Frame 16: 106 bytes on wire (848 bits), 106 bytes captured (848 bits) on interface 0
+Ethernet II, Src: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54), Dst: Technico_80:af:ca (58:98:35:80:af:ca)
+Internet Protocol Version 4, Src: 192.168.1.69 (192.168.1.69), Dst: 93.184.216.119 (93.184.216.119)
+Internet Control Message Protocol
+    Type: 8 (Echo (ping) request)
+    Code: 0
+    Checksum: 0xf7d2 [correct]
+    Identifier (BE): 1 (0x0001)
+    Identifier (LE): 256 (0x0100)
+    Sequence number (BE): 44 (0x002c)
+    Sequence number (LE): 11264 (0x2c00)
+    Data (64 bytes)
+
+0000  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0030  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+        Data: 000000000000000000000000000000000000000000000000...
+        [Length: 64]
+
+No.     Time           Source                Destination           Protocol Length Info
+     17 13.080184000   213.168.1.18          192.168.1.69          ICMP     182    Time-to-live exceeded (Time to live exceeded in transit)
+
+Frame 17: 182 bytes on wire (1456 bits), 182 bytes captured (1456 bits) on interface 0
+Ethernet II, Src: Technico_80:af:ca (58:98:35:80:af:ca), Dst: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54)
+Internet Protocol Version 4, Src: 213.168.1.18 (213.168.1.18), Dst: 192.168.1.69 (192.168.1.69)
+Internet Control Message Protocol
+    Type: 11 (Time-to-live exceeded)
+    Code: 0 (Time to live exceeded in transit)
+    Checksum: 0x974a [correct]
+    Internet Protocol Version 4, Src: 192.168.1.69 (192.168.1.69), Dst: 93.184.216.119 (93.184.216.119)
+    Internet Control Message Protocol
+        Type: 8 (Echo (ping) request)
+        Code: 0
+        Checksum: 0xfbf1
+        Identifier (BE): 1 (0x0001)
+        Identifier (LE): 256 (0x0100)
+        Sequence number (BE): 44 (0x002c)
+        Sequence number (LE): 11264 (0x2c00)
+        Data (64 bytes)
+
+0000  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0030  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+            Data: 000000000000000000000000000000000000000000000000...
+            [Length: 64]
+    ICMP Multi-Part Extensions
+
+No.     Time           Source                Destination           Protocol Length Info
+     18 13.080725000   192.168.1.69          93.184.216.119        ICMP     106    Echo (ping) request  id=0x0001, seq=45/11520, ttl=3
+
+Frame 18: 106 bytes on wire (848 bits), 106 bytes captured (848 bits) on interface 0
+Ethernet II, Src: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54), Dst: Technico_80:af:ca (58:98:35:80:af:ca)
+Internet Protocol Version 4, Src: 192.168.1.69 (192.168.1.69), Dst: 93.184.216.119 (93.184.216.119)
+Internet Control Message Protocol
+    Type: 8 (Echo (ping) request)
+    Code: 0
+    Checksum: 0xf7d1 [correct]
+    Identifier (BE): 1 (0x0001)
+    Identifier (LE): 256 (0x0100)
+    Sequence number (BE): 45 (0x002d)
+    Sequence number (LE): 11520 (0x2d00)
+    Data (64 bytes)
+
+0000  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0030  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+        Data: 000000000000000000000000000000000000000000000000...
+        [Length: 64]
+
+No.     Time           Source                Destination           Protocol Length Info
+     19 13.103968000   213.168.1.18          192.168.1.69          ICMP     182    Time-to-live exceeded (Time to live exceeded in transit)
+
+Frame 19: 182 bytes on wire (1456 bits), 182 bytes captured (1456 bits) on interface 0
+Ethernet II, Src: Technico_80:af:ca (58:98:35:80:af:ca), Dst: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54)
+Internet Protocol Version 4, Src: 213.168.1.18 (213.168.1.18), Dst: 192.168.1.69 (192.168.1.69)
+Internet Control Message Protocol
+    Type: 11 (Time-to-live exceeded)
+    Code: 0 (Time to live exceeded in transit)
+    Checksum: 0x974a [correct]
+    Internet Protocol Version 4, Src: 192.168.1.69 (192.168.1.69), Dst: 93.184.216.119 (93.184.216.119)
+    Internet Control Message Protocol
+        Type: 8 (Echo (ping) request)
+        Code: 0
+        Checksum: 0xfbf0
+        Identifier (BE): 1 (0x0001)
+        Identifier (LE): 256 (0x0100)
+        Sequence number (BE): 45 (0x002d)
+        Sequence number (LE): 11520 (0x2d00)
+        Data (64 bytes)
+
+0000  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0030  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+            Data: 000000000000000000000000000000000000000000000000...
+            [Length: 64]
+    ICMP Multi-Part Extensions
+
+No.     Time           Source                Destination           Protocol Length Info
+     20 13.104668000   192.168.1.69          192.168.1.254         DNS      85     Standard query 0xe6ea  PTR 18.1.168.213.in-addr.arpa
+
+Frame 20: 85 bytes on wire (680 bits), 85 bytes captured (680 bits) on interface 0
+Ethernet II, Src: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54), Dst: Technico_80:af:ca (58:98:35:80:af:ca)
+Internet Protocol Version 4, Src: 192.168.1.69 (192.168.1.69), Dst: 192.168.1.254 (192.168.1.254)
+User Datagram Protocol, Src Port: 53115 (53115), Dst Port: domain (53)
+    Source port: 53115 (53115)
+    Destination port: domain (53)
+    Length: 51
+    Checksum: 0x3da4 [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+Domain Name System (query)
+    [Response In: 21]
+    Transaction ID: 0xe6ea
+    Flags: 0x0100 Standard query
+        0... .... .... .... = Response: Message is a query
+        .000 0... .... .... = Opcode: Standard query (0)
+        .... ..0. .... .... = Truncated: Message is not truncated
+        .... ...1 .... .... = Recursion desired: Do query recursively
+        .... .... .0.. .... = Z: reserved (0)
+        .... .... ...0 .... = Non-authenticated data: Unacceptable
+    Questions: 1
+    Answer RRs: 0
+    Authority RRs: 0
+    Additional RRs: 0
+    Queries
+        18.1.168.213.in-addr.arpa: type PTR, class IN
+            Name: 18.1.168.213.in-addr.arpa
+            Type: PTR (Domain name pointer)
+            Class: IN (0x0001)
+
+No.     Time           Source                Destination           Protocol Length Info
+     21 13.129621000   192.168.1.254         192.168.1.69          DNS      167    Standard query response 0xe6ea  PTR noe-bb1-ae-6-0.ee.estpak.ee
+
+Frame 21: 167 bytes on wire (1336 bits), 167 bytes captured (1336 bits) on interface 0
+Ethernet II, Src: Technico_80:af:ca (58:98:35:80:af:ca), Dst: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54)
+Internet Protocol Version 4, Src: 192.168.1.254 (192.168.1.254), Dst: 192.168.1.69 (192.168.1.69)
+User Datagram Protocol, Src Port: domain (53), Dst Port: 53115 (53115)
+    Source port: domain (53)
+    Destination port: 53115 (53115)
+    Length: 133
+    Checksum: 0x6d76 [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+Domain Name System (response)
+    [Request In: 20]
+    [Time: 0.024953000 seconds]
+    Transaction ID: 0xe6ea
+    Flags: 0x8180 Standard query response, No error
+        1... .... .... .... = Response: Message is a response
+        .000 0... .... .... = Opcode: Standard query (0)
+        .... .0.. .... .... = Authoritative: Server is not an authority for domain
+        .... ..0. .... .... = Truncated: Message is not truncated
+        .... ...1 .... .... = Recursion desired: Do query recursively
+        .... .... 1... .... = Recursion available: Server can do recursive queries
+        .... .... .0.. .... = Z: reserved (0)
+        .... .... ..0. .... = Answer authenticated: Answer/authority portion was not authenticated by the server
+        .... .... ...0 .... = Non-authenticated data: Unacceptable
+        .... .... .... 0000 = Reply code: No error (0)
+    Questions: 1
+    Answer RRs: 1
+    Authority RRs: 2
+    Additional RRs: 0
+    Queries
+        18.1.168.213.in-addr.arpa: type PTR, class IN
+            Name: 18.1.168.213.in-addr.arpa
+            Type: PTR (Domain name pointer)
+            Class: IN (0x0001)
+    Answers
+    Authoritative nameservers
+
+No.     Time           Source                Destination           Protocol Length Info
+     22 14.107648000   192.168.1.69          93.184.216.119        ICMP     106    Echo (ping) request  id=0x0001, seq=46/11776, ttl=4
+
+Frame 22: 106 bytes on wire (848 bits), 106 bytes captured (848 bits) on interface 0
+Ethernet II, Src: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54), Dst: Technico_80:af:ca (58:98:35:80:af:ca)
+Internet Protocol Version 4, Src: 192.168.1.69 (192.168.1.69), Dst: 93.184.216.119 (93.184.216.119)
+Internet Control Message Protocol
+    Type: 8 (Echo (ping) request)
+    Code: 0
+    Checksum: 0xf7d0 [correct]
+    Identifier (BE): 1 (0x0001)
+    Identifier (LE): 256 (0x0100)
+    Sequence number (BE): 46 (0x002e)
+    Sequence number (LE): 11776 (0x2e00)
+    Data (64 bytes)
+
+0000  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0030  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+        Data: 000000000000000000000000000000000000000000000000...
+        [Length: 64]
+
+No.     Time           Source                Destination           Protocol Length Info
+     23 14.131458000   194.126.123.103       192.168.1.69          ICMP     70     Time-to-live exceeded (Time to live exceeded in transit)
+
+Frame 23: 70 bytes on wire (560 bits), 70 bytes captured (560 bits) on interface 0
+Ethernet II, Src: Technico_80:af:ca (58:98:35:80:af:ca), Dst: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54)
+Internet Protocol Version 4, Src: 194.126.123.103 (194.126.123.103), Dst: 192.168.1.69 (192.168.1.69)
+Internet Control Message Protocol
+    Type: 11 (Time-to-live exceeded)
+    Code: 0 (Time to live exceeded in transit)
+    Checksum: 0x974a [correct]
+    Internet Protocol Version 4, Src: 192.168.1.69 (192.168.1.69), Dst: 93.184.216.119 (93.184.216.119)
+    Internet Control Message Protocol
+        Type: 8 (Echo (ping) request)
+        Code: 0
+        Checksum: 0xfbef
+        Identifier (BE): 1 (0x0001)
+        Identifier (LE): 256 (0x0100)
+        Sequence number (BE): 46 (0x002e)
+        Sequence number (LE): 11776 (0x2e00)
+
+No.     Time           Source                Destination           Protocol Length Info
+     24 14.131997000   192.168.1.69          93.184.216.119        ICMP     106    Echo (ping) request  id=0x0001, seq=47/12032, ttl=4
+
+Frame 24: 106 bytes on wire (848 bits), 106 bytes captured (848 bits) on interface 0
+Ethernet II, Src: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54), Dst: Technico_80:af:ca (58:98:35:80:af:ca)
+Internet Protocol Version 4, Src: 192.168.1.69 (192.168.1.69), Dst: 93.184.216.119 (93.184.216.119)
+Internet Control Message Protocol
+    Type: 8 (Echo (ping) request)
+    Code: 0
+    Checksum: 0xf7cf [correct]
+    Identifier (BE): 1 (0x0001)
+    Identifier (LE): 256 (0x0100)
+    Sequence number (BE): 47 (0x002f)
+    Sequence number (LE): 12032 (0x2f00)
+    Data (64 bytes)
+
+0000  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0030  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+        Data: 000000000000000000000000000000000000000000000000...
+        [Length: 64]
+
+No.     Time           Source                Destination           Protocol Length Info
+     25 14.154675000   194.126.123.103       192.168.1.69          ICMP     70     Time-to-live exceeded (Time to live exceeded in transit)
+
+Frame 25: 70 bytes on wire (560 bits), 70 bytes captured (560 bits) on interface 0
+Ethernet II, Src: Technico_80:af:ca (58:98:35:80:af:ca), Dst: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54)
+Internet Protocol Version 4, Src: 194.126.123.103 (194.126.123.103), Dst: 192.168.1.69 (192.168.1.69)
+Internet Control Message Protocol
+    Type: 11 (Time-to-live exceeded)
+    Code: 0 (Time to live exceeded in transit)
+    Checksum: 0x974a [correct]
+    Internet Protocol Version 4, Src: 192.168.1.69 (192.168.1.69), Dst: 93.184.216.119 (93.184.216.119)
+    Internet Control Message Protocol
+        Type: 8 (Echo (ping) request)
+        Code: 0
+        Checksum: 0xfbee
+        Identifier (BE): 1 (0x0001)
+        Identifier (LE): 256 (0x0100)
+        Sequence number (BE): 47 (0x002f)
+        Sequence number (LE): 12032 (0x2f00)
+
+No.     Time           Source                Destination           Protocol Length Info
+     26 14.155120000   192.168.1.69          93.184.216.119        ICMP     106    Echo (ping) request  id=0x0001, seq=48/12288, ttl=4
+
+Frame 26: 106 bytes on wire (848 bits), 106 bytes captured (848 bits) on interface 0
+Ethernet II, Src: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54), Dst: Technico_80:af:ca (58:98:35:80:af:ca)
+Internet Protocol Version 4, Src: 192.168.1.69 (192.168.1.69), Dst: 93.184.216.119 (93.184.216.119)
+Internet Control Message Protocol
+    Type: 8 (Echo (ping) request)
+    Code: 0
+    Checksum: 0xf7ce [correct]
+    Identifier (BE): 1 (0x0001)
+    Identifier (LE): 256 (0x0100)
+    Sequence number (BE): 48 (0x0030)
+    Sequence number (LE): 12288 (0x3000)
+    Data (64 bytes)
+
+0000  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0030  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+        Data: 000000000000000000000000000000000000000000000000...
+        [Length: 64]
+
+No.     Time           Source                Destination           Protocol Length Info
+     27 14.177366000   194.126.123.103       192.168.1.69          ICMP     70     Time-to-live exceeded (Time to live exceeded in transit)
+
+Frame 27: 70 bytes on wire (560 bits), 70 bytes captured (560 bits) on interface 0
+Ethernet II, Src: Technico_80:af:ca (58:98:35:80:af:ca), Dst: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54)
+Internet Protocol Version 4, Src: 194.126.123.103 (194.126.123.103), Dst: 192.168.1.69 (192.168.1.69)
+Internet Control Message Protocol
+    Type: 11 (Time-to-live exceeded)
+    Code: 0 (Time to live exceeded in transit)
+    Checksum: 0x974a [correct]
+    Internet Protocol Version 4, Src: 192.168.1.69 (192.168.1.69), Dst: 93.184.216.119 (93.184.216.119)
+    Internet Control Message Protocol
+        Type: 8 (Echo (ping) request)
+        Code: 0
+        Checksum: 0xfbed
+        Identifier (BE): 1 (0x0001)
+        Identifier (LE): 256 (0x0100)
+        Sequence number (BE): 48 (0x0030)
+        Sequence number (LE): 12288 (0x3000)
+
+No.     Time           Source                Destination           Protocol Length Info
+     28 14.178158000   192.168.1.69          192.168.1.254         DNS      88     Standard query 0x1cdb  PTR 103.123.126.194.in-addr.arpa
+
+Frame 28: 88 bytes on wire (704 bits), 88 bytes captured (704 bits) on interface 0
+Ethernet II, Src: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54), Dst: Technico_80:af:ca (58:98:35:80:af:ca)
+Internet Protocol Version 4, Src: 192.168.1.69 (192.168.1.69), Dst: 192.168.1.254 (192.168.1.254)
+User Datagram Protocol, Src Port: 58049 (58049), Dst Port: domain (53)
+    Source port: 58049 (58049)
+    Destination port: domain (53)
+    Length: 54
+    Checksum: 0x8c3a [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+Domain Name System (query)
+    [Response In: 29]
+    Transaction ID: 0x1cdb
+    Flags: 0x0100 Standard query
+        0... .... .... .... = Response: Message is a query
+        .000 0... .... .... = Opcode: Standard query (0)
+        .... ..0. .... .... = Truncated: Message is not truncated
+        .... ...1 .... .... = Recursion desired: Do query recursively
+        .... .... .0.. .... = Z: reserved (0)
+        .... .... ...0 .... = Non-authenticated data: Unacceptable
+    Questions: 1
+    Answer RRs: 0
+    Authority RRs: 0
+    Additional RRs: 0
+    Queries
+        103.123.126.194.in-addr.arpa: type PTR, class IN
+            Name: 103.123.126.194.in-addr.arpa
+            Type: PTR (Domain name pointer)
+            Class: IN (0x0001)
+
+No.     Time           Source                Destination           Protocol Length Info
+     29 14.203738000   192.168.1.254         192.168.1.69          DNS      174    Standard query response 0x1cdb  PTR kjj-bb3-xe-7-0-1-0.ee.estpak.ee
+
+Frame 29: 174 bytes on wire (1392 bits), 174 bytes captured (1392 bits) on interface 0
+Ethernet II, Src: Technico_80:af:ca (58:98:35:80:af:ca), Dst: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54)
+Internet Protocol Version 4, Src: 192.168.1.254 (192.168.1.254), Dst: 192.168.1.69 (192.168.1.69)
+User Datagram Protocol, Src Port: domain (53), Dst Port: 58049 (58049)
+    Source port: domain (53)
+    Destination port: 58049 (58049)
+    Length: 140
+    Checksum: 0x3a1a [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+Domain Name System (response)
+    [Request In: 28]
+    [Time: 0.025580000 seconds]
+    Transaction ID: 0x1cdb
+    Flags: 0x8180 Standard query response, No error
+        1... .... .... .... = Response: Message is a response
+        .000 0... .... .... = Opcode: Standard query (0)
+        .... .0.. .... .... = Authoritative: Server is not an authority for domain
+        .... ..0. .... .... = Truncated: Message is not truncated
+        .... ...1 .... .... = Recursion desired: Do query recursively
+        .... .... 1... .... = Recursion available: Server can do recursive queries
+        .... .... .0.. .... = Z: reserved (0)
+        .... .... ..0. .... = Answer authenticated: Answer/authority portion was not authenticated by the server
+        .... .... ...0 .... = Non-authenticated data: Unacceptable
+        .... .... .... 0000 = Reply code: No error (0)
+    Questions: 1
+    Answer RRs: 1
+    Authority RRs: 2
+    Additional RRs: 0
+    Queries
+        103.123.126.194.in-addr.arpa: type PTR, class IN
+            Name: 103.123.126.194.in-addr.arpa
+            Type: PTR (Domain name pointer)
+            Class: IN (0x0001)
+    Answers
+    Authoritative nameservers
+
+No.     Time           Source                Destination           Protocol Length Info
+     30 15.182669000   192.168.1.69          93.184.216.119        ICMP     106    Echo (ping) request  id=0x0001, seq=49/12544, ttl=5
+
+Frame 30: 106 bytes on wire (848 bits), 106 bytes captured (848 bits) on interface 0
+Ethernet II, Src: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54), Dst: Technico_80:af:ca (58:98:35:80:af:ca)
+Internet Protocol Version 4, Src: 192.168.1.69 (192.168.1.69), Dst: 93.184.216.119 (93.184.216.119)
+Internet Control Message Protocol
+    Type: 8 (Echo (ping) request)
+    Code: 0
+    Checksum: 0xf7cd [correct]
+    Identifier (BE): 1 (0x0001)
+    Identifier (LE): 256 (0x0100)
+    Sequence number (BE): 49 (0x0031)
+    Sequence number (LE): 12544 (0x3100)
+    Data (64 bytes)
+
+0000  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0030  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+        Data: 000000000000000000000000000000000000000000000000...
+        [Length: 64]
+
+No.     Time           Source                Destination           Protocol Length Info
+     31 15.206367000   62.115.34.133         192.168.1.69          ICMP     70     Time-to-live exceeded (Time to live exceeded in transit)
+
+Frame 31: 70 bytes on wire (560 bits), 70 bytes captured (560 bits) on interface 0
+Ethernet II, Src: Technico_80:af:ca (58:98:35:80:af:ca), Dst: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54)
+Internet Protocol Version 4, Src: 62.115.34.133 (62.115.34.133), Dst: 192.168.1.69 (192.168.1.69)
+Internet Control Message Protocol
+    Type: 11 (Time-to-live exceeded)
+    Code: 0 (Time to live exceeded in transit)
+    Checksum: 0x974a [correct]
+    Internet Protocol Version 4, Src: 192.168.1.69 (192.168.1.69), Dst: 93.184.216.119 (93.184.216.119)
+    Internet Control Message Protocol
+        Type: 8 (Echo (ping) request)
+        Code: 0
+        Checksum: 0xfbec
+        Identifier (BE): 1 (0x0001)
+        Identifier (LE): 256 (0x0100)
+        Sequence number (BE): 49 (0x0031)
+        Sequence number (LE): 12544 (0x3100)
+
+No.     Time           Source                Destination           Protocol Length Info
+     32 15.206946000   192.168.1.69          93.184.216.119        ICMP     106    Echo (ping) request  id=0x0001, seq=50/12800, ttl=5
+
+Frame 32: 106 bytes on wire (848 bits), 106 bytes captured (848 bits) on interface 0
+Ethernet II, Src: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54), Dst: Technico_80:af:ca (58:98:35:80:af:ca)
+Internet Protocol Version 4, Src: 192.168.1.69 (192.168.1.69), Dst: 93.184.216.119 (93.184.216.119)
+Internet Control Message Protocol
+    Type: 8 (Echo (ping) request)
+    Code: 0
+    Checksum: 0xf7cc [correct]
+    Identifier (BE): 1 (0x0001)
+    Identifier (LE): 256 (0x0100)
+    Sequence number (BE): 50 (0x0032)
+    Sequence number (LE): 12800 (0x3200)
+    Data (64 bytes)
+
+0000  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0030  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+        Data: 000000000000000000000000000000000000000000000000...
+        [Length: 64]
+
+No.     Time           Source                Destination           Protocol Length Info
+     33 15.230317000   62.115.34.133         192.168.1.69          ICMP     70     Time-to-live exceeded (Time to live exceeded in transit)
+
+Frame 33: 70 bytes on wire (560 bits), 70 bytes captured (560 bits) on interface 0
+Ethernet II, Src: Technico_80:af:ca (58:98:35:80:af:ca), Dst: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54)
+Internet Protocol Version 4, Src: 62.115.34.133 (62.115.34.133), Dst: 192.168.1.69 (192.168.1.69)
+Internet Control Message Protocol
+    Type: 11 (Time-to-live exceeded)
+    Code: 0 (Time to live exceeded in transit)
+    Checksum: 0x974a [correct]
+    Internet Protocol Version 4, Src: 192.168.1.69 (192.168.1.69), Dst: 93.184.216.119 (93.184.216.119)
+    Internet Control Message Protocol
+        Type: 8 (Echo (ping) request)
+        Code: 0
+        Checksum: 0xfbeb
+        Identifier (BE): 1 (0x0001)
+        Identifier (LE): 256 (0x0100)
+        Sequence number (BE): 50 (0x0032)
+        Sequence number (LE): 12800 (0x3200)
+
+No.     Time           Source                Destination           Protocol Length Info
+     34 15.230739000   192.168.1.69          93.184.216.119        ICMP     106    Echo (ping) request  id=0x0001, seq=51/13056, ttl=5
+
+Frame 34: 106 bytes on wire (848 bits), 106 bytes captured (848 bits) on interface 0
+Ethernet II, Src: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54), Dst: Technico_80:af:ca (58:98:35:80:af:ca)
+Internet Protocol Version 4, Src: 192.168.1.69 (192.168.1.69), Dst: 93.184.216.119 (93.184.216.119)
+Internet Control Message Protocol
+    Type: 8 (Echo (ping) request)
+    Code: 0
+    Checksum: 0xf7cb [correct]
+    Identifier (BE): 1 (0x0001)
+    Identifier (LE): 256 (0x0100)
+    Sequence number (BE): 51 (0x0033)
+    Sequence number (LE): 13056 (0x3300)
+    Data (64 bytes)
+
+0000  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0030  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+        Data: 000000000000000000000000000000000000000000000000...
+        [Length: 64]
+
+No.     Time           Source                Destination           Protocol Length Info
+     35 15.254491000   62.115.34.133         192.168.1.69          ICMP     70     Time-to-live exceeded (Time to live exceeded in transit)
+
+Frame 35: 70 bytes on wire (560 bits), 70 bytes captured (560 bits) on interface 0
+Ethernet II, Src: Technico_80:af:ca (58:98:35:80:af:ca), Dst: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54)
+Internet Protocol Version 4, Src: 62.115.34.133 (62.115.34.133), Dst: 192.168.1.69 (192.168.1.69)
+Internet Control Message Protocol
+    Type: 11 (Time-to-live exceeded)
+    Code: 0 (Time to live exceeded in transit)
+    Checksum: 0x974a [correct]
+    Internet Protocol Version 4, Src: 192.168.1.69 (192.168.1.69), Dst: 93.184.216.119 (93.184.216.119)
+    Internet Control Message Protocol
+        Type: 8 (Echo (ping) request)
+        Code: 0
+        Checksum: 0xfbea
+        Identifier (BE): 1 (0x0001)
+        Identifier (LE): 256 (0x0100)
+        Sequence number (BE): 51 (0x0033)
+        Sequence number (LE): 13056 (0x3300)
+
+No.     Time           Source                Destination           Protocol Length Info
+     36 15.255188000   192.168.1.69          192.168.1.254         DNS      86     Standard query 0xf567  PTR 133.34.115.62.in-addr.arpa
+
+Frame 36: 86 bytes on wire (688 bits), 86 bytes captured (688 bits) on interface 0
+Ethernet II, Src: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54), Dst: Technico_80:af:ca (58:98:35:80:af:ca)
+Internet Protocol Version 4, Src: 192.168.1.69 (192.168.1.69), Dst: 192.168.1.254 (192.168.1.254)
+User Datagram Protocol, Src Port: 50336 (50336), Dst Port: domain (53)
+    Source port: 50336 (50336)
+    Destination port: domain (53)
+    Length: 52
+    Checksum: 0xa367 [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+Domain Name System (query)
+    [Response In: 37]
+    Transaction ID: 0xf567
+    Flags: 0x0100 Standard query
+        0... .... .... .... = Response: Message is a query
+        .000 0... .... .... = Opcode: Standard query (0)
+        .... ..0. .... .... = Truncated: Message is not truncated
+        .... ...1 .... .... = Recursion desired: Do query recursively
+        .... .... .0.. .... = Z: reserved (0)
+        .... .... ...0 .... = Non-authenticated data: Unacceptable
+    Questions: 1
+    Answer RRs: 0
+    Authority RRs: 0
+    Additional RRs: 0
+    Queries
+        133.34.115.62.in-addr.arpa: type PTR, class IN
+            Name: 133.34.115.62.in-addr.arpa
+            Type: PTR (Domain name pointer)
+            Class: IN (0x0001)
+
+No.     Time           Source                Destination           Protocol Length Info
+     37 15.280087000   192.168.1.254         192.168.1.69          DNS      168    Standard query response 0xf567  PTR tln-b3-link.telia.net
+
+Frame 37: 168 bytes on wire (1344 bits), 168 bytes captured (1344 bits) on interface 0
+Ethernet II, Src: Technico_80:af:ca (58:98:35:80:af:ca), Dst: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54)
+Internet Protocol Version 4, Src: 192.168.1.254 (192.168.1.254), Dst: 192.168.1.69 (192.168.1.69)
+User Datagram Protocol, Src Port: domain (53), Dst Port: 50336 (50336)
+    Source port: domain (53)
+    Destination port: 50336 (50336)
+    Length: 134
+    Checksum: 0x77be [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+Domain Name System (response)
+    [Request In: 36]
+    [Time: 0.024899000 seconds]
+    Transaction ID: 0xf567
+    Flags: 0x8180 Standard query response, No error
+        1... .... .... .... = Response: Message is a response
+        .000 0... .... .... = Opcode: Standard query (0)
+        .... .0.. .... .... = Authoritative: Server is not an authority for domain
+        .... ..0. .... .... = Truncated: Message is not truncated
+        .... ...1 .... .... = Recursion desired: Do query recursively
+        .... .... 1... .... = Recursion available: Server can do recursive queries
+        .... .... .0.. .... = Z: reserved (0)
+        .... .... ..0. .... = Answer authenticated: Answer/authority portion was not authenticated by the server
+        .... .... ...0 .... = Non-authenticated data: Unacceptable
+        .... .... .... 0000 = Reply code: No error (0)
+    Questions: 1
+    Answer RRs: 1
+    Authority RRs: 2
+    Additional RRs: 0
+    Queries
+        133.34.115.62.in-addr.arpa: type PTR, class IN
+            Name: 133.34.115.62.in-addr.arpa
+            Type: PTR (Domain name pointer)
+            Class: IN (0x0001)
+    Answers
+    Authoritative nameservers
+
+No.     Time           Source                Destination           Protocol Length Info
+     38 16.257702000   192.168.1.69          93.184.216.119        ICMP     106    Echo (ping) request  id=0x0001, seq=52/13312, ttl=6
+
+Frame 38: 106 bytes on wire (848 bits), 106 bytes captured (848 bits) on interface 0
+Ethernet II, Src: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54), Dst: Technico_80:af:ca (58:98:35:80:af:ca)
+Internet Protocol Version 4, Src: 192.168.1.69 (192.168.1.69), Dst: 93.184.216.119 (93.184.216.119)
+Internet Control Message Protocol
+    Type: 8 (Echo (ping) request)
+    Code: 0
+    Checksum: 0xf7ca [correct]
+    Identifier (BE): 1 (0x0001)
+    Identifier (LE): 256 (0x0100)
+    Sequence number (BE): 52 (0x0034)
+    Sequence number (LE): 13312 (0x3400)
+    Data (64 bytes)
+
+0000  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0030  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+        Data: 000000000000000000000000000000000000000000000000...
+        [Length: 64]
+
+No.     Time           Source                Destination           Protocol Length Info
+     39 16.289278000   213.155.133.14        192.168.1.69          ICMP     110    Time-to-live exceeded (Time to live exceeded in transit)
+
+Frame 39: 110 bytes on wire (880 bits), 110 bytes captured (880 bits) on interface 0
+Ethernet II, Src: Technico_80:af:ca (58:98:35:80:af:ca), Dst: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54)
+Internet Protocol Version 4, Src: 213.155.133.14 (213.155.133.14), Dst: 192.168.1.69 (192.168.1.69)
+Internet Control Message Protocol
+    Type: 11 (Time-to-live exceeded)
+    Code: 0 (Time to live exceeded in transit)
+    Checksum: 0x974a [correct]
+    Internet Protocol Version 4, Src: 192.168.1.69 (192.168.1.69), Dst: 93.184.216.119 (93.184.216.119)
+    Internet Control Message Protocol
+        Type: 8 (Echo (ping) request)
+        Code: 0
+        Checksum: 0xfbe9
+        Identifier (BE): 1 (0x0001)
+        Identifier (LE): 256 (0x0100)
+        Sequence number (BE): 52 (0x0034)
+        Sequence number (LE): 13312 (0x3400)
+        Data (40 bytes)
+
+0000  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00 00 00 00 00 00 00 00                           ........
+            Data: 000000000000000000000000000000000000000000000000...
+            [Length: 40]
+
+No.     Time           Source                Destination           Protocol Length Info
+     40 16.289832000   192.168.1.69          93.184.216.119        ICMP     106    Echo (ping) request  id=0x0001, seq=53/13568, ttl=6
+
+Frame 40: 106 bytes on wire (848 bits), 106 bytes captured (848 bits) on interface 0
+Ethernet II, Src: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54), Dst: Technico_80:af:ca (58:98:35:80:af:ca)
+Internet Protocol Version 4, Src: 192.168.1.69 (192.168.1.69), Dst: 93.184.216.119 (93.184.216.119)
+Internet Control Message Protocol
+    Type: 8 (Echo (ping) request)
+    Code: 0
+    Checksum: 0xf7c9 [correct]
+    Identifier (BE): 1 (0x0001)
+    Identifier (LE): 256 (0x0100)
+    Sequence number (BE): 53 (0x0035)
+    Sequence number (LE): 13568 (0x3500)
+    Data (64 bytes)
+
+0000  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0030  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+        Data: 000000000000000000000000000000000000000000000000...
+        [Length: 64]
+
+No.     Time           Source                Destination           Protocol Length Info
+     41 16.322052000   213.155.133.14        192.168.1.69          ICMP     110    Time-to-live exceeded (Time to live exceeded in transit)
+
+Frame 41: 110 bytes on wire (880 bits), 110 bytes captured (880 bits) on interface 0
+Ethernet II, Src: Technico_80:af:ca (58:98:35:80:af:ca), Dst: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54)
+Internet Protocol Version 4, Src: 213.155.133.14 (213.155.133.14), Dst: 192.168.1.69 (192.168.1.69)
+Internet Control Message Protocol
+    Type: 11 (Time-to-live exceeded)
+    Code: 0 (Time to live exceeded in transit)
+    Checksum: 0x974a [correct]
+    Internet Protocol Version 4, Src: 192.168.1.69 (192.168.1.69), Dst: 93.184.216.119 (93.184.216.119)
+    Internet Control Message Protocol
+        Type: 8 (Echo (ping) request)
+        Code: 0
+        Checksum: 0xfbe8
+        Identifier (BE): 1 (0x0001)
+        Identifier (LE): 256 (0x0100)
+        Sequence number (BE): 53 (0x0035)
+        Sequence number (LE): 13568 (0x3500)
+        Data (40 bytes)
+
+0000  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00 00 00 00 00 00 00 00                           ........
+            Data: 000000000000000000000000000000000000000000000000...
+            [Length: 40]
+
+No.     Time           Source                Destination           Protocol Length Info
+     42 16.322442000   192.168.1.69          93.184.216.119        ICMP     106    Echo (ping) request  id=0x0001, seq=54/13824, ttl=6
+
+Frame 42: 106 bytes on wire (848 bits), 106 bytes captured (848 bits) on interface 0
+Ethernet II, Src: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54), Dst: Technico_80:af:ca (58:98:35:80:af:ca)
+Internet Protocol Version 4, Src: 192.168.1.69 (192.168.1.69), Dst: 93.184.216.119 (93.184.216.119)
+Internet Control Message Protocol
+    Type: 8 (Echo (ping) request)
+    Code: 0
+    Checksum: 0xf7c8 [correct]
+    Identifier (BE): 1 (0x0001)
+    Identifier (LE): 256 (0x0100)
+    Sequence number (BE): 54 (0x0036)
+    Sequence number (LE): 13824 (0x3600)
+    Data (64 bytes)
+
+0000  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0030  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+        Data: 000000000000000000000000000000000000000000000000...
+        [Length: 64]
+
+No.     Time           Source                Destination           Protocol Length Info
+     43 16.353954000   213.155.133.14        192.168.1.69          ICMP     110    Time-to-live exceeded (Time to live exceeded in transit)
+
+Frame 43: 110 bytes on wire (880 bits), 110 bytes captured (880 bits) on interface 0
+Ethernet II, Src: Technico_80:af:ca (58:98:35:80:af:ca), Dst: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54)
+Internet Protocol Version 4, Src: 213.155.133.14 (213.155.133.14), Dst: 192.168.1.69 (192.168.1.69)
+Internet Control Message Protocol
+    Type: 11 (Time-to-live exceeded)
+    Code: 0 (Time to live exceeded in transit)
+    Checksum: 0x974a [correct]
+    Internet Protocol Version 4, Src: 192.168.1.69 (192.168.1.69), Dst: 93.184.216.119 (93.184.216.119)
+    Internet Control Message Protocol
+        Type: 8 (Echo (ping) request)
+        Code: 0
+        Checksum: 0xfbe7
+        Identifier (BE): 1 (0x0001)
+        Identifier (LE): 256 (0x0100)
+        Sequence number (BE): 54 (0x0036)
+        Sequence number (LE): 13824 (0x3600)
+        Data (40 bytes)
+
+0000  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00 00 00 00 00 00 00 00                           ........
+            Data: 000000000000000000000000000000000000000000000000...
+            [Length: 40]
+
+No.     Time           Source                Destination           Protocol Length Info
+     44 16.354636000   192.168.1.69          192.168.1.254         DNS      87     Standard query 0x0730  PTR 14.133.155.213.in-addr.arpa
+
+Frame 44: 87 bytes on wire (696 bits), 87 bytes captured (696 bits) on interface 0
+Ethernet II, Src: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54), Dst: Technico_80:af:ca (58:98:35:80:af:ca)
+Internet Protocol Version 4, Src: 192.168.1.69 (192.168.1.69), Dst: 192.168.1.254 (192.168.1.254)
+User Datagram Protocol, Src Port: 64206 (64206), Dst Port: domain (53)
+    Source port: 64206 (64206)
+    Destination port: domain (53)
+    Length: 53
+    Checksum: 0xc5d3 [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+Domain Name System (query)
+    [Response In: 45]
+    Transaction ID: 0x0730
+    Flags: 0x0100 Standard query
+        0... .... .... .... = Response: Message is a query
+        .000 0... .... .... = Opcode: Standard query (0)
+        .... ..0. .... .... = Truncated: Message is not truncated
+        .... ...1 .... .... = Recursion desired: Do query recursively
+        .... .... .0.. .... = Z: reserved (0)
+        .... .... ...0 .... = Non-authenticated data: Unacceptable
+    Questions: 1
+    Answer RRs: 0
+    Authority RRs: 0
+    Additional RRs: 0
+    Queries
+        14.133.155.213.in-addr.arpa: type PTR, class IN
+            Name: 14.133.155.213.in-addr.arpa
+            Type: PTR (Domain name pointer)
+            Class: IN (0x0001)
+
+No.     Time           Source                Destination           Protocol Length Info
+     45 16.380926000   192.168.1.254         192.168.1.69          DNS      168    Standard query response 0x0730  PTR s-bb3-link.telia.net
+
+Frame 45: 168 bytes on wire (1344 bits), 168 bytes captured (1344 bits) on interface 0
+Ethernet II, Src: Technico_80:af:ca (58:98:35:80:af:ca), Dst: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54)
+Internet Protocol Version 4, Src: 192.168.1.254 (192.168.1.254), Dst: 192.168.1.69 (192.168.1.69)
+User Datagram Protocol, Src Port: domain (53), Dst Port: 64206 (64206)
+    Source port: domain (53)
+    Destination port: 64206 (64206)
+    Length: 134
+    Checksum: 0xad29 [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+Domain Name System (response)
+    [Request In: 44]
+    [Time: 0.026290000 seconds]
+    Transaction ID: 0x0730
+    Flags: 0x8180 Standard query response, No error
+        1... .... .... .... = Response: Message is a response
+        .000 0... .... .... = Opcode: Standard query (0)
+        .... .0.. .... .... = Authoritative: Server is not an authority for domain
+        .... ..0. .... .... = Truncated: Message is not truncated
+        .... ...1 .... .... = Recursion desired: Do query recursively
+        .... .... 1... .... = Recursion available: Server can do recursive queries
+        .... .... .0.. .... = Z: reserved (0)
+        .... .... ..0. .... = Answer authenticated: Answer/authority portion was not authenticated by the server
+        .... .... ...0 .... = Non-authenticated data: Unacceptable
+        .... .... .... 0000 = Reply code: No error (0)
+    Questions: 1
+    Answer RRs: 1
+    Authority RRs: 2
+    Additional RRs: 0
+    Queries
+        14.133.155.213.in-addr.arpa: type PTR, class IN
+            Name: 14.133.155.213.in-addr.arpa
+            Type: PTR (Domain name pointer)
+            Class: IN (0x0001)
+    Answers
+    Authoritative nameservers
+
+No.     Time           Source                Destination           Protocol Length Info
+     46 17.350670000   192.168.1.69          93.184.216.119        ICMP     106    Echo (ping) request  id=0x0001, seq=55/14080, ttl=7
+
+Frame 46: 106 bytes on wire (848 bits), 106 bytes captured (848 bits) on interface 0
+Ethernet II, Src: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54), Dst: Technico_80:af:ca (58:98:35:80:af:ca)
+Internet Protocol Version 4, Src: 192.168.1.69 (192.168.1.69), Dst: 93.184.216.119 (93.184.216.119)
+Internet Control Message Protocol
+    Type: 8 (Echo (ping) request)
+    Code: 0
+    Checksum: 0xf7c7 [correct]
+    Identifier (BE): 1 (0x0001)
+    Identifier (LE): 256 (0x0100)
+    Sequence number (BE): 55 (0x0037)
+    Sequence number (LE): 14080 (0x3700)
+    Data (64 bytes)
+
+0000  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0030  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+        Data: 000000000000000000000000000000000000000000000000...
+        [Length: 64]
+
+No.     Time           Source                Destination           Protocol Length Info
+     47 17.392245000   62.115.139.171        192.168.1.69          ICMP     70     Time-to-live exceeded (Time to live exceeded in transit)
+
+Frame 47: 70 bytes on wire (560 bits), 70 bytes captured (560 bits) on interface 0
+Ethernet II, Src: Technico_80:af:ca (58:98:35:80:af:ca), Dst: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54)
+Internet Protocol Version 4, Src: 62.115.139.171 (62.115.139.171), Dst: 192.168.1.69 (192.168.1.69)
+Internet Control Message Protocol
+    Type: 11 (Time-to-live exceeded)
+    Code: 0 (Time to live exceeded in transit)
+    Checksum: 0x974a [correct]
+    Internet Protocol Version 4, Src: 192.168.1.69 (192.168.1.69), Dst: 93.184.216.119 (93.184.216.119)
+    Internet Control Message Protocol
+        Type: 8 (Echo (ping) request)
+        Code: 0
+        Checksum: 0xfbe6
+        Identifier (BE): 1 (0x0001)
+        Identifier (LE): 256 (0x0100)
+        Sequence number (BE): 55 (0x0037)
+        Sequence number (LE): 14080 (0x3700)
+
+No.     Time           Source                Destination           Protocol Length Info
+     48 17.392830000   192.168.1.69          93.184.216.119        ICMP     106    Echo (ping) request  id=0x0001, seq=56/14336, ttl=7
+
+Frame 48: 106 bytes on wire (848 bits), 106 bytes captured (848 bits) on interface 0
+Ethernet II, Src: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54), Dst: Technico_80:af:ca (58:98:35:80:af:ca)
+Internet Protocol Version 4, Src: 192.168.1.69 (192.168.1.69), Dst: 93.184.216.119 (93.184.216.119)
+Internet Control Message Protocol
+    Type: 8 (Echo (ping) request)
+    Code: 0
+    Checksum: 0xf7c6 [correct]
+    Identifier (BE): 1 (0x0001)
+    Identifier (LE): 256 (0x0100)
+    Sequence number (BE): 56 (0x0038)
+    Sequence number (LE): 14336 (0x3800)
+    Data (64 bytes)
+
+0000  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0030  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+        Data: 000000000000000000000000000000000000000000000000...
+        [Length: 64]
+
+No.     Time           Source                Destination           Protocol Length Info
+     49 17.434305000   62.115.139.167        192.168.1.69          ICMP     70     Time-to-live exceeded (Time to live exceeded in transit)
+
+Frame 49: 70 bytes on wire (560 bits), 70 bytes captured (560 bits) on interface 0
+Ethernet II, Src: Technico_80:af:ca (58:98:35:80:af:ca), Dst: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54)
+Internet Protocol Version 4, Src: 62.115.139.167 (62.115.139.167), Dst: 192.168.1.69 (192.168.1.69)
+Internet Control Message Protocol
+    Type: 11 (Time-to-live exceeded)
+    Code: 0 (Time to live exceeded in transit)
+    Checksum: 0x974a [correct]
+    Internet Protocol Version 4, Src: 192.168.1.69 (192.168.1.69), Dst: 93.184.216.119 (93.184.216.119)
+    Internet Control Message Protocol
+        Type: 8 (Echo (ping) request)
+        Code: 0
+        Checksum: 0xfbe5
+        Identifier (BE): 1 (0x0001)
+        Identifier (LE): 256 (0x0100)
+        Sequence number (BE): 56 (0x0038)
+        Sequence number (LE): 14336 (0x3800)
+
+No.     Time           Source                Destination           Protocol Length Info
+     50 17.434749000   192.168.1.69          93.184.216.119        ICMP     106    Echo (ping) request  id=0x0001, seq=57/14592, ttl=7
+
+Frame 50: 106 bytes on wire (848 bits), 106 bytes captured (848 bits) on interface 0
+Ethernet II, Src: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54), Dst: Technico_80:af:ca (58:98:35:80:af:ca)
+Internet Protocol Version 4, Src: 192.168.1.69 (192.168.1.69), Dst: 93.184.216.119 (93.184.216.119)
+Internet Control Message Protocol
+    Type: 8 (Echo (ping) request)
+    Code: 0
+    Checksum: 0xf7c5 [correct]
+    Identifier (BE): 1 (0x0001)
+    Identifier (LE): 256 (0x0100)
+    Sequence number (BE): 57 (0x0039)
+    Sequence number (LE): 14592 (0x3900)
+    Data (64 bytes)
+
+0000  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0030  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+        Data: 000000000000000000000000000000000000000000000000...
+        [Length: 64]
+
+No.     Time           Source                Destination           Protocol Length Info
+     51 17.475110000   62.115.139.169        192.168.1.69          ICMP     70     Time-to-live exceeded (Time to live exceeded in transit)
+
+Frame 51: 70 bytes on wire (560 bits), 70 bytes captured (560 bits) on interface 0
+Ethernet II, Src: Technico_80:af:ca (58:98:35:80:af:ca), Dst: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54)
+Internet Protocol Version 4, Src: 62.115.139.169 (62.115.139.169), Dst: 192.168.1.69 (192.168.1.69)
+Internet Control Message Protocol
+    Type: 11 (Time-to-live exceeded)
+    Code: 0 (Time to live exceeded in transit)
+    Checksum: 0x974a [correct]
+    Internet Protocol Version 4, Src: 192.168.1.69 (192.168.1.69), Dst: 93.184.216.119 (93.184.216.119)
+    Internet Control Message Protocol
+        Type: 8 (Echo (ping) request)
+        Code: 0
+        Checksum: 0xfbe4
+        Identifier (BE): 1 (0x0001)
+        Identifier (LE): 256 (0x0100)
+        Sequence number (BE): 57 (0x0039)
+        Sequence number (LE): 14592 (0x3900)
+
+No.     Time           Source                Destination           Protocol Length Info
+     52 17.475843000   192.168.1.69          192.168.1.254         DNS      87     Standard query 0x54d3  PTR 169.139.115.62.in-addr.arpa
+
+Frame 52: 87 bytes on wire (696 bits), 87 bytes captured (696 bits) on interface 0
+Ethernet II, Src: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54), Dst: Technico_80:af:ca (58:98:35:80:af:ca)
+Internet Protocol Version 4, Src: 192.168.1.69 (192.168.1.69), Dst: 192.168.1.254 (192.168.1.254)
+User Datagram Protocol, Src Port: 51572 (51572), Dst Port: domain (53)
+    Source port: 51572 (51572)
+    Destination port: domain (53)
+    Length: 53
+    Checksum: 0x36ee [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+Domain Name System (query)
+    [Response In: 53]
+    Transaction ID: 0x54d3
+    Flags: 0x0100 Standard query
+        0... .... .... .... = Response: Message is a query
+        .000 0... .... .... = Opcode: Standard query (0)
+        .... ..0. .... .... = Truncated: Message is not truncated
+        .... ...1 .... .... = Recursion desired: Do query recursively
+        .... .... .0.. .... = Z: reserved (0)
+        .... .... ...0 .... = Non-authenticated data: Unacceptable
+    Questions: 1
+    Answer RRs: 0
+    Authority RRs: 0
+    Additional RRs: 0
+    Queries
+        169.139.115.62.in-addr.arpa: type PTR, class IN
+            Name: 169.139.115.62.in-addr.arpa
+            Type: PTR (Domain name pointer)
+            Class: IN (0x0001)
+
+No.     Time           Source                Destination           Protocol Length Info
+     53 17.521541000   192.168.1.254         192.168.1.69          DNS      170    Standard query response 0x54d3  PTR kbn-bb3-link.telia.net
+
+Frame 53: 170 bytes on wire (1360 bits), 170 bytes captured (1360 bits) on interface 0
+Ethernet II, Src: Technico_80:af:ca (58:98:35:80:af:ca), Dst: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54)
+Internet Protocol Version 4, Src: 192.168.1.254 (192.168.1.254), Dst: 192.168.1.69 (192.168.1.69)
+User Datagram Protocol, Src Port: domain (53), Dst Port: 51572 (51572)
+    Source port: domain (53)
+    Destination port: 51572 (51572)
+    Length: 136
+    Checksum: 0xd777 [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+Domain Name System (response)
+    [Request In: 52]
+    [Time: 0.045698000 seconds]
+    Transaction ID: 0x54d3
+    Flags: 0x8180 Standard query response, No error
+        1... .... .... .... = Response: Message is a response
+        .000 0... .... .... = Opcode: Standard query (0)
+        .... .0.. .... .... = Authoritative: Server is not an authority for domain
+        .... ..0. .... .... = Truncated: Message is not truncated
+        .... ...1 .... .... = Recursion desired: Do query recursively
+        .... .... 1... .... = Recursion available: Server can do recursive queries
+        .... .... .0.. .... = Z: reserved (0)
+        .... .... ..0. .... = Answer authenticated: Answer/authority portion was not authenticated by the server
+        .... .... ...0 .... = Non-authenticated data: Unacceptable
+        .... .... .... 0000 = Reply code: No error (0)
+    Questions: 1
+    Answer RRs: 1
+    Authority RRs: 2
+    Additional RRs: 0
+    Queries
+        169.139.115.62.in-addr.arpa: type PTR, class IN
+            Name: 169.139.115.62.in-addr.arpa
+            Type: PTR (Domain name pointer)
+            Class: IN (0x0001)
+    Answers
+    Authoritative nameservers
+
+No.     Time           Source                Destination           Protocol Length Info
+     54 18.481723000   192.168.1.69          93.184.216.119        ICMP     106    Echo (ping) request  id=0x0001, seq=58/14848, ttl=8
+
+Frame 54: 106 bytes on wire (848 bits), 106 bytes captured (848 bits) on interface 0
+Ethernet II, Src: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54), Dst: Technico_80:af:ca (58:98:35:80:af:ca)
+Internet Protocol Version 4, Src: 192.168.1.69 (192.168.1.69), Dst: 93.184.216.119 (93.184.216.119)
+Internet Control Message Protocol
+    Type: 8 (Echo (ping) request)
+    Code: 0
+    Checksum: 0xf7c4 [correct]
+    Identifier (BE): 1 (0x0001)
+    Identifier (LE): 256 (0x0100)
+    Sequence number (BE): 58 (0x003a)
+    Sequence number (LE): 14848 (0x3a00)
+    Data (64 bytes)
+
+0000  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0030  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+        Data: 000000000000000000000000000000000000000000000000...
+        [Length: 64]
+
+No.     Time           Source                Destination           Protocol Length Info
+     55 18.698711000   80.91.247.115         192.168.1.69          ICMP     70     Time-to-live exceeded (Time to live exceeded in transit)
+
+Frame 55: 70 bytes on wire (560 bits), 70 bytes captured (560 bits) on interface 0
+Ethernet II, Src: Technico_80:af:ca (58:98:35:80:af:ca), Dst: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54)
+Internet Protocol Version 4, Src: 80.91.247.115 (80.91.247.115), Dst: 192.168.1.69 (192.168.1.69)
+Internet Control Message Protocol
+    Type: 11 (Time-to-live exceeded)
+    Code: 0 (Time to live exceeded in transit)
+    Checksum: 0x974a [correct]
+    Internet Protocol Version 4, Src: 192.168.1.69 (192.168.1.69), Dst: 93.184.216.119 (93.184.216.119)
+    Internet Control Message Protocol
+        Type: 8 (Echo (ping) request)
+        Code: 0
+        Checksum: 0xfbe3
+        Identifier (BE): 1 (0x0001)
+        Identifier (LE): 256 (0x0100)
+        Sequence number (BE): 58 (0x003a)
+        Sequence number (LE): 14848 (0x3a00)
+
+No.     Time           Source                Destination           Protocol Length Info
+     56 18.699287000   192.168.1.69          93.184.216.119        ICMP     106    Echo (ping) request  id=0x0001, seq=59/15104, ttl=8
+
+Frame 56: 106 bytes on wire (848 bits), 106 bytes captured (848 bits) on interface 0
+Ethernet II, Src: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54), Dst: Technico_80:af:ca (58:98:35:80:af:ca)
+Internet Protocol Version 4, Src: 192.168.1.69 (192.168.1.69), Dst: 93.184.216.119 (93.184.216.119)
+Internet Control Message Protocol
+    Type: 8 (Echo (ping) request)
+    Code: 0
+    Checksum: 0xf7c3 [correct]
+    Identifier (BE): 1 (0x0001)
+    Identifier (LE): 256 (0x0100)
+    Sequence number (BE): 59 (0x003b)
+    Sequence number (LE): 15104 (0x3b00)
+    Data (64 bytes)
+
+0000  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0030  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+        Data: 000000000000000000000000000000000000000000000000...
+        [Length: 64]
+
+No.     Time           Source                Destination           Protocol Length Info
+     57 18.856968000   80.91.247.115         192.168.1.69          ICMP     70     Time-to-live exceeded (Time to live exceeded in transit)
+
+Frame 57: 70 bytes on wire (560 bits), 70 bytes captured (560 bits) on interface 0
+Ethernet II, Src: Technico_80:af:ca (58:98:35:80:af:ca), Dst: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54)
+Internet Protocol Version 4, Src: 80.91.247.115 (80.91.247.115), Dst: 192.168.1.69 (192.168.1.69)
+Internet Control Message Protocol
+    Type: 11 (Time-to-live exceeded)
+    Code: 0 (Time to live exceeded in transit)
+    Checksum: 0x974a [correct]
+    Internet Protocol Version 4, Src: 192.168.1.69 (192.168.1.69), Dst: 93.184.216.119 (93.184.216.119)
+    Internet Control Message Protocol
+        Type: 8 (Echo (ping) request)
+        Code: 0
+        Checksum: 0xfbe2
+        Identifier (BE): 1 (0x0001)
+        Identifier (LE): 256 (0x0100)
+        Sequence number (BE): 59 (0x003b)
+        Sequence number (LE): 15104 (0x3b00)
+
+No.     Time           Source                Destination           Protocol Length Info
+     58 18.857532000   192.168.1.69          93.184.216.119        ICMP     106    Echo (ping) request  id=0x0001, seq=60/15360, ttl=8
+
+Frame 58: 106 bytes on wire (848 bits), 106 bytes captured (848 bits) on interface 0
+Ethernet II, Src: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54), Dst: Technico_80:af:ca (58:98:35:80:af:ca)
+Internet Protocol Version 4, Src: 192.168.1.69 (192.168.1.69), Dst: 93.184.216.119 (93.184.216.119)
+Internet Control Message Protocol
+    Type: 8 (Echo (ping) request)
+    Code: 0
+    Checksum: 0xf7c2 [correct]
+    Identifier (BE): 1 (0x0001)
+    Identifier (LE): 256 (0x0100)
+    Sequence number (BE): 60 (0x003c)
+    Sequence number (LE): 15360 (0x3c00)
+    Data (64 bytes)
+
+0000  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0030  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+        Data: 000000000000000000000000000000000000000000000000...
+        [Length: 64]
+
+No.     Time           Source                Destination           Protocol Length Info
+     59 19.016367000   80.91.247.115         192.168.1.69          ICMP     70     Time-to-live exceeded (Time to live exceeded in transit)
+
+Frame 59: 70 bytes on wire (560 bits), 70 bytes captured (560 bits) on interface 0
+Ethernet II, Src: Technico_80:af:ca (58:98:35:80:af:ca), Dst: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54)
+Internet Protocol Version 4, Src: 80.91.247.115 (80.91.247.115), Dst: 192.168.1.69 (192.168.1.69)
+Internet Control Message Protocol
+    Type: 11 (Time-to-live exceeded)
+    Code: 0 (Time to live exceeded in transit)
+    Checksum: 0x974a [correct]
+    Internet Protocol Version 4, Src: 192.168.1.69 (192.168.1.69), Dst: 93.184.216.119 (93.184.216.119)
+    Internet Control Message Protocol
+        Type: 8 (Echo (ping) request)
+        Code: 0
+        Checksum: 0xfbe1
+        Identifier (BE): 1 (0x0001)
+        Identifier (LE): 256 (0x0100)
+        Sequence number (BE): 60 (0x003c)
+        Sequence number (LE): 15360 (0x3c00)
+
+No.     Time           Source                Destination           Protocol Length Info
+     60 19.017159000   192.168.1.69          192.168.1.254         DNS      86     Standard query 0x5acd  PTR 115.247.91.80.in-addr.arpa
+
+Frame 60: 86 bytes on wire (688 bits), 86 bytes captured (688 bits) on interface 0
+Ethernet II, Src: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54), Dst: Technico_80:af:ca (58:98:35:80:af:ca)
+Internet Protocol Version 4, Src: 192.168.1.69 (192.168.1.69), Dst: 192.168.1.254 (192.168.1.254)
+User Datagram Protocol, Src Port: 58903 (58903), Dst Port: domain (53)
+    Source port: 58903 (58903)
+    Destination port: domain (53)
+    Length: 52
+    Checksum: 0x4e50 [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+Domain Name System (query)
+    [Response In: 61]
+    Transaction ID: 0x5acd
+    Flags: 0x0100 Standard query
+        0... .... .... .... = Response: Message is a query
+        .000 0... .... .... = Opcode: Standard query (0)
+        .... ..0. .... .... = Truncated: Message is not truncated
+        .... ...1 .... .... = Recursion desired: Do query recursively
+        .... .... .0.. .... = Z: reserved (0)
+        .... .... ...0 .... = Non-authenticated data: Unacceptable
+    Questions: 1
+    Answer RRs: 0
+    Authority RRs: 0
+    Additional RRs: 0
+    Queries
+        115.247.91.80.in-addr.arpa: type PTR, class IN
+            Name: 115.247.91.80.in-addr.arpa
+            Type: PTR (Domain name pointer)
+            Class: IN (0x0001)
+
+No.     Time           Source                Destination           Protocol Length Info
+     61 19.090470000   192.168.1.254         192.168.1.69          DNS      169    Standard query response 0x5acd  PTR nyk-bb1-link.telia.net
+
+Frame 61: 169 bytes on wire (1352 bits), 169 bytes captured (1352 bits) on interface 0
+Ethernet II, Src: Technico_80:af:ca (58:98:35:80:af:ca), Dst: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54)
+Internet Protocol Version 4, Src: 192.168.1.254 (192.168.1.254), Dst: 192.168.1.69 (192.168.1.69)
+User Datagram Protocol, Src Port: domain (53), Dst Port: 58903 (58903)
+    Source port: domain (53)
+    Destination port: 58903 (58903)
+    Length: 135
+    Checksum: 0x6a4a [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+Domain Name System (response)
+    [Request In: 60]
+    [Time: 0.073311000 seconds]
+    Transaction ID: 0x5acd
+    Flags: 0x8180 Standard query response, No error
+        1... .... .... .... = Response: Message is a response
+        .000 0... .... .... = Opcode: Standard query (0)
+        .... .0.. .... .... = Authoritative: Server is not an authority for domain
+        .... ..0. .... .... = Truncated: Message is not truncated
+        .... ...1 .... .... = Recursion desired: Do query recursively
+        .... .... 1... .... = Recursion available: Server can do recursive queries
+        .... .... .0.. .... = Z: reserved (0)
+        .... .... ..0. .... = Answer authenticated: Answer/authority portion was not authenticated by the server
+        .... .... ...0 .... = Non-authenticated data: Unacceptable
+        .... .... .... 0000 = Reply code: No error (0)
+    Questions: 1
+    Answer RRs: 1
+    Authority RRs: 2
+    Additional RRs: 0
+    Queries
+        115.247.91.80.in-addr.arpa: type PTR, class IN
+            Name: 115.247.91.80.in-addr.arpa
+            Type: PTR (Domain name pointer)
+            Class: IN (0x0001)
+    Answers
+    Authoritative nameservers
+
+No.     Time           Source                Destination           Protocol Length Info
+     62 19.932603000   192.168.1.69          93.184.216.119        ICMP     106    Echo (ping) request  id=0x0001, seq=61/15616, ttl=9
+
+Frame 62: 106 bytes on wire (848 bits), 106 bytes captured (848 bits) on interface 0
+Ethernet II, Src: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54), Dst: Technico_80:af:ca (58:98:35:80:af:ca)
+Internet Protocol Version 4, Src: 192.168.1.69 (192.168.1.69), Dst: 93.184.216.119 (93.184.216.119)
+Internet Control Message Protocol
+    Type: 8 (Echo (ping) request)
+    Code: 0
+    Checksum: 0xf7c1 [correct]
+    Identifier (BE): 1 (0x0001)
+    Identifier (LE): 256 (0x0100)
+    Sequence number (BE): 61 (0x003d)
+    Sequence number (LE): 15616 (0x3d00)
+    Data (64 bytes)
+
+0000  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0030  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+        Data: 000000000000000000000000000000000000000000000000...
+        [Length: 64]
+
+No.     Time           Source                Destination           Protocol Length Info
+     63 20.085547000   213.155.130.28        192.168.1.69          ICMP     70     Time-to-live exceeded (Time to live exceeded in transit)
+
+Frame 63: 70 bytes on wire (560 bits), 70 bytes captured (560 bits) on interface 0
+Ethernet II, Src: Technico_80:af:ca (58:98:35:80:af:ca), Dst: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54)
+Internet Protocol Version 4, Src: 213.155.130.28 (213.155.130.28), Dst: 192.168.1.69 (192.168.1.69)
+Internet Control Message Protocol
+    Type: 11 (Time-to-live exceeded)
+    Code: 0 (Time to live exceeded in transit)
+    Checksum: 0x974a [correct]
+    Internet Protocol Version 4, Src: 192.168.1.69 (192.168.1.69), Dst: 93.184.216.119 (93.184.216.119)
+    Internet Control Message Protocol
+        Type: 8 (Echo (ping) request)
+        Code: 0
+        Checksum: 0xfbe0
+        Identifier (BE): 1 (0x0001)
+        Identifier (LE): 256 (0x0100)
+        Sequence number (BE): 61 (0x003d)
+        Sequence number (LE): 15616 (0x3d00)
+
+No.     Time           Source                Destination           Protocol Length Info
+     64 20.086060000   192.168.1.69          93.184.216.119        ICMP     106    Echo (ping) request  id=0x0001, seq=62/15872, ttl=9
+
+Frame 64: 106 bytes on wire (848 bits), 106 bytes captured (848 bits) on interface 0
+Ethernet II, Src: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54), Dst: Technico_80:af:ca (58:98:35:80:af:ca)
+Internet Protocol Version 4, Src: 192.168.1.69 (192.168.1.69), Dst: 93.184.216.119 (93.184.216.119)
+Internet Control Message Protocol
+    Type: 8 (Echo (ping) request)
+    Code: 0
+    Checksum: 0xf7c0 [correct]
+    Identifier (BE): 1 (0x0001)
+    Identifier (LE): 256 (0x0100)
+    Sequence number (BE): 62 (0x003e)
+    Sequence number (LE): 15872 (0x3e00)
+    Data (64 bytes)
+
+0000  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0030  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+        Data: 000000000000000000000000000000000000000000000000...
+        [Length: 64]
+
+No.     Time           Source                Destination           Protocol Length Info
+     65 20.099812000   192.168.1.69          192.168.1.254         DNS      79     Standard query 0xc34e  A fsecureadmin.wm.net
+
+Frame 65: 79 bytes on wire (632 bits), 79 bytes captured (632 bits) on interface 0
+Ethernet II, Src: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54), Dst: Technico_80:af:ca (58:98:35:80:af:ca)
+Internet Protocol Version 4, Src: 192.168.1.69 (192.168.1.69), Dst: 192.168.1.254 (192.168.1.254)
+User Datagram Protocol, Src Port: 64170 (64170), Dst Port: domain (53)
+    Source port: 64170 (64170)
+    Destination port: domain (53)
+    Length: 45
+    Checksum: 0x470a [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+Domain Name System (query)
+    [Response In: 66]
+    Transaction ID: 0xc34e
+    Flags: 0x0100 Standard query
+        0... .... .... .... = Response: Message is a query
+        .000 0... .... .... = Opcode: Standard query (0)
+        .... ..0. .... .... = Truncated: Message is not truncated
+        .... ...1 .... .... = Recursion desired: Do query recursively
+        .... .... .0.. .... = Z: reserved (0)
+        .... .... ...0 .... = Non-authenticated data: Unacceptable
+    Questions: 1
+    Answer RRs: 0
+    Authority RRs: 0
+    Additional RRs: 0
+    Queries
+        fsecureadmin.wm.net: type A, class IN
+            Name: fsecureadmin.wm.net
+            Type: A (Host address)
+            Class: IN (0x0001)
+
+No.     Time           Source                Destination           Protocol Length Info
+     66 20.124426000   192.168.1.254         192.168.1.69          DNS      138    Standard query response 0xc34e No such name
+
+Frame 66: 138 bytes on wire (1104 bits), 138 bytes captured (1104 bits) on interface 0
+Ethernet II, Src: Technico_80:af:ca (58:98:35:80:af:ca), Dst: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54)
+Internet Protocol Version 4, Src: 192.168.1.254 (192.168.1.254), Dst: 192.168.1.69 (192.168.1.69)
+User Datagram Protocol, Src Port: domain (53), Dst Port: 64170 (64170)
+    Source port: domain (53)
+    Destination port: 64170 (64170)
+    Length: 104
+    Checksum: 0xb4df [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+Domain Name System (response)
+    [Request In: 65]
+    [Time: 0.024614000 seconds]
+    Transaction ID: 0xc34e
+    Flags: 0x8183 Standard query response, No such name
+        1... .... .... .... = Response: Message is a response
+        .000 0... .... .... = Opcode: Standard query (0)
+        .... .0.. .... .... = Authoritative: Server is not an authority for domain
+        .... ..0. .... .... = Truncated: Message is not truncated
+        .... ...1 .... .... = Recursion desired: Do query recursively
+        .... .... 1... .... = Recursion available: Server can do recursive queries
+        .... .... .0.. .... = Z: reserved (0)
+        .... .... ..0. .... = Answer authenticated: Answer/authority portion was not authenticated by the server
+        .... .... ...0 .... = Non-authenticated data: Unacceptable
+        .... .... .... 0011 = Reply code: No such name (3)
+    Questions: 1
+    Answer RRs: 0
+    Authority RRs: 1
+    Additional RRs: 0
+    Queries
+        fsecureadmin.wm.net: type A, class IN
+            Name: fsecureadmin.wm.net
+            Type: A (Host address)
+            Class: IN (0x0001)
+    Authoritative nameservers
+
+No.     Time           Source                Destination           Protocol Length Info
+     67 20.239796000   213.155.130.28        192.168.1.69          ICMP     70     Time-to-live exceeded (Time to live exceeded in transit)
+
+Frame 67: 70 bytes on wire (560 bits), 70 bytes captured (560 bits) on interface 0
+Ethernet II, Src: Technico_80:af:ca (58:98:35:80:af:ca), Dst: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54)
+Internet Protocol Version 4, Src: 213.155.130.28 (213.155.130.28), Dst: 192.168.1.69 (192.168.1.69)
+Internet Control Message Protocol
+    Type: 11 (Time-to-live exceeded)
+    Code: 0 (Time to live exceeded in transit)
+    Checksum: 0x974a [correct]
+    Internet Protocol Version 4, Src: 192.168.1.69 (192.168.1.69), Dst: 93.184.216.119 (93.184.216.119)
+    Internet Control Message Protocol
+        Type: 8 (Echo (ping) request)
+        Code: 0
+        Checksum: 0xfbdf
+        Identifier (BE): 1 (0x0001)
+        Identifier (LE): 256 (0x0100)
+        Sequence number (BE): 62 (0x003e)
+        Sequence number (LE): 15872 (0x3e00)
+
+No.     Time           Source                Destination           Protocol Length Info
+     68 20.240387000   192.168.1.69          93.184.216.119        ICMP     106    Echo (ping) request  id=0x0001, seq=63/16128, ttl=9
+
+Frame 68: 106 bytes on wire (848 bits), 106 bytes captured (848 bits) on interface 0
+Ethernet II, Src: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54), Dst: Technico_80:af:ca (58:98:35:80:af:ca)
+Internet Protocol Version 4, Src: 192.168.1.69 (192.168.1.69), Dst: 93.184.216.119 (93.184.216.119)
+Internet Control Message Protocol
+    Type: 8 (Echo (ping) request)
+    Code: 0
+    Checksum: 0xf7bf [correct]
+    Identifier (BE): 1 (0x0001)
+    Identifier (LE): 256 (0x0100)
+    Sequence number (BE): 63 (0x003f)
+    Sequence number (LE): 16128 (0x3f00)
+    Data (64 bytes)
+
+0000  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0030  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+        Data: 000000000000000000000000000000000000000000000000...
+        [Length: 64]
+
+No.     Time           Source                Destination           Protocol Length Info
+     69 20.399432000   213.155.130.28        192.168.1.69          ICMP     70     Time-to-live exceeded (Time to live exceeded in transit)
+
+Frame 69: 70 bytes on wire (560 bits), 70 bytes captured (560 bits) on interface 0
+Ethernet II, Src: Technico_80:af:ca (58:98:35:80:af:ca), Dst: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54)
+Internet Protocol Version 4, Src: 213.155.130.28 (213.155.130.28), Dst: 192.168.1.69 (192.168.1.69)
+Internet Control Message Protocol
+    Type: 11 (Time-to-live exceeded)
+    Code: 0 (Time to live exceeded in transit)
+    Checksum: 0x974a [correct]
+    Internet Protocol Version 4, Src: 192.168.1.69 (192.168.1.69), Dst: 93.184.216.119 (93.184.216.119)
+    Internet Control Message Protocol
+        Type: 8 (Echo (ping) request)
+        Code: 0
+        Checksum: 0xfbde
+        Identifier (BE): 1 (0x0001)
+        Identifier (LE): 256 (0x0100)
+        Sequence number (BE): 63 (0x003f)
+        Sequence number (LE): 16128 (0x3f00)
+
+No.     Time           Source                Destination           Protocol Length Info
+     70 20.400222000   192.168.1.69          192.168.1.254         DNS      87     Standard query 0xb9a3  PTR 28.130.155.213.in-addr.arpa
+
+Frame 70: 87 bytes on wire (696 bits), 87 bytes captured (696 bits) on interface 0
+Ethernet II, Src: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54), Dst: Technico_80:af:ca (58:98:35:80:af:ca)
+Internet Protocol Version 4, Src: 192.168.1.69 (192.168.1.69), Dst: 192.168.1.254 (192.168.1.254)
+User Datagram Protocol, Src Port: 62089 (62089), Dst Port: domain (53)
+    Source port: 62089 (62089)
+    Destination port: domain (53)
+    Length: 53
+    Checksum: 0x1aa4 [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+Domain Name System (query)
+    [Response In: 71]
+    Transaction ID: 0xb9a3
+    Flags: 0x0100 Standard query
+        0... .... .... .... = Response: Message is a query
+        .000 0... .... .... = Opcode: Standard query (0)
+        .... ..0. .... .... = Truncated: Message is not truncated
+        .... ...1 .... .... = Recursion desired: Do query recursively
+        .... .... .0.. .... = Z: reserved (0)
+        .... .... ...0 .... = Non-authenticated data: Unacceptable
+    Questions: 1
+    Answer RRs: 0
+    Authority RRs: 0
+    Additional RRs: 0
+    Queries
+        28.130.155.213.in-addr.arpa: type PTR, class IN
+            Name: 28.130.155.213.in-addr.arpa
+            Type: PTR (Domain name pointer)
+            Class: IN (0x0001)
+
+No.     Time           Source                Destination           Protocol Length Info
+     71 20.480935000   192.168.1.254         192.168.1.69          DNS      169    Standard query response 0xb9a3  PTR nyk-b2-link.telia.net
+
+Frame 71: 169 bytes on wire (1352 bits), 169 bytes captured (1352 bits) on interface 0
+Ethernet II, Src: Technico_80:af:ca (58:98:35:80:af:ca), Dst: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54)
+Internet Protocol Version 4, Src: 192.168.1.254 (192.168.1.254), Dst: 192.168.1.69 (192.168.1.69)
+User Datagram Protocol, Src Port: domain (53), Dst Port: 62089 (62089)
+    Source port: domain (53)
+    Destination port: 62089 (62089)
+    Length: 135
+    Checksum: 0x9d9e [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+Domain Name System (response)
+    [Request In: 70]
+    [Time: 0.080713000 seconds]
+    Transaction ID: 0xb9a3
+    Flags: 0x8180 Standard query response, No error
+        1... .... .... .... = Response: Message is a response
+        .000 0... .... .... = Opcode: Standard query (0)
+        .... .0.. .... .... = Authoritative: Server is not an authority for domain
+        .... ..0. .... .... = Truncated: Message is not truncated
+        .... ...1 .... .... = Recursion desired: Do query recursively
+        .... .... 1... .... = Recursion available: Server can do recursive queries
+        .... .... .0.. .... = Z: reserved (0)
+        .... .... ..0. .... = Answer authenticated: Answer/authority portion was not authenticated by the server
+        .... .... ...0 .... = Non-authenticated data: Unacceptable
+        .... .... .... 0000 = Reply code: No error (0)
+    Questions: 1
+    Answer RRs: 1
+    Authority RRs: 2
+    Additional RRs: 0
+    Queries
+        28.130.155.213.in-addr.arpa: type PTR, class IN
+            Name: 28.130.155.213.in-addr.arpa
+            Type: PTR (Domain name pointer)
+            Class: IN (0x0001)
+    Answers
+    Authoritative nameservers
+
+No.     Time           Source                Destination           Protocol Length Info
+     72 21.322705000   192.168.1.69          93.184.216.119        ICMP     106    Echo (ping) request  id=0x0001, seq=64/16384, ttl=10
+
+Frame 72: 106 bytes on wire (848 bits), 106 bytes captured (848 bits) on interface 0
+Ethernet II, Src: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54), Dst: Technico_80:af:ca (58:98:35:80:af:ca)
+Internet Protocol Version 4, Src: 192.168.1.69 (192.168.1.69), Dst: 93.184.216.119 (93.184.216.119)
+Internet Control Message Protocol
+    Type: 8 (Echo (ping) request)
+    Code: 0
+    Checksum: 0xf7be [correct]
+    Identifier (BE): 1 (0x0001)
+    Identifier (LE): 256 (0x0100)
+    Sequence number (BE): 64 (0x0040)
+    Sequence number (LE): 16384 (0x4000)
+    Data (64 bytes)
+
+0000  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0030  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+        Data: 000000000000000000000000000000000000000000000000...
+        [Length: 64]
+
+No.     Time           Source                Destination           Protocol Length Info
+     73 21.480489000   195.12.254.186        192.168.1.69          ICMP     70     Time-to-live exceeded (Time to live exceeded in transit)
+
+Frame 73: 70 bytes on wire (560 bits), 70 bytes captured (560 bits) on interface 0
+Ethernet II, Src: Technico_80:af:ca (58:98:35:80:af:ca), Dst: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54)
+Internet Protocol Version 4, Src: 195.12.254.186 (195.12.254.186), Dst: 192.168.1.69 (192.168.1.69)
+Internet Control Message Protocol
+    Type: 11 (Time-to-live exceeded)
+    Code: 0 (Time to live exceeded in transit)
+    Checksum: 0x974a [correct]
+    Internet Protocol Version 4, Src: 192.168.1.69 (192.168.1.69), Dst: 93.184.216.119 (93.184.216.119)
+    Internet Control Message Protocol
+        Type: 8 (Echo (ping) request)
+        Code: 0
+        Checksum: 0xfbdd
+        Identifier (BE): 1 (0x0001)
+        Identifier (LE): 256 (0x0100)
+        Sequence number (BE): 64 (0x0040)
+        Sequence number (LE): 16384 (0x4000)
+
+No.     Time           Source                Destination           Protocol Length Info
+     74 21.481073000   192.168.1.69          93.184.216.119        ICMP     106    Echo (ping) request  id=0x0001, seq=65/16640, ttl=10
+
+Frame 74: 106 bytes on wire (848 bits), 106 bytes captured (848 bits) on interface 0
+Ethernet II, Src: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54), Dst: Technico_80:af:ca (58:98:35:80:af:ca)
+Internet Protocol Version 4, Src: 192.168.1.69 (192.168.1.69), Dst: 93.184.216.119 (93.184.216.119)
+Internet Control Message Protocol
+    Type: 8 (Echo (ping) request)
+    Code: 0
+    Checksum: 0xf7bd [correct]
+    Identifier (BE): 1 (0x0001)
+    Identifier (LE): 256 (0x0100)
+    Sequence number (BE): 65 (0x0041)
+    Sequence number (LE): 16640 (0x4100)
+    Data (64 bytes)
+
+0000  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0030  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+        Data: 000000000000000000000000000000000000000000000000...
+        [Length: 64]
+
+No.     Time           Source                Destination           Protocol Length Info
+     75 21.638609000   195.12.254.186        192.168.1.69          ICMP     70     Time-to-live exceeded (Time to live exceeded in transit)
+
+Frame 75: 70 bytes on wire (560 bits), 70 bytes captured (560 bits) on interface 0
+Ethernet II, Src: Technico_80:af:ca (58:98:35:80:af:ca), Dst: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54)
+Internet Protocol Version 4, Src: 195.12.254.186 (195.12.254.186), Dst: 192.168.1.69 (192.168.1.69)
+Internet Control Message Protocol
+    Type: 11 (Time-to-live exceeded)
+    Code: 0 (Time to live exceeded in transit)
+    Checksum: 0x974a [correct]
+    Internet Protocol Version 4, Src: 192.168.1.69 (192.168.1.69), Dst: 93.184.216.119 (93.184.216.119)
+    Internet Control Message Protocol
+        Type: 8 (Echo (ping) request)
+        Code: 0
+        Checksum: 0xfbdc
+        Identifier (BE): 1 (0x0001)
+        Identifier (LE): 256 (0x0100)
+        Sequence number (BE): 65 (0x0041)
+        Sequence number (LE): 16640 (0x4100)
+
+No.     Time           Source                Destination           Protocol Length Info
+     76 21.639174000   192.168.1.69          93.184.216.119        ICMP     106    Echo (ping) request  id=0x0001, seq=66/16896, ttl=10
+
+Frame 76: 106 bytes on wire (848 bits), 106 bytes captured (848 bits) on interface 0
+Ethernet II, Src: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54), Dst: Technico_80:af:ca (58:98:35:80:af:ca)
+Internet Protocol Version 4, Src: 192.168.1.69 (192.168.1.69), Dst: 93.184.216.119 (93.184.216.119)
+Internet Control Message Protocol
+    Type: 8 (Echo (ping) request)
+    Code: 0
+    Checksum: 0xf7bc [correct]
+    Identifier (BE): 1 (0x0001)
+    Identifier (LE): 256 (0x0100)
+    Sequence number (BE): 66 (0x0042)
+    Sequence number (LE): 16896 (0x4200)
+    Data (64 bytes)
+
+0000  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0030  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+        Data: 000000000000000000000000000000000000000000000000...
+        [Length: 64]
+
+No.     Time           Source                Destination           Protocol Length Info
+     77 21.794273000   195.12.254.186        192.168.1.69          ICMP     70     Time-to-live exceeded (Time to live exceeded in transit)
+
+Frame 77: 70 bytes on wire (560 bits), 70 bytes captured (560 bits) on interface 0
+Ethernet II, Src: Technico_80:af:ca (58:98:35:80:af:ca), Dst: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54)
+Internet Protocol Version 4, Src: 195.12.254.186 (195.12.254.186), Dst: 192.168.1.69 (192.168.1.69)
+Internet Control Message Protocol
+    Type: 11 (Time-to-live exceeded)
+    Code: 0 (Time to live exceeded in transit)
+    Checksum: 0x974a [correct]
+    Internet Protocol Version 4, Src: 192.168.1.69 (192.168.1.69), Dst: 93.184.216.119 (93.184.216.119)
+    Internet Control Message Protocol
+        Type: 8 (Echo (ping) request)
+        Code: 0
+        Checksum: 0xfbdb
+        Identifier (BE): 1 (0x0001)
+        Identifier (LE): 256 (0x0100)
+        Sequence number (BE): 66 (0x0042)
+        Sequence number (LE): 16896 (0x4200)
+
+No.     Time           Source                Destination           Protocol Length Info
+     78 21.795006000   192.168.1.69          192.168.1.254         DNS      87     Standard query 0x1601  PTR 186.254.12.195.in-addr.arpa
+
+Frame 78: 87 bytes on wire (696 bits), 87 bytes captured (696 bits) on interface 0
+Ethernet II, Src: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54), Dst: Technico_80:af:ca (58:98:35:80:af:ca)
+Internet Protocol Version 4, Src: 192.168.1.69 (192.168.1.69), Dst: 192.168.1.254 (192.168.1.254)
+User Datagram Protocol, Src Port: 59576 (59576), Dst Port: domain (53)
+    Source port: 59576 (59576)
+    Destination port: domain (53)
+    Length: 53
+    Checksum: 0x20b2 [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+Domain Name System (query)
+    [Response In: 79]
+    Transaction ID: 0x1601
+    Flags: 0x0100 Standard query
+        0... .... .... .... = Response: Message is a query
+        .000 0... .... .... = Opcode: Standard query (0)
+        .... ..0. .... .... = Truncated: Message is not truncated
+        .... ...1 .... .... = Recursion desired: Do query recursively
+        .... .... .0.. .... = Z: reserved (0)
+        .... .... ...0 .... = Non-authenticated data: Unacceptable
+    Questions: 1
+    Answer RRs: 0
+    Authority RRs: 0
+    Additional RRs: 0
+    Queries
+        186.254.12.195.in-addr.arpa: type PTR, class IN
+            Name: 186.254.12.195.in-addr.arpa
+            Type: PTR (Domain name pointer)
+            Class: IN (0x0001)
+
+No.     Time           Source                Destination           Protocol Length Info
+     79 21.837556000   192.168.1.254         192.168.1.69          DNS      185    Standard query response 0x1601  PTR edgecast-ic-156944-nyk-b2.c.telia.net
+
+Frame 79: 185 bytes on wire (1480 bits), 185 bytes captured (1480 bits) on interface 0
+Ethernet II, Src: Technico_80:af:ca (58:98:35:80:af:ca), Dst: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54)
+Internet Protocol Version 4, Src: 192.168.1.254 (192.168.1.254), Dst: 192.168.1.69 (192.168.1.69)
+User Datagram Protocol, Src Port: domain (53), Dst Port: 59576 (59576)
+    Source port: domain (53)
+    Destination port: 59576 (59576)
+    Length: 151
+    Checksum: 0x8ff4 [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+Domain Name System (response)
+    [Request In: 78]
+    [Time: 0.042550000 seconds]
+    Transaction ID: 0x1601
+    Flags: 0x8180 Standard query response, No error
+        1... .... .... .... = Response: Message is a response
+        .000 0... .... .... = Opcode: Standard query (0)
+        .... .0.. .... .... = Authoritative: Server is not an authority for domain
+        .... ..0. .... .... = Truncated: Message is not truncated
+        .... ...1 .... .... = Recursion desired: Do query recursively
+        .... .... 1... .... = Recursion available: Server can do recursive queries
+        .... .... .0.. .... = Z: reserved (0)
+        .... .... ..0. .... = Answer authenticated: Answer/authority portion was not authenticated by the server
+        .... .... ...0 .... = Non-authenticated data: Unacceptable
+        .... .... .... 0000 = Reply code: No error (0)
+    Questions: 1
+    Answer RRs: 1
+    Authority RRs: 2
+    Additional RRs: 0
+    Queries
+        186.254.12.195.in-addr.arpa: type PTR, class IN
+            Name: 186.254.12.195.in-addr.arpa
+            Type: PTR (Domain name pointer)
+            Class: IN (0x0001)
+    Answers
+    Authoritative nameservers
+
+No.     Time           Source                Destination           Protocol Length Info
+     80 22.683760000   192.168.1.69          93.184.216.119        ICMP     106    Echo (ping) request  id=0x0001, seq=67/17152, ttl=11 (reply in 81)
+
+Frame 80: 106 bytes on wire (848 bits), 106 bytes captured (848 bits) on interface 0
+Ethernet II, Src: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54), Dst: Technico_80:af:ca (58:98:35:80:af:ca)
+Internet Protocol Version 4, Src: 192.168.1.69 (192.168.1.69), Dst: 93.184.216.119 (93.184.216.119)
+Internet Control Message Protocol
+    Type: 8 (Echo (ping) request)
+    Code: 0
+    Checksum: 0xf7bb [correct]
+    Identifier (BE): 1 (0x0001)
+    Identifier (LE): 256 (0x0100)
+    Sequence number (BE): 67 (0x0043)
+    Sequence number (LE): 17152 (0x4300)
+    [Response frame: 81]
+    Data (64 bytes)
+
+0000  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0030  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+        Data: 000000000000000000000000000000000000000000000000...
+        [Length: 64]
+
+No.     Time           Source                Destination           Protocol Length Info
+     81 22.841318000   93.184.216.119        192.168.1.69          ICMP     106    Echo (ping) reply    id=0x0001, seq=67/17152, ttl=54 (request in 80)
+
+Frame 81: 106 bytes on wire (848 bits), 106 bytes captured (848 bits) on interface 0
+Ethernet II, Src: Technico_80:af:ca (58:98:35:80:af:ca), Dst: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54)
+Internet Protocol Version 4, Src: 93.184.216.119 (93.184.216.119), Dst: 192.168.1.69 (192.168.1.69)
+Internet Control Message Protocol
+    Type: 0 (Echo (ping) reply)
+    Code: 0
+    Checksum: 0xffbb [correct]
+    Identifier (BE): 1 (0x0001)
+    Identifier (LE): 256 (0x0100)
+    Sequence number (BE): 67 (0x0043)
+    Sequence number (LE): 17152 (0x4300)
+    [Request frame: 80]
+    [Response time: 157,558 ms]
+    Data (64 bytes)
+
+0000  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0030  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+        Data: 000000000000000000000000000000000000000000000000...
+        [Length: 64]
+
+No.     Time           Source                Destination           Protocol Length Info
+     82 22.841871000   192.168.1.69          93.184.216.119        ICMP     106    Echo (ping) request  id=0x0001, seq=68/17408, ttl=11 (reply in 83)
+
+Frame 82: 106 bytes on wire (848 bits), 106 bytes captured (848 bits) on interface 0
+Ethernet II, Src: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54), Dst: Technico_80:af:ca (58:98:35:80:af:ca)
+Internet Protocol Version 4, Src: 192.168.1.69 (192.168.1.69), Dst: 93.184.216.119 (93.184.216.119)
+Internet Control Message Protocol
+    Type: 8 (Echo (ping) request)
+    Code: 0
+    Checksum: 0xf7ba [correct]
+    Identifier (BE): 1 (0x0001)
+    Identifier (LE): 256 (0x0100)
+    Sequence number (BE): 68 (0x0044)
+    Sequence number (LE): 17408 (0x4400)
+    [Response frame: 83]
+    Data (64 bytes)
+
+0000  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0030  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+        Data: 000000000000000000000000000000000000000000000000...
+        [Length: 64]
+
+No.     Time           Source                Destination           Protocol Length Info
+     83 23.002586000   93.184.216.119        192.168.1.69          ICMP     106    Echo (ping) reply    id=0x0001, seq=68/17408, ttl=54 (request in 82)
+
+Frame 83: 106 bytes on wire (848 bits), 106 bytes captured (848 bits) on interface 0
+Ethernet II, Src: Technico_80:af:ca (58:98:35:80:af:ca), Dst: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54)
+Internet Protocol Version 4, Src: 93.184.216.119 (93.184.216.119), Dst: 192.168.1.69 (192.168.1.69)
+Internet Control Message Protocol
+    Type: 0 (Echo (ping) reply)
+    Code: 0
+    Checksum: 0xffba [correct]
+    Identifier (BE): 1 (0x0001)
+    Identifier (LE): 256 (0x0100)
+    Sequence number (BE): 68 (0x0044)
+    Sequence number (LE): 17408 (0x4400)
+    [Request frame: 82]
+    [Response time: 160,715 ms]
+    Data (64 bytes)
+
+0000  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0030  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+        Data: 000000000000000000000000000000000000000000000000...
+        [Length: 64]
+
+No.     Time           Source                Destination           Protocol Length Info
+     84 23.003183000   192.168.1.69          93.184.216.119        ICMP     106    Echo (ping) request  id=0x0001, seq=69/17664, ttl=11 (reply in 85)
+
+Frame 84: 106 bytes on wire (848 bits), 106 bytes captured (848 bits) on interface 0
+Ethernet II, Src: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54), Dst: Technico_80:af:ca (58:98:35:80:af:ca)
+Internet Protocol Version 4, Src: 192.168.1.69 (192.168.1.69), Dst: 93.184.216.119 (93.184.216.119)
+Internet Control Message Protocol
+    Type: 8 (Echo (ping) request)
+    Code: 0
+    Checksum: 0xf7b9 [correct]
+    Identifier (BE): 1 (0x0001)
+    Identifier (LE): 256 (0x0100)
+    Sequence number (BE): 69 (0x0045)
+    Sequence number (LE): 17664 (0x4500)
+    [Response frame: 85]
+    Data (64 bytes)
+
+0000  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0030  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+        Data: 000000000000000000000000000000000000000000000000...
+        [Length: 64]
+
+No.     Time           Source                Destination           Protocol Length Info
+     85 23.167273000   93.184.216.119        192.168.1.69          ICMP     106    Echo (ping) reply    id=0x0001, seq=69/17664, ttl=54 (request in 84)
+
+Frame 85: 106 bytes on wire (848 bits), 106 bytes captured (848 bits) on interface 0
+Ethernet II, Src: Technico_80:af:ca (58:98:35:80:af:ca), Dst: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54)
+Internet Protocol Version 4, Src: 93.184.216.119 (93.184.216.119), Dst: 192.168.1.69 (192.168.1.69)
+Internet Control Message Protocol
+    Type: 0 (Echo (ping) reply)
+    Code: 0
+    Checksum: 0xffb9 [correct]
+    Identifier (BE): 1 (0x0001)
+    Identifier (LE): 256 (0x0100)
+    Sequence number (BE): 69 (0x0045)
+    Sequence number (LE): 17664 (0x4500)
+    [Request frame: 84]
+    [Response time: 164,090 ms]
+    Data (64 bytes)
+
+0000  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0030  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+        Data: 000000000000000000000000000000000000000000000000...
+        [Length: 64]
+
+No.     Time           Source                Destination           Protocol Length Info
+     86 23.167982000   192.168.1.69          192.168.1.254         DNS      87     Standard query 0xf98c  PTR 119.216.184.93.in-addr.arpa
+
+Frame 86: 87 bytes on wire (696 bits), 87 bytes captured (696 bits) on interface 0
+Ethernet II, Src: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54), Dst: Technico_80:af:ca (58:98:35:80:af:ca)
+Internet Protocol Version 4, Src: 192.168.1.69 (192.168.1.69), Dst: 192.168.1.254 (192.168.1.254)
+User Datagram Protocol, Src Port: 60149 (60149), Dst Port: domain (53)
+    Source port: 60149 (60149)
+    Destination port: domain (53)
+    Length: 53
+    Checksum: 0x6fb3 [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+Domain Name System (query)
+    [Response In: 87]
+    Transaction ID: 0xf98c
+    Flags: 0x0100 Standard query
+        0... .... .... .... = Response: Message is a query
+        .000 0... .... .... = Opcode: Standard query (0)
+        .... ..0. .... .... = Truncated: Message is not truncated
+        .... ...1 .... .... = Recursion desired: Do query recursively
+        .... .... .0.. .... = Z: reserved (0)
+        .... .... ...0 .... = Non-authenticated data: Unacceptable
+    Questions: 1
+    Answer RRs: 0
+    Authority RRs: 0
+    Additional RRs: 0
+    Queries
+        119.216.184.93.in-addr.arpa: type PTR, class IN
+            Name: 119.216.184.93.in-addr.arpa
+            Type: PTR (Domain name pointer)
+            Class: IN (0x0001)
+
+No.     Time           Source                Destination           Protocol Length Info
+     87 23.210432000   192.168.1.254         192.168.1.69          DNS      158    Standard query response 0xf98c No such name
+
+Frame 87: 158 bytes on wire (1264 bits), 158 bytes captured (1264 bits) on interface 0
+Ethernet II, Src: Technico_80:af:ca (58:98:35:80:af:ca), Dst: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54)
+Internet Protocol Version 4, Src: 192.168.1.254 (192.168.1.254), Dst: 192.168.1.69 (192.168.1.69)
+User Datagram Protocol, Src Port: domain (53), Dst Port: 60149 (60149)
+    Source port: domain (53)
+    Destination port: 60149 (60149)
+    Length: 124
+    Checksum: 0x1bf3 [validation disabled]
+        [Good Checksum: False]
+        [Bad Checksum: False]
+Domain Name System (response)
+    [Request In: 86]
+    [Time: 0.042450000 seconds]
+    Transaction ID: 0xf98c
+    Flags: 0x8183 Standard query response, No such name
+        1... .... .... .... = Response: Message is a response
+        .000 0... .... .... = Opcode: Standard query (0)
+        .... .0.. .... .... = Authoritative: Server is not an authority for domain
+        .... ..0. .... .... = Truncated: Message is not truncated
+        .... ...1 .... .... = Recursion desired: Do query recursively
+        .... .... 1... .... = Recursion available: Server can do recursive queries
+        .... .... .0.. .... = Z: reserved (0)
+        .... .... ..0. .... = Answer authenticated: Answer/authority portion was not authenticated by the server
+        .... .... ...0 .... = Non-authenticated data: Unacceptable
+        .... .... .... 0011 = Reply code: No such name (3)
+    Questions: 1
+    Answer RRs: 0
+    Authority RRs: 1
+    Additional RRs: 0
+    Queries
+        119.216.184.93.in-addr.arpa: type PTR, class IN
+            Name: 119.216.184.93.in-addr.arpa
+            Type: PTR (Domain name pointer)
+            Class: IN (0x0001)
+    Authoritative nameservers
+
+No.     Time           Source                Destination           Protocol Length Info
+     88 24.615515000   90.191.8.2            192.168.1.69          ICMP     134    Time-to-live exceeded (Time to live exceeded in transit)
+
+Frame 88: 134 bytes on wire (1072 bits), 134 bytes captured (1072 bits) on interface 0
+Ethernet II, Src: Technico_80:af:ca (58:98:35:80:af:ca), Dst: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54)
+Internet Protocol Version 4, Src: 90.191.8.2 (90.191.8.2), Dst: 192.168.1.69 (192.168.1.69)
+Internet Control Message Protocol
+    Type: 11 (Time-to-live exceeded)
+    Code: 0 (Time to live exceeded in transit)
+    Checksum: 0x974a [correct]
+    Internet Protocol Version 4, Src: 192.168.1.69 (192.168.1.69), Dst: 93.184.216.119 (93.184.216.119)
+    Internet Control Message Protocol
+        Type: 8 (Echo (ping) request)
+        Code: 0
+        Checksum: 0xfbf5
+        Identifier (BE): 1 (0x0001)
+        Identifier (LE): 256 (0x0100)
+        Sequence number (BE): 40 (0x0028)
+        Sequence number (LE): 10240 (0x2800)
+        Data (64 bytes)
+
+0000  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0030  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+            Data: 000000000000000000000000000000000000000000000000...
+            [Length: 64]
+
+No.     Time           Source                Destination           Protocol Length Info
+     89 28.456177000   90.191.8.2            192.168.1.69          ICMP     134    Time-to-live exceeded (Time to live exceeded in transit)
+
+Frame 89: 134 bytes on wire (1072 bits), 134 bytes captured (1072 bits) on interface 0
+Ethernet II, Src: Technico_80:af:ca (58:98:35:80:af:ca), Dst: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54)
+Internet Protocol Version 4, Src: 90.191.8.2 (90.191.8.2), Dst: 192.168.1.69 (192.168.1.69)
+Internet Control Message Protocol
+    Type: 11 (Time-to-live exceeded)
+    Code: 0 (Time to live exceeded in transit)
+    Checksum: 0x974a [correct]
+    Internet Protocol Version 4, Src: 192.168.1.69 (192.168.1.69), Dst: 93.184.216.119 (93.184.216.119)
+    Internet Control Message Protocol
+        Type: 8 (Echo (ping) request)
+        Code: 0
+        Checksum: 0xfbf4
+        Identifier (BE): 1 (0x0001)
+        Identifier (LE): 256 (0x0100)
+        Sequence number (BE): 41 (0x0029)
+        Sequence number (LE): 10496 (0x2900)
+        Data (64 bytes)
+
+0000  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0030  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+            Data: 000000000000000000000000000000000000000000000000...
+            [Length: 64]
+
+No.     Time           Source                Destination           Protocol Length Info
+     90 32.387640000   90.191.8.2            192.168.1.69          ICMP     134    Time-to-live exceeded (Time to live exceeded in transit)
+
+Frame 90: 134 bytes on wire (1072 bits), 134 bytes captured (1072 bits) on interface 0
+Ethernet II, Src: Technico_80:af:ca (58:98:35:80:af:ca), Dst: IntelCor_ea:9a:54 (00:24:d7:ea:9a:54)
+Internet Protocol Version 4, Src: 90.191.8.2 (90.191.8.2), Dst: 192.168.1.69 (192.168.1.69)
+Internet Control Message Protocol
+    Type: 11 (Time-to-live exceeded)
+    Code: 0 (Time to live exceeded in transit)
+    Checksum: 0x974a [correct]
+    Internet Protocol Version 4, Src: 192.168.1.69 (192.168.1.69), Dst: 93.184.216.119 (93.184.216.119)
+    Internet Control Message Protocol
+        Type: 8 (Echo (ping) request)
+        Code: 0
+        Checksum: 0xfbf3
+        Identifier (BE): 1 (0x0001)
+        Identifier (LE): 256 (0x0100)
+        Sequence number (BE): 42 (0x002a)
+        Sequence number (LE): 10752 (0x2a00)
+        Data (64 bytes)
+
+0000  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0010  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0020  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0030  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+            Data: 000000000000000000000000000000000000000000000000...
+            [Length: 64]

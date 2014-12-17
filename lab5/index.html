@@ -33,71 +33,106 @@
 
     <h4>ARP </h4>
     <p>
-        Milliste protokollide päiseid ARP paketid sisaldavad? <br />
+        Milliste protokollide päiseid ARP paketid sisaldavad? eth:ethertype:arp <br />
 
-    <p>Millisele aadressile saadetakse ARP päring?</p>
+    <p>Millisele aadressile saadetakse ARP päring? 192.168.1.254</p>
 
-    <p>Milliselt aadressilt tuleb ARP vastus?</p>
+    <p>Milliselt aadressilt tuleb ARP vastus? 192.168.1.254</p>
 
-    <p>Milline on ARP pakettide sisu?</p>
+    <p>Milline on ARP pakettide sisu? Millisele MAC aadressile vastab IP</p>
 
     <p>
         Ekraanipilt Wiresharki keskmisest aknast, kus näha dekodeeritud kujul ARP päringu paketis EthernetII ja ARP osa
         ning teine ekraanipilt Wiresharki keskmisest aknast, kus näha ARP vastuse paketis dekodeeritud EthernetII ja ARP osa.
+
+        <img src="arp_wireshark.png" alt="ARP protokolli kuvatõmmis" />
     </p>
+
     <h4>IP</h4>
-    <p>Millised väljad on IP päises?</p>
+    <p>
+        Millised väljad on IP päises? Version, Header length, Differentiated Services Field, Total Length, Identification, Flags, Fragment offset,
+        Time to live, Protocol, Header checksum, Source, Destination
+    </p>
 
-    <p>Milline paketi eluaja (Time To Live, TTL) väärtus on päringu pakettidel ning vastuse pakettidel sama võrgu arvutilt ja arvutilt www.example com?</p>
+    <p>
+        Milline paketi eluaja (Time To Live, TTL) väärtus on päringu pakettidel ning vastuse pakettidel sama võrgu arvutilt ja arvutilt www.example com?
+        <ul>
+            <li>193.40.252.59, Väljuv pakett on TTLi 128 ja vastuses on TTL 57</li>
+            <li>www.example.com, Väljuv pakett on TTLiga 128 ja vastuses on TTL 54</li>
+        </ul>
+    </p>
 
-    <p>Mida TTL näitab?</p>
-
-    <p>Lisada ekraanipilt ühest paketist (ping vastus) Wiresharki keskmises aknas, kus IP osa on tervenisti lahti.</p>
+    <p>Mida TTL näitab? Näitab mitme masina vahel paketti edastatakse enne kui loobutakse.</p>
+    <p>
+        Lisada ekraanipilt ühest paketist (ping vastus) Wiresharki keskmises aknas, kus IP osa on tervenisti lahti.
+    </p>
+    <img src="icmp_response.png" alt="Pingi vastus" />
 
     <h4>ICMP</h4>
-    <p>Milliste protokollide päiseid ICMP paketid sisaldavad?</p>
+    <p>Milliste protokollide päiseid ICMP paketid sisaldavad? eth:ethertype:ip:icmp:data</p>
 
-    <p>Millisele aadressile saadetakse ping päring (MAC aadress ja IP aadress)?</p>
+    <p>Millisele aadressile saadetakse ping päring (MAC aadress ja IP aadress)? 58:98:35:80:af:ca, 193.40.252.59</p>
 
-    <p>Milliselt aadressilt tuleb vastus (MAC aadress ja IP aadress)?</p>
+    <p>Milliselt aadressilt tuleb vastus (MAC aadress ja IP aadress)? 58:98:35:80:af:ca, 193.40.252.59</p>
 
-    <p>Mis on päringu ja vastuse Data osas (kirjeldada oma sõnadega andmete kogust ja sisu)?</p>
+    <p>Mis on päringu ja vastuse Data osas (kirjeldada oma sõnadega andmete kogust ja sisu)? Korratakse tähestiku, kuni vajalik andmekogus on täis</p>
 
-    <p>Ekraanipildid ping päringu ja ping vastuse Wiresharki keskmisest aknast, kus dekodeeritud ICMP paketi IP ja ICMP osa.</p>
+    <p>
+        Ekraanipildid ping päringu ja ping vastuse Wiresharki keskmisest aknast, kus dekodeeritud ICMP paketi IP ja ICMP osa.<br />
+        <img src="icmp_request.png" alt="Request" />
+        <img src="icmp_response.png" alt="Request" />
+    </p>
 
-    <p>Millisele aadressile saadetakse ping päring (MAC aadress ja IP aadress)?</p>
+    <p>Millisele aadressile saadetakse ping päring (MAC aadress ja IP aadress)? 58:98:35:80:af:ca, 93.184.216.34</p>
 
-    <p>Milliselt aadressilt tuleb vastus (MAC aadress ja IP aadress)?</p>
+    <p>Milliselt aadressilt tuleb vastus (MAC aadress ja IP aadress)? 58:98:35:80:af:ca, 93.184.216.34</p>
 
-    <p>Ekraanipilt ping päringu ja ping vastuse pakettidest Wiresharki keskmises aknas, (kus kõik plussid kinni).</p>
+    <p>
+        Ekraanipilt ping päringu ja ping vastuse pakettidest Wiresharki keskmises aknas, (kus kõik plussid kinni).<br />
+
+        <img src="icmp_examplecom_request.png" alt="Request" />
+        <img src="icmp_examplecom_response.png" alt="Request" />
+    </p>
 
     <h4>UDP, DNS</h4>
-    <p>Milliste protokollide päiseid DNS paketid sisaldavad?</p>
+    <p>Milliste protokollide päiseid DNS paketid sisaldavad? eth:ethertype:ip:udp:dns</p>
 
-    <p>Kui pikk on UDP päis?</p>
+    <p>Kui pikk on UDP päis? 8 baiti</p>
 
-    <p>Mis sisaldub UDP päises?</p>
+    <p>Mis sisaldub UDP päises? Lähteport, sihtport, andmete pikkus, kontrollkoodid</p>
 
-    <p>Milline on UDP pordi number DNS jaoks?</p>
+    <p>Milline on UDP pordi number DNS jaoks? 53</p>
 
-    <p>Mis sisaldub DNS osas?</p>
+    <p>Mis sisaldub DNS osas? Päring www.example.com nimele vastava ip aadress leidmiseks.</p>
 
-    Ekraanipildid DNS päringu ja vastuse pakettidest Wiresharki keskmises aknas, kus UDP ja DNS osad on lahti.
+    <img src="dns_request.png" alt="Request" /><br />
+    <img src="dns_response.png" alt="Response" /><br />
 
     <h3>4.4 Traceroute</h3>
-    <p>Lisada ekraanipilt käsurealt olevatest traceroute tulemustest.
-    <p>Mis on traceroute tulemuseks üldiselt?
+    <p>
+        Lisada ekraanipilt käsurealt olevatest traceroute tulemustest.
+        <img src="tracert.png" alt="Tracert" />
+    </p>
+    <p>
+        Mis on traceroute tulemuseks üldiselt? Tracert püüab kindlaks teha läbi, mis marsruutereid läbib ühendus www.example.com arvutini.
+    </p>
 
     <p>
-        Mitme marsruuteri kaugusel meie võrgust asub www.example.com?
-    </p><p>
-        Milliseid protokolle kasutatakse tracert käsu täitmiseks?
-    </p><p>
+        Mitme marsruuteri kaugusel meie võrgust asub www.example.com? 11
+    </p>
+    <p>
+        Milliseid protokolle kasutatakse tracert käsu täitmiseks? dns, icmp
+    </p>
+    <p>
         Milline paketi eluaja (Time To Live, TTL) väärtus on päringu pakettidel ning vastuse pakettidel?
-    </p><p>Mida TTL näitab?
-
+        TTL, mis on väiksem kui vahel asuvatel marsruuterite arv siis vastuspakette ei olnud.<br />
+        TTL=11 puhul tuli vastuspakett TTLiga 54<br />
+    </p>
     <p>
-        Lisada Wiresharkist salvestatud pakettide faili sisu.
+        Mida TTL näitab? Näitab mitme masina vahel paketti edastatakse enne kui loobutakse.
+    </p>
+    <p>
+        <a href="tracert.pcapng">Wiresharkist salvestatud pakettide faili sisu.</a>
     </p>
 
     <h2>4.5 Nimeteenus</h2>
@@ -173,12 +208,12 @@
         <li>ICMP päise pikkus 8 baiti.
     </ol>
 
-    <img src="" alt="Salvestada Wiresharki ekraanipilt, kus peal ülemises aknas üks päring koos fragmentidega ja üks vastus fragmentidega (iga pakett on üks rida)." />
+    <img src="size_wireshark.png" alt="Salvestada Wiresharki ekraanipilt, kus peal ülemises aknas üks päring koos fragmentidega ja üks vastus fragmentidega (iga pakett on üks rida)." />
     <p>
-        LISADA ÜLESANDE LAHENDUSKÄIK JA TULEMUSED!!
+        Kokku edastatakse 2042 baiti, millest 2000 baiti on kasulikud. 2000/2042 = 97,94%
     </p>
 
     <h2>Kokkuvõte ja järeldused</h2>
-    <p>KIRJUTA KOKKUVÕTE JA JÄRELDUSED SIIA!</p>
+    <p>TCP ja UDP protokolile ehitatud rakendused võimaldavad suuremal osal tavainimese jaoks nähtava interneti töös hoida.</p>
 </body>
 </html>

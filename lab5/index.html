@@ -32,20 +32,21 @@
     </p>
 
     <h4>ARP </h4>
-    <p>
-        Milliste protokollide päiseid ARP paketid sisaldavad? eth:ethertype:arp <br />
+    <p>Milliste protokollide päiseid ARP paketid sisaldavad? eth:ethertype:arp </p>
 
-    <p>Millisele aadressile saadetakse ARP päring? 192.168.1.254</p>
+    <p>Millisele aadressile saadetakse ARP päring? FF:FF:FF:FF:FF:FF</p>
 
-    <p>Milliselt aadressilt tuleb ARP vastus? 192.168.1.254</p>
+    <p>Milliselt aadressilt tuleb ARP vastus? 58:98:35:30:af:ca</p>
 
     <p>Milline on ARP pakettide sisu? Millisele MAC aadressile vastab IP</p>
 
     <p>
         Ekraanipilt Wiresharki keskmisest aknast, kus näha dekodeeritud kujul ARP päringu paketis EthernetII ja ARP osa
-        ning teine ekraanipilt Wiresharki keskmisest aknast, kus näha ARP vastuse paketis dekodeeritud EthernetII ja ARP osa.
-
         <img src="arp_wireshark.png" alt="ARP protokolli kuvatõmmis" />
+
+        <br />
+        ning teine ekraanipilt Wiresharki keskmisest aknast, kus näha ARP vastuse paketis dekodeeritud EthernetII ja ARP osa.
+        <img src="arp_wireshark2.png" alt="ARP protokolli kuvatõmmis" />
     </p>
 
     <h4>IP</h4>
@@ -91,7 +92,7 @@
         Ekraanipilt ping päringu ja ping vastuse pakettidest Wiresharki keskmises aknas, (kus kõik plussid kinni).<br />
 
         <img src="icmp_examplecom_request.png" alt="Request" />
-        <img src="icmp_examplecom_response.png" alt="Request" />
+        <img src="icmp_examplecom_response.png" alt="Response" />
     </p>
 
     <h4>UDP, DNS</h4>
@@ -151,7 +152,7 @@
 
     <p>Kuidas TCP seanssi alustatakse (3 esimest paketti)? SYN, SYN-ACK, ACK</p>
 
-    <p>Kuidas TCP seanssi lõpetatakse (4 viimast paketti)?</p>
+    <p>Kuidas TCP seanssi lõpetatakse (4 viimast paketti)? FIN, ACK, FIN, ACK</p>
 
     <img src="www_wireshark.png" alt="Salvestada Wiresharki ekraanipilt ühest paketist, kus keskmises aknas on TCP osa lahti." />
 
@@ -181,7 +182,7 @@
         </tr>
         <tr>
             <td>Keskmine RTT</td>
-            <td>275</td>
+            <td>150 ms</td>
             <td></td>
         </tr>
         <tr><td colspan=3>Wiresharkist leida:</td></tr>
@@ -210,7 +211,8 @@
 
     <img src="size_wireshark.png" alt="Salvestada Wiresharki ekraanipilt, kus peal ülemises aknas üks päring koos fragmentidega ja üks vastus fragmentidega (iga pakett on üks rida)." />
     <p>
-        Kokku edastatakse 2042 baiti, millest 2000 baiti on kasulikud. 2000/2042 = 97,94%
+        Koos fragmentidega edastatakse juhtmes iga paketiga 2076 baiti, millest 2000 on kasulik informatsioon. 2000/2076 = 96,33%<br />
+        Edastuskiirus: 2076 baiti edastamiseks edasi-tagasi kulus keskmiselt 150ms, mis teeb keskmiseks edastuskiiruseks 13840 baiti sekundis.
     </p>
 
     <h2>Kokkuvõte ja järeldused</h2>

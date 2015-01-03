@@ -26,9 +26,6 @@
                 <td>Andrei Reinus</td>
             </tr>
             <tr>
-                <td>Kristjan Kranich</td>
-            </tr>
-            <tr>
                 <td>Töö tegemise kuupäev: Sat Oct 18 13:38:36 2014</td>
             </tr>
         </tbody>
@@ -102,9 +99,9 @@
             <tr>
                 <td>1</td>
                 <td>1 ja 6</td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>2.4025 GHz</td>
+                <td>2.4600 GHz</td>
+                <td>0.0575 GHz</td>
             </tr>
             <tr>
                 <td colspan="7"><img src="Screen_20141018_153418.png" alt="LISA SIIA KATSE 1 SPEKTRIPILT!"></td>
@@ -124,9 +121,9 @@
             <tr>
                 <td>2</td>
                 <td>1 ja 4</td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>2.4025 GHz</td>
+                <td>2.700 GHz</td>
+                <td>0.0675 GHz</td>
             </tr>
             <tr>
                 <td colspan="7"><img src="Screen_20141018_153637.png" alt="LISA SIIA KATSE 2 SPEKTRIPILT!"></td>
@@ -138,8 +135,7 @@
     <ol>
         <li>
             <font face="Courier New, monospace">netsh wlan show interface</font>
-<pre>KOPEERI ESIMESE KÄSU VÄLJUNDFAILI SISU SIIA!
-</pre>
+<pre>Väljundfaili sisu ei ole suutnud leida. Antud info puudub.</pre>
         </li>
         <li>
             <font face="Courier New, monospace">netsh wlan show all</font><br>
@@ -516,20 +512,26 @@ SSID 15 : LAUPAEV-5G
                 netsh käsu väljundfailidest)?
             </small>
             <br />
-            802.11a - TTU, eduroam,
-            802.11b - orinoco
-            802.11g - TTU, eduroam, A41, Artjoms network24ghx, eriline_v6rk, LAUPAEV
-            802.11n - NETGEAR28, NETGEAR68, Artjoms network5ghz, NETGEAR28-5G, NETGEAR68-5G, A42, eriline_v6rk_5ghz, LAUPAEV-5G
+            802.11a - TTU, eduroam,<br />
+            802.11b - orinoco<br />
+            802.11g - TTU, eduroam, A41, Artjoms network24ghx, eriline_v6rk, LAUPAEV<br />
+            802.11n - NETGEAR28, NETGEAR68, Artjoms network5ghz, NETGEAR28-5G, NETGEAR68-5G, A42, eriline_v6rk_5ghz, LAUPAEV-5G<br />
         </li>
         <li>
-            <small>Kui palju on võrreldavate võrkude Link Score ja mida sellest järeldada võib? </small>
+            <small>Kui palju on võrreldavate võrkude Link Score ja mida sellest järeldada võib? </small><br />
+            LAUPAEV - 27, TTU - 12; TTU võrgu signaal on nõrgem, järelikult on kas saatja kaugemal või nõrgema võimsusega.
             <br />
         </li>
         <li>
-            <small>Selgitada <font face="Courier New, monospace"><i>inSSIDer</i></font>'i tabelis näidatavate MAC aadresside tähendust.</small><br>
+            <small>Selgitada <font face="Courier New, monospace"><i>inSSIDer</i></font>'i tabelis näidatavate MAC aadresside tähendust.</small><br />
+            Need on antud võrguseadmete MAC aadressid, ehk siis võrguseadme füüsiline aadress.
+            <br />
         </li>
         <li>
-            <small>Millised raadiokanalid on kasutuses ja kus on veel vaba ruumi uute võrkude jaoks?</small><br>
+            <small>Millised raadiokanalid on kasutuses ja kus on veel vaba ruumi uute võrkude jaoks?</small>
+            <br />
+            2.4GHz võrkudes on kõik kanalid kasutuses aga kõige rohkem on vaba 3, 4, 8, 9<br />
+            5GHz WiFi võrkudel on kasutuses 36,40,44,48 ning vabad on 52, 56, 60, 64<br />
         </li>
     </ol>
 
@@ -653,7 +655,7 @@ SSID 15 : LAUPAEV-5G
             <tr>
                 <td width="49"><b>S</b></td>
                 <td width="39">dBm</td>
-                <td width="24" align="right"><pre>-60dBm</pre></td>
+                <td width="24" align="right"><pre>-60</pre></td>
             </tr>
             <tr>
                 <td width="49"><b>N</b></td>
@@ -664,7 +666,7 @@ SSID 15 : LAUPAEV-5G
                 <td width="49"><b>S/N</b></td>
                 <td width="39">dB</td>
                 <td width="24" align="right">
-                    <pre>-60/-91 = 0,659</pre>
+                    <img src="valem2.png" alt="SNR ratio" />
                 </td>
             </tr>
             <tr>
@@ -676,7 +678,7 @@ SSID 15 : LAUPAEV-5G
                 <td width="49"><b>N</b></td>
                 <td width="39">mW</td>
                 <td width="24" align="right">
-                    <pre>10 * log<sub>10</sub>(P/P<sub>väljund</sub>) = 0</pre>
+                    <p>10<sup>(-91dBm / 10) </sup> = 7.94 · 10<sup>-10</sup></p>
                 </td>
             </tr>
         </tbody>
